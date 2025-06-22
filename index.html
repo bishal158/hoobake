@@ -1,0 +1,1828 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>HOOBAKE</title>
+    <!-- ==== Favicon ==== -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+    <!-- All Plugins CSS -->
+    <link rel="stylesheet" href="./assets/css/plugins/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/plugins/aos.css" />
+    <link rel="stylesheet" href="./assets/css/plugins/nice-select.min.css" />
+    <link rel="stylesheet" href="./assets/css/plugins/owl.carousel.min.css" />
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./assets/css/helper.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- header area starts -->
+    <header class="container page-top-header">
+      <div class="bi-header-logo">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="123"
+          height="24"
+          viewBox="0 0 123 24"
+          fill="none"
+        >
+          <g clip-path="url(#clip0_162_310)">
+            <path
+              d="M32.2411 9.6783C31.0325 9.01712 29.649 8.68652 28.0941 8.68652C26.5561 8.68652 25.1879 9.01712 23.986 9.6783C22.7859 10.3412 21.8387 11.2402 21.1461 12.377C20.4518 13.5122 20.1055 14.8362 20.1055 16.3441C20.1055 17.8166 20.4535 19.1305 21.1461 20.2842C21.8403 21.4396 22.7927 22.3471 24.0013 23.0083C25.21 23.6694 26.5748 24 28.0941 24C29.6303 24 31.0087 23.6694 32.2293 23.0083C33.4464 22.3471 34.3987 21.443 35.0845 20.2961C35.7669 19.1508 36.1098 17.8335 36.1098 16.3424C36.1098 14.8345 35.7669 13.5105 35.0845 12.3753C34.3987 11.2385 33.4532 10.3395 32.2411 9.6783ZM31.9882 18.8168C31.6046 19.5337 31.0732 20.0835 30.3993 20.4664C29.7237 20.8476 28.9547 21.0399 28.0924 21.0399C27.2657 21.0399 26.5171 20.8476 25.8431 20.4664C25.1675 20.0852 24.6328 19.5354 24.239 18.8168C23.8468 18.1 23.6482 17.2752 23.6482 16.3441C23.6482 15.3945 23.8451 14.5697 24.239 13.8714C24.6328 13.1731 25.1675 12.6334 25.8431 12.2505C26.5171 11.8693 27.2776 11.6787 28.1212 11.6787C28.9649 11.6787 29.7237 11.871 30.3993 12.2505C31.0732 12.6334 31.6029 13.1731 31.9882 13.8714C32.3719 14.5697 32.5671 15.3945 32.5671 16.3441C32.5671 17.2752 32.3736 18.1 31.9882 18.8168Z"
+              fill="#231E55"
+            />
+            <path
+              d="M49.8036 9.6783C48.595 9.01712 47.2115 8.68652 45.6549 8.68652C44.1186 8.68652 42.7487 9.01712 41.5485 9.6783C40.3484 10.3412 39.4012 11.2402 38.7086 12.377C38.0143 13.5122 37.668 14.8362 37.668 16.3441C37.668 17.8166 38.016 19.1305 38.7086 20.2842C39.4029 21.4396 40.3535 22.3471 41.5638 23.0083C42.7725 23.6694 44.1373 24 45.6549 24C47.1928 24 48.5712 23.6694 49.7901 23.0083C51.0106 22.3471 51.9612 21.443 52.6436 20.2961C53.3294 19.1508 53.6706 17.8335 53.6706 16.3424C53.6706 14.8345 53.3277 13.5105 52.6436 12.3753C51.9612 11.2385 51.0123 10.3395 49.8036 9.6783ZM49.5507 18.8168C49.1671 19.5337 48.6357 20.0835 47.9618 20.4664C47.2862 20.8476 46.5189 21.0399 45.6549 21.0399C44.8299 21.0399 44.0796 20.8476 43.4056 20.4664C42.73 20.0852 42.197 19.5354 41.8032 18.8168C41.4093 18.1 41.2107 17.2752 41.2107 16.3441C41.2107 15.3945 41.4076 14.5697 41.8032 13.8714C42.1953 13.1731 42.73 12.6334 43.4056 12.2505C44.0813 11.8693 44.8417 11.6787 45.6837 11.6787C46.5291 11.6787 47.2862 11.871 47.9618 12.2505C48.6374 12.6334 49.1688 13.1731 49.5507 13.8714C49.9361 14.5697 50.1279 15.3945 50.1279 16.3441C50.1279 17.2752 49.9361 18.1 49.5507 18.8168Z"
+              fill="#231E55"
+            />
+            <path
+              d="M68.2009 9.63598C67.0584 9.00347 65.753 8.68637 64.2914 8.68637C63.0522 8.68637 61.937 8.9613 60.9439 9.51117C60.3922 9.81646 59.9067 10.2145 59.4806 10.6969L59.4789 2.72559H55.9922L55.9939 23.8059H59.3414V21.8999C59.7777 22.4262 60.292 22.8546 60.8896 23.1785C61.903 23.7266 63.037 24.0016 64.2914 24.0016C65.753 24.0016 67.0584 23.6862 68.2009 23.052C69.3433 22.4195 70.2498 21.5306 70.9152 20.3836C71.5807 19.2383 71.9134 17.8924 71.9134 16.3457C71.9134 14.8192 71.5807 13.4766 70.9152 12.3229C70.2498 11.1641 69.3433 10.2702 68.2009 9.63598ZM67.7493 18.8167C67.3555 19.5335 66.8259 20.0834 66.1604 20.4663C65.495 20.8475 64.7311 21.0397 63.8687 21.0397C63.042 21.0397 62.2934 20.8475 61.6195 20.4663C60.9439 20.0851 60.4109 19.5352 60.017 18.8167C59.6232 18.0998 59.4263 17.275 59.4263 16.344C59.4263 15.3944 59.6232 14.5696 60.017 13.8713C60.4109 13.173 60.9456 12.6332 61.6195 12.2504C62.2951 11.8692 63.0437 11.6786 63.8687 11.6786C64.7311 11.6786 65.495 11.8709 66.1604 12.2504C66.8259 12.6332 67.3555 13.173 67.7493 13.8713C68.1431 14.5696 68.3401 15.3944 68.3401 16.344C68.3401 17.275 68.1431 18.0998 67.7493 18.8167Z"
+              fill="#231E55"
+            />
+            <path
+              d="M40.5237 8.50423L39.6359 7.16162C37.8178 8.2799 35.9981 8.2799 34.1817 7.16162L33.2871 8.51604C34.5908 9.29192 35.6365 10.3242 36.4004 11.5926C36.5854 11.8996 36.7501 12.2183 36.8944 12.5472C37.0421 12.215 37.2084 11.8945 37.3968 11.5841C38.1709 10.3157 39.2217 9.28011 40.5237 8.50423Z"
+              fill="#231E55"
+            />
+            <path
+              d="M28.1055 12.4697V13.9338C29.3124 13.9338 30.2936 15.0217 30.2936 16.3592H31.7671C31.7671 14.2138 30.1238 12.4697 28.1055 12.4697Z"
+              fill="#231E55"
+            />
+            <path
+              d="M45.6289 12.4697V13.9338C46.8359 13.9338 47.817 15.0217 47.817 16.3592H49.2905C49.2888 14.2138 47.6473 12.4697 45.6289 12.4697Z"
+              fill="#231E55"
+            />
+            <path
+              d="M13.8994 12.3198H3.65649V4.24219H0V23.8045H3.65649V15.4216H13.8994V23.8045H17.5559V4.24219H13.8994V12.3198Z"
+              fill="#231E55"
+            />
+            <path
+              d="M107.555 8.88056H103.335L96.0509 15.5751V2.72412H92.5625V23.8045H96.0509V19.866L98.6397 17.4136L103.897 23.8045H108.144L101.261 15.1348L107.555 8.88056Z"
+              fill="#231E55"
+            />
+            <path
+              d="M118.287 20.6469C117.624 20.9269 116.866 21.0669 116.024 21.0669C115.03 21.0669 114.157 20.8746 113.407 20.4934C112.658 20.1122 112.076 19.5522 111.662 18.8168C111.584 18.6785 111.518 18.5318 111.455 18.3833L122.998 16.2041C122.961 14.6203 122.599 13.2693 121.915 12.151C121.229 11.0344 120.321 10.1759 119.187 9.58047C118.053 8.98338 116.792 8.68652 115.403 8.68652C113.886 8.68652 112.543 9.01712 111.38 9.6783C110.217 10.3412 109.304 11.2436 108.639 12.3888C107.971 13.5341 107.639 14.8531 107.639 16.3424C107.639 17.8335 107.982 19.1508 108.667 20.2961C109.35 21.443 110.317 22.3471 111.563 23.0083C112.811 23.6694 114.268 24 115.938 24C117.23 24 118.389 23.7959 119.411 23.3861C120.433 22.9779 121.282 22.3791 121.957 21.5982L120.1 19.419C119.559 19.9587 118.953 20.3686 118.287 20.6469ZM111.046 16.1485C111.046 15.1989 111.229 14.3741 111.594 13.6758C111.959 12.9775 112.472 12.4462 113.125 12.0835C113.784 11.7209 114.541 11.5387 115.405 11.5387C116.249 11.5387 116.989 11.7209 117.629 12.0835C118.265 12.4462 118.769 12.9539 119.146 13.6066C119.319 13.9035 119.443 14.2256 119.53 14.5663L111.046 16.1603V16.1485Z"
+              fill="#231E55"
+            />
+            <path
+              d="M85.9125 10.6937C85.4932 10.2113 85.0111 9.81497 84.4645 9.50968C84.271 9.4051 84.0774 9.30727 83.8737 9.22125L83.1862 10.4222C83.3407 10.5824 83.4612 10.7781 83.5325 11.0041C83.7226 11.6164 83.945 12.4951 84.0367 13.4515C86.1009 13.605 87.5557 13.9356 87.6558 14.3184C87.6609 14.3336 87.6626 14.3471 87.6626 14.3623C87.6626 14.6946 86.639 14.9914 85.0705 15.1753C84.7412 15.2107 84.3881 15.2444 84.0146 15.2697C83.7685 15.2883 83.5138 15.3035 83.2524 15.3153C83.3577 14.6895 83.3492 14.0283 83.2796 13.4059C83.2558 13.1766 83.2219 12.9539 83.1845 12.7363C83.1234 12.9505 83.047 13.1698 82.9622 13.3908C82.7754 13.8765 82.5378 14.3724 82.2662 14.8481C82.166 15.0201 82.0642 15.1888 81.9572 15.3558C81.7925 15.3575 81.6262 15.3608 81.4564 15.3608C81.3206 15.3608 81.1865 15.3608 81.0558 15.3591C81.2408 15.0977 81.4293 14.8076 81.6126 14.4837C81.8401 14.0874 82.0217 13.7146 82.166 13.3705C82.772 11.9318 82.7364 10.9585 82.4834 10.8169C82.1694 10.6398 80.937 11.3954 79.781 13.4026C79.7742 13.4144 79.7657 13.4262 79.7606 13.438C79.3668 14.1262 79.1037 14.7502 78.9407 15.2782C78.8541 15.2714 78.7692 15.2664 78.6861 15.2596C78.5129 15.2444 78.3432 15.2309 78.1802 15.2141C78.3432 14.6457 78.5927 14.0418 78.8983 13.4532C78.9662 13.325 79.0358 13.1985 79.1087 13.072C79.5043 12.3787 79.9762 11.726 80.4634 11.2048C79.3956 11.6096 78.2175 12.2404 77.5131 13.1968C77.4095 13.3385 77.3246 13.4835 77.2567 13.6286C77.0581 14.084 77.0411 14.5681 77.2109 15.0943C76.9104 15.0488 76.6388 14.9999 76.4012 14.9442C75.6848 14.7806 75.2638 14.5816 75.2553 14.369C75.2553 14.3674 75.2553 14.3674 75.2553 14.3657C75.2553 14.3623 75.2553 14.3623 75.2553 14.3589C75.2553 14.3387 75.2621 14.3168 75.2723 14.2931C75.3521 14.1042 75.7663 13.9271 76.4216 13.7787C76.5081 13.4211 76.6711 13.077 76.9087 12.7549C78.1208 11.1104 80.4838 10.3345 81.7858 10.0191C82.0166 9.96171 82.2475 9.96508 82.4648 10.0157L83.0759 8.94632C82.4563 8.77596 81.7892 8.68994 81.0796 8.68994C79.6367 8.68994 78.3415 9.00535 77.1973 9.63955C76.0549 10.2737 75.1535 11.166 74.4965 12.3231C73.8413 13.4768 73.5137 14.8211 73.5137 16.3475C73.5137 17.8926 73.843 19.2385 74.4965 20.3838C75.1535 21.5308 76.0549 22.4196 77.1973 23.0538C78.3415 23.688 79.6367 24.0035 81.0796 24.0035C82.3918 24.0035 83.5427 23.7268 84.5239 23.1803C85.1231 22.8447 85.6426 22.4011 86.0873 21.8495V23.8078H89.4332V8.88054H85.9125V10.6937ZM86.9055 17.7441C86.3504 18.7494 85.6035 19.5202 84.6614 20.0515C84.4747 20.1561 84.2828 20.2522 84.0842 20.3383V20.4412C84.0842 21.0248 83.6072 21.4987 83.0199 21.4987H79.8472C79.2564 21.4987 78.7794 21.0248 78.7794 20.4412V20.2826C78.6249 20.2134 78.4705 20.1359 78.3211 20.0515C77.3773 19.5185 76.627 18.7477 76.0837 17.7441C75.6628 16.9834 75.4013 16.135 75.2995 15.2006C75.6067 15.3507 76.0345 15.4772 76.5947 15.5835C76.7152 15.6071 76.8425 15.6273 76.9766 15.6493C77.1413 15.6762 77.3162 15.7015 77.4944 15.7235C77.6726 15.7488 77.8543 15.769 78.0427 15.7892C78.2481 15.8095 78.4586 15.8297 78.6759 15.8466C78.6776 15.8483 78.6776 15.8483 78.6793 15.8466C78.7149 15.8483 78.754 15.8533 78.7913 15.855C79.3634 15.8989 79.9711 15.9292 80.6026 15.9427C80.8827 15.9495 81.1662 15.9512 81.4547 15.9512H81.5464C82.0777 15.9495 82.6023 15.9394 83.1047 15.9157C83.3763 15.9039 83.6412 15.8888 83.8975 15.8719C84.0231 15.8635 84.1453 15.855 84.2659 15.8449H84.2676C84.8787 15.796 85.4423 15.7319 85.9379 15.6509C86.7392 15.5227 87.3112 15.3693 87.6847 15.1685C87.5879 16.1148 87.3282 16.975 86.9055 17.7441Z"
+              fill="#231E55"
+            />
+            <path
+              d="M85.5747 6.24246L86.5015 6.76702L89.1107 2.20114C89.513 1.49273 89.2634 0.593717 88.5539 0.192283C88.3213 0.0607211 88.0718 0 87.8239 0C87.3096 0 86.8037 0.269871 86.5338 0.74552L83.9247 5.31141L84.8515 5.83428L83.0742 8.94455C83.3526 9.02045 83.6174 9.11322 83.8755 9.22285L85.5747 6.24246Z"
+              fill="#231E55"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_162_310">
+              <rect width="123" height="24" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+      <div class="bi-header-routes">
+        <a href="index.html" class="bi-header-route active"> Home page </a>
+        <a href="about.html" class="bi-header-route"> About Us </a>
+        <a href="#faqs" class="bi-header-route"> FAQ </a>
+        <a href="join-option.html" class="common-btn"> Join now </a>
+      </div>
+      <!-- mobile header routes  -->
+      <div class="mobile-header-routes">
+        <svg
+          id="open-mobile-header"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <path
+            d="M12 4.5H3"
+            stroke="white"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M12 9.5H3"
+            stroke="white"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M21 14.5H3"
+            stroke="white"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M21 19.5H3"
+            stroke="white"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <div class="mobile-header-routes-box">
+          <a href="index.html" class="bi-header-route active"> Home page </a>
+          <a href="about.html" class="bi-header-route"> About Us </a>
+          <a href="#faqs" class="bi-header-route"> FAQ </a>
+          <a href="join-option.html" class="bi-header-route join-now">
+            Join Now
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- header area starts -->
+    <!-- custom cricle background -->
+    <div class="cs--circle--1 cs--circle">
+      <img
+        src="./assets/images/user-1.png"
+        class="cs-circle-avatar avatar1"
+        alt=""
+      />
+      <img
+        src="./assets/images/user-2.png"
+        class="cs-circle-avatar avatar2"
+        alt=""
+      />
+      <img
+        src="./assets/images/user-3.png"
+        class="cs-circle-avatar avatar3"
+        alt=""
+      />
+    </div>
+    <div class="cs--circle--2 cs--circle">
+      <img
+        src="./assets/images/user-9.png"
+        class="cs-circle-avatar avatar1"
+        alt=""
+      />
+      <img
+        src="./assets/images/user-8.png"
+        class="cs-circle-avatar avatar2"
+        alt=""
+      />
+      <img
+        src="./assets/images/user-7.png"
+        class="cs-circle-avatar avatar3"
+        alt=""
+      />
+    </div>
+    <div class="cs--circle--3 cs--circle">
+      <img
+        src="./assets/images/user-4.png"
+        class="cs-circle-avatar avatar1"
+        alt=""
+      />
+      <img
+        src="./assets/images/user-5.png"
+        class="cs-circle-avatar avatar2"
+        alt=""
+      />
+    </div>
+    <!-- custom cricle background -->
+    <!-- main area starts -->
+    <main>
+      <!-- banner section starts here -->
+      <div class="bi-home-page-banner">
+        <div class="container top-banner">
+          <h1 class="top-title">
+            Meet the new AI-powered smart <br />
+            solution connecting customers <br />
+            with the perfect local bakers
+          </h1>
+
+          <div class="hoobake-features--grid">
+            <!-- feature 1 -->
+            <div class="feature-card">
+              <div class="feature_icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="33"
+                  viewBox="0 0 32 33"
+                  fill="none"
+                >
+                  <path
+                    d="M14.666 27.1667C21.2934 27.1667 26.666 21.7942 26.666 15.1667C26.666 8.53933 21.2934 3.16675 14.666 3.16675C8.0386 3.16675 2.66602 8.53933 2.66602 15.1667C2.66602 21.7942 8.0386 27.1667 14.666 27.1667Z"
+                    stroke="#4A25E1"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M25.2392 28.0865C25.9459 30.2198 27.5592 30.4332 28.7992 28.5665C29.9326 26.8598 29.1859 25.4598 27.1326 25.4598C25.6126 25.4465 24.7592 26.6332 25.2392 28.0865Z"
+                    stroke="#4A25E1"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h1 class="feature_title">Search</h1>
+              <p class="feature_text">
+                Find the best bakers based on your specific needs, preferences,
+                location & more
+              </p>
+            </div>
+            <!-- feature 2 -->
+            <div class="feature-card">
+              <div class="feature_icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="31"
+                  viewBox="0 0 30 31"
+                  fill="none"
+                >
+                  <path
+                    d="M22.5 13C22.5 13 18.0784 14.875 15 14.875C11.9216 14.875 7.5 13 7.5 13M15 15.5V17.3153M15 17.3153C15 18.0344 15.2067 18.7383 15.5956 19.3431L18.75 24.25M15 17.3153C15 18.0344 14.7933 18.7383 14.4044 19.3431L11.25 24.25M27.5 15.5C27.5 22.4036 21.9036 28 15 28C8.09644 28 2.5 22.4036 2.5 15.5C2.5 8.59644 8.09644 3 15 3C21.9036 3 27.5 8.59644 27.5 15.5ZM17.5 9.25C17.5 10.6307 16.3807 11.75 15 11.75C13.6193 11.75 12.5 10.6307 12.5 9.25C12.5 7.86929 13.6193 6.75 15 6.75C16.3807 6.75 17.5 7.86929 17.5 9.25Z"
+                    stroke="#5050FA"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <h1 class="feature_title">Recommend</h1>
+              <p class="feature_text">
+                Browse through a curated list of talented local bakers
+              </p>
+            </div>
+            <!-- feature 3 -->
+            <div class="feature-card">
+              <div class="feature_icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="33"
+                  viewBox="0 0 32 33"
+                  fill="none"
+                >
+                  <path
+                    d="M15.9993 24.5C12.4208 24.5 9.15343 25.0035 6.66602 25.8333"
+                    stroke="#4A25E1"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M23.9993 17.8333C26.9448 17.8333 29.3327 15.4455 29.3327 12.5C29.3327 9.55448 26.9448 7.16667 23.9993 7.16667C22.9016 7.16667 21.8813 7.49832 21.0332 8.06691C20.3043 5.98952 18.3257 4.5 15.9993 4.5C13.6729 4.5 11.6944 5.98952 10.9655 8.06691C10.1174 7.49832 9.09711 7.16667 7.99935 7.16667C5.05383 7.16667 2.66602 9.55448 2.66602 12.5C2.66602 15.4455 5.05383 17.8333 7.99935 17.8333V25.1667"
+                    stroke="#4A25E1"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M20 25.1666H27.3333M24.6667 28.4999L28 25.1666L24.6667 21.8333"
+                    stroke="#4A25E1"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h1 class="feature_title">Order</h1>
+              <p class="feature_text">
+                Customize and finalize your purchase with your chosen baker
+              </p>
+            </div>
+            <!-- feature 4 -->
+            <div class="feature-card">
+              <div class="feature_icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="33"
+                  viewBox="0 0 32 33"
+                  fill="none"
+                >
+                  <path
+                    d="M29.2791 15.1276C29.3505 16.2345 29.3505 17.3809 29.2791 18.4879C28.9135 24.1443 24.4708 28.65 18.8935 29.0207C16.9907 29.1472 15.0041 29.1469 13.1052 29.0207C12.4513 28.9772 11.7385 28.8212 11.1247 28.5684C10.4417 28.2871 10.1001 28.1464 9.9266 28.1677C9.75304 28.1891 9.50121 28.3748 8.99759 28.7461C8.10959 29.4009 6.99091 29.8713 5.33192 29.8309C4.49303 29.8105 4.07359 29.8003 3.8858 29.4801C3.69803 29.16 3.93189 28.7168 4.39963 27.8304C5.04833 26.6011 5.45936 25.1937 4.83656 24.0661C3.76392 22.4555 2.85281 20.548 2.71967 18.4879C2.64813 17.3809 2.64813 16.2345 2.71967 15.1276C3.08523 9.47118 7.52787 4.96551 13.1052 4.59476C14.7084 4.48819 15.0409 4.47142 16.666 4.54491"
+                    stroke="#4A25E1"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15.9933 17.1667H16.0053M21.3207 17.1667H21.3327M10.666 17.1667H10.678"
+                    stroke="#4A25E1"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M29.3333 7.83341C29.3333 10.4107 27.244 12.5001 24.6667 12.5001C22.0893 12.5001 20 10.4107 20 7.83341C20 5.25608 22.0893 3.16675 24.6667 3.16675C27.244 3.16675 29.3333 5.25608 29.3333 7.83341Z"
+                    stroke="#4A25E1"
+                    stroke-width="1.5"
+                  />
+                </svg>
+              </div>
+              <h1 class="feature_title">Chat</h1>
+              <p class="feature_text">
+                Engage in interactive conversations with your potential bakers
+              </p>
+            </div>
+          </div>
+          <a href="join-option.html" class="common-btn find-bakers"
+            >Get Started</a
+          >
+        </div>
+      </div>
+      <!-- banner section starts here -->
+
+      <!-- what's make hoobake unique starts here   -->
+      <div class="benifits-of-hoobake second-section">
+        <div class="container benifits-of-hoobake-container">
+          <div class="bottom-banner-title">What Makes Hoobake Unique</div>
+          <div class="benifits-of-hoobake-subtitle">
+            Hoobake is a one-of-a-kind platform that revolutionizes how you
+            connect with local bakers, offering a seamless experience that
+            doesn’t exist anywhere else.
+          </div>
+          <div class="what-make-hoobake-unique-section">
+            <div class="ui-img">
+              <img src="assets/images/chat-ui.png" alt="" srcset="" />
+            </div>
+            <p class="what-make-hoobake-unique-section-left--text">
+              Our AI-powered technology streamlines both the search and ordering
+              processes, allowing you to find the perfect local baker tailored
+              to your specific needs—all in one place. <br />
+              No more sifting through emails, DMs, or messages on various
+              platforms like Facebook, Instagram, Google or Yelp. With Hoobake,
+              all inquiries and orders are managed through a single,
+              user-friendly interface, eliminating confusion and ensuring timely
+              communication. <br />
+              Discover a diverse selection of bakers, easily discuss your
+              requirements, and place orders directly without hassle. Hoobake
+              simplifies the entire experience, making it easier than ever to
+              enjoy delicious, personalized baked goods while supporting local
+              talent. Experience the future of baking today!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- what's make hoobake unique ends here   -->
+
+      <!-- benifits of hoobake section starts -->
+      <div class="benifits-of-hoobake">
+        <div class="container benifits-of-hoobake-container">
+          <div class="bottom-banner-title">
+            Benefits you can get from Hoobake
+          </div>
+          <div class="benifits-of-hoobake-subtitle">
+            Discover the smartest way to connect with local bakers and enjoy
+            delicious baked goods with Hoobake.
+          </div>
+          <div class="faq-accordion-section">
+            <!-- baker -->
+            <div class="accordion-right">
+              <h1 class="accordion-title">Baker</h1>
+              <div class="accordion" id="accordionExample">
+                <!-- item 1 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq1"
+                      aria-expanded="false"
+                      aria-controls="faq1"
+                    >
+                      Personalized Recommendations.
+                    </button>
+                  </h2>
+                  <div
+                    id="faq1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Hoobake's AI-driven search engine tailors results based on
+                      your specific needs, preferences, and location, ensuring
+                      that you find bakers who align with your vision.
+                    </div>
+                  </div>
+                </div>
+                <!-- item 2 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq2"
+                      aria-expanded="false"
+                      aria-controls="faq2"
+                    >
+                      Wide Selection of Bakers.
+                    </button>
+                  </h2>
+                  <div
+                    id="faq2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Explore a diverse range of local bakers, from artisan
+                      bread makers to cake designers, all in one place, making
+                      it convenient to compare options and find the right fit
+                      for your event or cravings.
+                    </div>
+                  </div>
+                </div>
+                <!-- item 3 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq3"
+                      aria-expanded="false"
+                      aria-controls="faq3"
+                    >
+                      Interactive Experience
+                    </button>
+                  </h2>
+                  <div
+                    id="faq3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Our engaging platform allows for real-time conversations
+                      with bakers, making it easy to ask questions, discuss
+                      ideas, and make informed decisions about your baking
+                      needs.
+                    </div>
+                  </div>
+                </div>
+                <!-- item 4 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq4"
+                      aria-expanded="false"
+                      aria-controls="faq4"
+                    >
+                      Customer Reviews and Ratings
+                    </button>
+                  </h2>
+                  <div
+                    id="faq4"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Read reviews from other customers to gain insights into
+                      their experiences, helping you make confident choices when
+                      selecting your baker.
+                    </div>
+                  </div>
+                </div>
+                <!-- item 5 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq5"
+                      aria-expanded="false"
+                      aria-controls="faq5"
+                    >
+                      Support Local Bussiness
+                    </button>
+                  </h2>
+                  <div
+                    id="faq5"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      By using Hoobake, you’re helping promote local bakers in
+                      your community, fostering a network of small businesses
+                      that thrive on quality and creativity.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- customer -->
+            <div class="accordion-right">
+              <h1 class="accordion-title">Customer</h1>
+              <div class="accordion" id="accordionExample-customer">
+                <!-- item 1 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq1-customer"
+                      aria-expanded="false"
+                      aria-controls="faq1-customer"
+                    >
+                      Increased Visibility
+                    </button>
+                  </h2>
+                  <div
+                    id="faq1-customer"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample-customer"
+                  >
+                    <div class="accordion-body">
+                      -customer Hoobake provides local bakers with a platform to
+                      showcase their talents and reach a broader audience,
+                      increasing their chances of attracting new customers.
+                    </div>
+                  </div>
+                </div>
+                <!-- item 2 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq2-customer"
+                      aria-expanded="false"
+                      aria-controls="faq2-customer"
+                    >
+                      Targeted Customer Engagement
+                    </button>
+                  </h2>
+                  <div
+                    id="faq2-customer"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample-customer"
+                  >
+                    <div class="accordion-body">
+                      Our AI technology connects bakers with customers whose
+                      needs match their specialties, allowing bakers to focus on
+                      leads that are more likely to result in successful orders.
+                    </div>
+                  </div>
+                </div>
+                <!-- item 3 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq3-customer"
+                      aria-expanded="false"
+                      aria-controls="faq3-customer"
+                    >
+                      Improved Communication
+                    </button>
+                  </h2>
+                  <div
+                    id="faq3-customer"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample-customer"
+                  >
+                    <div class="accordion-body">
+                      The interactive platform facilitates seamless
+                      communication between bakers and customers, making it
+                      easier for bakers to understand client preferences and
+                      provide tailored services.
+                    </div>
+                  </div>
+                </div>
+                <!-- item 4 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq4-customer"
+                      aria-expanded="false"
+                      aria-controls="faq4-customer"
+                    >
+                      Customer Feedback and insights
+                    </button>
+                  </h2>
+                  <div
+                    id="faq4-customer"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample-customer"
+                  >
+                    <div class="accordion-body">
+                      Local bakers receive valuable feedback through customer
+                      reviews, enabling them to refine their offerings and
+                      enhance their services to meet market demands.
+                    </div>
+                  </div>
+                </div>
+                <!-- item 5 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq5-customer"
+                      aria-expanded="false"
+                      aria-controls="faq5-customer"
+                    >
+                      Comminity building
+                    </button>
+                  </h2>
+                  <div
+                    id="faq5-customer"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample-customer"
+                  >
+                    <div class="accordion-body">
+                      By joining Hoobake, bakers can connect with other local
+                      bakers, share experiences, and collaborate on projects,
+                      fostering a supportive community within the baking
+                      industry.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- benifits of hoobake section starts -->
+      <!-- live chatbot experience section starts  -->
+      <div class="live-chat-bot-experience-section" id="ai-chat-demo">
+        <div class="container bottom-banner">
+          <div class="bottom-banner-title">
+            Have a live experience about the chatbot by yourself
+          </div>
+          <div class="bottom-banner-subtitle">
+            Use for a trail about the chatbot, know it better for your self.
+          </div>
+          <a href="join-option.html" class="common-btn find-bakers"
+            >Join to Order</a
+          >
+          <div class="live-demo--chatbot--screen">
+            <div class="demo-ai--chat--message--screen">
+              <!-- ai reply -->
+              <div class="demo-ai-reply--row">
+                <div class="demo-ai--icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                  >
+                    <circle
+                      cx="20"
+                      cy="20"
+                      r="20"
+                      fill="url(#paint0_linear_775_1065)"
+                    />
+                    <g filter="url(#filter0_ddi_775_1065)">
+                      <path
+                        d="M25.5398 16.8526C25.4742 16.8526 25.4185 16.8395 25.3725 16.8133C25.3266 16.7871 25.2905 16.7412 25.2643 16.6757L24.6936 15.3389L23.2569 14.7097C23.1913 14.6835 23.1454 14.6475 23.1192 14.6016C23.0929 14.5557 23.0798 14.5 23.0798 14.4345C23.0798 14.369 23.0929 14.3133 23.1192 14.2674C23.1454 14.2215 23.1913 14.1855 23.2569 14.1593L24.6936 13.5498L25.2643 12.272C25.2905 12.2064 25.3266 12.1606 25.3725 12.1344C25.4185 12.1081 25.4742 12.095 25.5398 12.095C25.6054 12.095 25.6612 12.1081 25.7071 12.1344C25.753 12.1606 25.7891 12.2064 25.8153 12.272L26.386 13.5498L27.8227 14.1593C27.8883 14.1855 27.9342 14.2215 27.9604 14.2674C27.9867 14.3133 27.9998 14.369 27.9998 14.4345C27.9998 14.5 27.9867 14.5557 27.9604 14.6016C27.9342 14.6475 27.8883 14.6835 27.8227 14.7097L26.386 15.3389L25.8153 16.6757C25.7891 16.7412 25.753 16.7871 25.7071 16.8133C25.6612 16.8395 25.6054 16.8526 25.5398 16.8526ZM25.5398 28.5697C25.4873 28.5697 25.4349 28.5566 25.3824 28.5304C25.3299 28.5042 25.2905 28.4583 25.2643 28.3928L24.6936 27.1149L23.2766 26.5055C23.211 26.4793 23.1651 26.4432 23.1389 26.3973C23.1126 26.3515 23.0995 26.2958 23.0995 26.2302C23.0995 26.1647 23.1126 26.109 23.1389 26.0631C23.1651 26.0173 23.211 25.9812 23.2766 25.955L24.6936 25.3456L25.2643 23.989C25.2905 23.9235 25.3266 23.8776 25.3725 23.8514C25.4185 23.8252 25.4742 23.8121 25.5398 23.8121C25.6054 23.8121 25.6612 23.8252 25.7071 23.8514C25.753 23.8776 25.7891 23.9235 25.8153 23.989L26.386 25.3456L27.803 25.955C27.8686 25.9812 27.9145 26.0173 27.9408 26.0631C27.967 26.109 27.9801 26.1647 27.9801 26.2302C27.9801 26.2958 27.967 26.3515 27.9408 26.3973C27.9145 26.4432 27.8686 26.4793 27.803 26.5055L26.386 27.1149L25.8153 28.3928C25.7891 28.4583 25.7497 28.5042 25.6973 28.5304C25.6448 28.5566 25.5923 28.5697 25.5398 28.5697ZM16.9003 25.1686C16.7953 25.1686 16.6937 25.1391 16.5953 25.0802C16.4969 25.0212 16.4214 24.9393 16.369 24.8344L15.0898 22.1017L12.3346 20.8632C12.2296 20.8108 12.1476 20.7354 12.0886 20.6371C12.0295 20.5388 12 20.4372 12 20.3324C12 20.2275 12.0295 20.1259 12.0886 20.0277C12.1476 19.9294 12.2296 19.854 12.3346 19.8016L15.0898 18.563L16.369 15.85C16.4214 15.732 16.4969 15.6436 16.5953 15.5846C16.6937 15.5256 16.7953 15.4961 16.9003 15.4961C17.0053 15.4961 17.1069 15.5256 17.2053 15.5846C17.3037 15.6436 17.3792 15.7255 17.4317 15.8303L18.7305 18.563L21.4661 19.8016C21.5841 19.854 21.6727 19.9294 21.7317 20.0277C21.7908 20.1259 21.8203 20.2275 21.8203 20.3324C21.8203 20.4372 21.7908 20.5388 21.7317 20.6371C21.6727 20.7354 21.5841 20.8108 21.4661 20.8632L18.7305 22.1017L17.4317 24.8344C17.3792 24.9524 17.3037 25.0376 17.2053 25.09C17.1069 25.1424 17.0053 25.1686 16.9003 25.1686Z"
+                        fill="url(#paint1_linear_775_1065)"
+                        shape-rendering="crispEdges"
+                      />
+                    </g>
+                    <defs>
+                      <filter
+                        id="filter0_ddi_775_1065"
+                        x="5.63323"
+                        y="6.53326"
+                        width="28.0017"
+                        height="29.5741"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood
+                          flood-opacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feColorMatrix
+                          in="SourceAlpha"
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha"
+                        />
+                        <feOffset dx="-1.31726" dy="2.48816" />
+                        <feGaussianBlur stdDeviation="2.52475" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix
+                          type="matrix"
+                          values="0 0 0 0 0.0506089 0 0 0 0 0.0159861 0 0 0 0 0.191833 0 0 0 0.25 0"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in2="BackgroundImageFix"
+                          result="effect1_dropShadow_775_1065"
+                        />
+                        <feColorMatrix
+                          in="SourceAlpha"
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha"
+                        />
+                        <feOffset dx="1.24408" dy="-1.1709" />
+                        <feGaussianBlur stdDeviation="2.19544" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix
+                          type="matrix"
+                          values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.35 0"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in2="effect1_dropShadow_775_1065"
+                          result="effect2_dropShadow_775_1065"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="effect2_dropShadow_775_1065"
+                          result="shape"
+                        />
+                        <feColorMatrix
+                          in="SourceAlpha"
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha"
+                        />
+                        <feOffset dy="3.07361" />
+                        <feGaussianBlur stdDeviation="1.9393" />
+                        <feComposite
+                          in2="hardAlpha"
+                          operator="arithmetic"
+                          k2="-1"
+                          k3="1"
+                        />
+                        <feColorMatrix
+                          type="matrix"
+                          values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in2="shape"
+                          result="effect3_innerShadow_775_1065"
+                        />
+                      </filter>
+                      <linearGradient
+                        id="paint0_linear_775_1065"
+                        x1="23.8824"
+                        y1="33.1765"
+                        x2="32.3889"
+                        y2="2.42592"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#4A25E1" />
+                        <stop offset="0.927091" stop-color="#7B5AFF" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint1_linear_775_1065"
+                        x1="22.7967"
+                        y1="19.8497"
+                        x2="20.3181"
+                        y2="31.3723"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="white" stop-opacity="0.96" />
+                        <stop
+                          offset="1"
+                          stop-color="white"
+                          stop-opacity="0.23"
+                        />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="demo-ai--msg--reply">
+                  <p class="common-demo--ai--msg--text">
+                    Hello! I'm here to help you find the perfect local baker.
+                    What type of baked goods are you looking for today?"
+                  </p>
+                </div>
+              </div>
+              <!-- my reply -->
+              <div class="demo-my-reply--row">
+                <div class="demo-my--msg--reply">
+                  <p class="common-demo--ai--msg--text">
+                    I'm looking for a cake.
+                  </p>
+                </div>
+                <div class="demo-user--icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      opacity="0.4"
+                      d="M7.75 6.75C7.75 4.40614 9.65614 2.5 12 2.5C14.3435 2.5 16.2495 4.40562 16.25 6.74903C16.2405 9.04858 14.4468 10.9052 12.161 10.99H12.161H12.1609H12.1609H12.1609H12.1609H12.1608H12.1608H12.1608H12.1607H12.1607H12.1607H12.1606H12.1606H12.1606H12.1606H12.1605H12.1605H12.1605H12.1604H12.1604H12.1604H12.1604H12.1603H12.1603H12.1603H12.1602H12.1602H12.1602H12.1601H12.1601H12.1601H12.1601H12.16H12.16H12.16H12.1599H12.1599H12.1599H12.1599H12.1598H12.1598H12.1598H12.1597H12.1597H12.1597H12.1596H12.1596H12.1596H12.1596H12.1595H12.1595H12.1595H12.1594H12.1594H12.1594H12.1594H12.1593H12.1593H12.1593H12.1592H12.1592H12.1592H12.1591H12.1591H12.1591H12.1591H12.159H12.159H12.159H12.1589H12.1589H12.1589H12.1588H12.1588H12.1588H12.1588H12.1587H12.1587H12.1587H12.1586H12.1586H12.1586H12.1585H12.1585H12.1585H12.1585H12.1584H12.1584H12.1584H12.1583H12.1583H12.1583H12.1582H12.1582H12.1582H12.1581H12.1581H12.1581H12.1581H12.158H12.158H12.158H12.1579H12.1579H12.1579H12.1578H12.1578H12.1578H12.1577H12.1577H12.1577H12.1576H12.1576H12.1576H12.1575H12.1575H12.1575H12.1575H12.1574H12.1574H12.1574H12.1573H12.1573H12.1573H12.1572H12.1572H12.1572H12.1571H12.1571H12.1571H12.157H12.157H12.157H12.1569H12.1569H12.1569H12.1568H12.1568H12.1568H12.1567H12.1567H12.1566H12.1566H12.1566H12.1565H12.1565H12.1565H12.1564H12.1564H12.1564H12.1563H12.1563H12.1563H12.1562H12.1562H12.1562H12.1561H12.1561H12.156H12.156H12.156H12.1559H12.1559H12.1559H12.1558H12.1558H12.1558H12.1557H12.1557H12.1556H12.1556H12.1556H12.1555H12.1555H12.1555H12.1554H12.1554H12.1553H12.1553H12.1553H12.1552H12.1552H12.1551H12.1551H12.1551H12.155H12.155H12.1549H12.1549H12.1549H12.1548H12.1548H12.1547H12.1547H12.1547H12.1546H12.1546H12.1545H12.1545H12.1545H12.1544H12.1544H12.1543H12.1543H12.1542H12.1542H12.1542H12.1541H12.1541H12.154H12.154H12.1539H12.1539H12.1539H12.1538H12.1538H12.1537H12.1537H12.1536H12.1536H12.1535H12.1535H12.1535H12.1534H12.1534H12.1533H12.1533H12.1532H12.1532H12.1531H12.1531H12.153H12.153H12.1529H12.1529H12.1529H12.1528H12.1528H12.1527H12.1527H12.1526H12.1526H12.1525H12.1525H12.1524H12.1524H12.1523H12.1523H12.1522H12.1522H12.1521H12.1521H12.152H12.152H12.1519H12.1519H12.1518H12.1518H12.1517H12.1517H12.1516H12.1516H12.1515H12.1514H12.1514H12.1513H12.1513H12.1512H12.1512H12.1511H12.1511H12.151H12.151H12.1509H12.1509H12.1508H12.1507H12.1507H12.1506H12.1506H12.1505H12.1505H12.1504H12.1503H12.1503H12.1502H12.1502H12.1501H12.1501H12.15H12.1499H12.1498H12.1496H12.1495H12.1494H12.1493H12.1492H12.1491H12.149H12.1488H12.1487H12.1486H12.1485H12.1484H12.1483H12.1482H12.148H12.1479H12.1478H12.1477H12.1476H12.1475H12.1474H12.1473H12.1471H12.147H12.1469H12.1468H12.1467H12.1466H12.1465H12.1464H12.1463H12.1461H12.146H12.1459H12.1458H12.1457H12.1456H12.1455H12.1454H12.1453H12.1452H12.1451H12.1449H12.1448H12.1447H12.1446H12.1445H12.1444H12.1443H12.1442H12.1441H12.144H12.1439H12.1438H12.1437H12.1436H12.1435H12.1433H12.1432H12.1431H12.143H12.1429H12.1428H12.1427H12.1426H12.1425H12.1424H12.1423H12.1422H12.1421H12.142H12.1419H12.1418H12.1417H12.1416H12.1415H12.1414H12.1413H12.1412H12.1411H12.141H12.1409H12.1408H12.1407H12.1406H12.1405H12.1404H12.1403H12.1402H12.1401H12.14H12.1399H12.1398H12.1397H12.1396H12.1395H12.1394H12.1393H12.1392H12.1391H12.139H12.1389H12.1388H12.1387H12.1386H12.1385H12.1384H12.1383H12.1382H12.1381H12.138H12.1379H12.1378H12.1377H12.1376H12.1375H12.1374H12.1373H12.1372H12.1371H12.137H12.1369H12.1368H12.1368H12.1367H12.1366H12.1365H12.1364H12.1363H12.1362H12.1361H12.136H12.1359H12.1358H12.1357H12.1356H12.1355H12.1354H12.1353H12.1352H12.1351H12.1351H12.135H12.1349H12.1348H12.1347H12.1346H12.1345H12.1344H12.1343H12.1342H12.1341H12.134H12.1339H12.1338H12.1338C12.0433 10.9796 11.9492 10.9808 11.8625 10.989C9.52538 10.8911 7.75 9.03575 7.75 6.75Z"
+                      stroke="#9A98B1"
+                    ></path>
+                    <path
+                      d="M7.19868 20.1749L7.19731 20.174C6.03836 19.4013 5.45996 18.4018 5.45996 17.38C5.45996 16.3579 6.03872 15.3485 7.207 14.5662C8.51356 13.7018 10.2518 13.255 12.0125 13.255C13.7738 13.255 15.5067 13.7021 16.8026 14.566C17.958 15.3363 18.5309 16.3356 18.54 17.3621C18.5392 18.3935 17.9603 19.3928 16.8008 20.1752C15.5 21.0484 13.7627 21.5 12 21.5C10.237 21.5 8.49957 21.0483 7.19868 20.1749Z"
+                      stroke="#9A98B1"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <!-- ai reply -->
+              <div class="demo-ai-reply--row">
+                <div class="demo-ai--icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                  >
+                    <circle
+                      cx="20"
+                      cy="20"
+                      r="20"
+                      fill="url(#paint0_linear_775_1065)"
+                    />
+                    <g filter="url(#filter0_ddi_775_1065)">
+                      <path
+                        d="M25.5398 16.8526C25.4742 16.8526 25.4185 16.8395 25.3725 16.8133C25.3266 16.7871 25.2905 16.7412 25.2643 16.6757L24.6936 15.3389L23.2569 14.7097C23.1913 14.6835 23.1454 14.6475 23.1192 14.6016C23.0929 14.5557 23.0798 14.5 23.0798 14.4345C23.0798 14.369 23.0929 14.3133 23.1192 14.2674C23.1454 14.2215 23.1913 14.1855 23.2569 14.1593L24.6936 13.5498L25.2643 12.272C25.2905 12.2064 25.3266 12.1606 25.3725 12.1344C25.4185 12.1081 25.4742 12.095 25.5398 12.095C25.6054 12.095 25.6612 12.1081 25.7071 12.1344C25.753 12.1606 25.7891 12.2064 25.8153 12.272L26.386 13.5498L27.8227 14.1593C27.8883 14.1855 27.9342 14.2215 27.9604 14.2674C27.9867 14.3133 27.9998 14.369 27.9998 14.4345C27.9998 14.5 27.9867 14.5557 27.9604 14.6016C27.9342 14.6475 27.8883 14.6835 27.8227 14.7097L26.386 15.3389L25.8153 16.6757C25.7891 16.7412 25.753 16.7871 25.7071 16.8133C25.6612 16.8395 25.6054 16.8526 25.5398 16.8526ZM25.5398 28.5697C25.4873 28.5697 25.4349 28.5566 25.3824 28.5304C25.3299 28.5042 25.2905 28.4583 25.2643 28.3928L24.6936 27.1149L23.2766 26.5055C23.211 26.4793 23.1651 26.4432 23.1389 26.3973C23.1126 26.3515 23.0995 26.2958 23.0995 26.2302C23.0995 26.1647 23.1126 26.109 23.1389 26.0631C23.1651 26.0173 23.211 25.9812 23.2766 25.955L24.6936 25.3456L25.2643 23.989C25.2905 23.9235 25.3266 23.8776 25.3725 23.8514C25.4185 23.8252 25.4742 23.8121 25.5398 23.8121C25.6054 23.8121 25.6612 23.8252 25.7071 23.8514C25.753 23.8776 25.7891 23.9235 25.8153 23.989L26.386 25.3456L27.803 25.955C27.8686 25.9812 27.9145 26.0173 27.9408 26.0631C27.967 26.109 27.9801 26.1647 27.9801 26.2302C27.9801 26.2958 27.967 26.3515 27.9408 26.3973C27.9145 26.4432 27.8686 26.4793 27.803 26.5055L26.386 27.1149L25.8153 28.3928C25.7891 28.4583 25.7497 28.5042 25.6973 28.5304C25.6448 28.5566 25.5923 28.5697 25.5398 28.5697ZM16.9003 25.1686C16.7953 25.1686 16.6937 25.1391 16.5953 25.0802C16.4969 25.0212 16.4214 24.9393 16.369 24.8344L15.0898 22.1017L12.3346 20.8632C12.2296 20.8108 12.1476 20.7354 12.0886 20.6371C12.0295 20.5388 12 20.4372 12 20.3324C12 20.2275 12.0295 20.1259 12.0886 20.0277C12.1476 19.9294 12.2296 19.854 12.3346 19.8016L15.0898 18.563L16.369 15.85C16.4214 15.732 16.4969 15.6436 16.5953 15.5846C16.6937 15.5256 16.7953 15.4961 16.9003 15.4961C17.0053 15.4961 17.1069 15.5256 17.2053 15.5846C17.3037 15.6436 17.3792 15.7255 17.4317 15.8303L18.7305 18.563L21.4661 19.8016C21.5841 19.854 21.6727 19.9294 21.7317 20.0277C21.7908 20.1259 21.8203 20.2275 21.8203 20.3324C21.8203 20.4372 21.7908 20.5388 21.7317 20.6371C21.6727 20.7354 21.5841 20.8108 21.4661 20.8632L18.7305 22.1017L17.4317 24.8344C17.3792 24.9524 17.3037 25.0376 17.2053 25.09C17.1069 25.1424 17.0053 25.1686 16.9003 25.1686Z"
+                        fill="url(#paint1_linear_775_1065)"
+                        shape-rendering="crispEdges"
+                      />
+                    </g>
+                    <defs>
+                      <filter
+                        id="filter0_ddi_775_1065"
+                        x="5.63323"
+                        y="6.53326"
+                        width="28.0017"
+                        height="29.5741"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood
+                          flood-opacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feColorMatrix
+                          in="SourceAlpha"
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha"
+                        />
+                        <feOffset dx="-1.31726" dy="2.48816" />
+                        <feGaussianBlur stdDeviation="2.52475" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix
+                          type="matrix"
+                          values="0 0 0 0 0.0506089 0 0 0 0 0.0159861 0 0 0 0 0.191833 0 0 0 0.25 0"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in2="BackgroundImageFix"
+                          result="effect1_dropShadow_775_1065"
+                        />
+                        <feColorMatrix
+                          in="SourceAlpha"
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha"
+                        />
+                        <feOffset dx="1.24408" dy="-1.1709" />
+                        <feGaussianBlur stdDeviation="2.19544" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix
+                          type="matrix"
+                          values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.35 0"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in2="effect1_dropShadow_775_1065"
+                          result="effect2_dropShadow_775_1065"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="effect2_dropShadow_775_1065"
+                          result="shape"
+                        />
+                        <feColorMatrix
+                          in="SourceAlpha"
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha"
+                        />
+                        <feOffset dy="3.07361" />
+                        <feGaussianBlur stdDeviation="1.9393" />
+                        <feComposite
+                          in2="hardAlpha"
+                          operator="arithmetic"
+                          k2="-1"
+                          k3="1"
+                        />
+                        <feColorMatrix
+                          type="matrix"
+                          values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in2="shape"
+                          result="effect3_innerShadow_775_1065"
+                        />
+                      </filter>
+                      <linearGradient
+                        id="paint0_linear_775_1065"
+                        x1="23.8824"
+                        y1="33.1765"
+                        x2="32.3889"
+                        y2="2.42592"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#4A25E1" />
+                        <stop offset="0.927091" stop-color="#7B5AFF" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint1_linear_775_1065"
+                        x1="22.7967"
+                        y1="19.8497"
+                        x2="20.3181"
+                        y2="31.3723"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="white" stop-opacity="0.96" />
+                        <stop
+                          offset="1"
+                          stop-color="white"
+                          stop-opacity="0.23"
+                        />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="demo-ai--msg--reply">
+                  <p class="common-demo--ai--msg--text">
+                    Great choice! Do you have a specific occasion in mind, like
+                    a birthday, wedding, or something else
+                  </p>
+                </div>
+              </div>
+              <!-- my reply -->
+              <div class="demo-my-reply--row">
+                <div class="demo-my--msg--reply">
+                  <p class="common-demo--ai--msg--text">It's for a birthday.</p>
+                </div>
+                <div class="demo-user--icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      opacity="0.4"
+                      d="M7.75 6.75C7.75 4.40614 9.65614 2.5 12 2.5C14.3435 2.5 16.2495 4.40562 16.25 6.74903C16.2405 9.04858 14.4468 10.9052 12.161 10.99H12.161H12.1609H12.1609H12.1609H12.1609H12.1608H12.1608H12.1608H12.1607H12.1607H12.1607H12.1606H12.1606H12.1606H12.1606H12.1605H12.1605H12.1605H12.1604H12.1604H12.1604H12.1604H12.1603H12.1603H12.1603H12.1602H12.1602H12.1602H12.1601H12.1601H12.1601H12.1601H12.16H12.16H12.16H12.1599H12.1599H12.1599H12.1599H12.1598H12.1598H12.1598H12.1597H12.1597H12.1597H12.1596H12.1596H12.1596H12.1596H12.1595H12.1595H12.1595H12.1594H12.1594H12.1594H12.1594H12.1593H12.1593H12.1593H12.1592H12.1592H12.1592H12.1591H12.1591H12.1591H12.1591H12.159H12.159H12.159H12.1589H12.1589H12.1589H12.1588H12.1588H12.1588H12.1588H12.1587H12.1587H12.1587H12.1586H12.1586H12.1586H12.1585H12.1585H12.1585H12.1585H12.1584H12.1584H12.1584H12.1583H12.1583H12.1583H12.1582H12.1582H12.1582H12.1581H12.1581H12.1581H12.1581H12.158H12.158H12.158H12.1579H12.1579H12.1579H12.1578H12.1578H12.1578H12.1577H12.1577H12.1577H12.1576H12.1576H12.1576H12.1575H12.1575H12.1575H12.1575H12.1574H12.1574H12.1574H12.1573H12.1573H12.1573H12.1572H12.1572H12.1572H12.1571H12.1571H12.1571H12.157H12.157H12.157H12.1569H12.1569H12.1569H12.1568H12.1568H12.1568H12.1567H12.1567H12.1566H12.1566H12.1566H12.1565H12.1565H12.1565H12.1564H12.1564H12.1564H12.1563H12.1563H12.1563H12.1562H12.1562H12.1562H12.1561H12.1561H12.156H12.156H12.156H12.1559H12.1559H12.1559H12.1558H12.1558H12.1558H12.1557H12.1557H12.1556H12.1556H12.1556H12.1555H12.1555H12.1555H12.1554H12.1554H12.1553H12.1553H12.1553H12.1552H12.1552H12.1551H12.1551H12.1551H12.155H12.155H12.1549H12.1549H12.1549H12.1548H12.1548H12.1547H12.1547H12.1547H12.1546H12.1546H12.1545H12.1545H12.1545H12.1544H12.1544H12.1543H12.1543H12.1542H12.1542H12.1542H12.1541H12.1541H12.154H12.154H12.1539H12.1539H12.1539H12.1538H12.1538H12.1537H12.1537H12.1536H12.1536H12.1535H12.1535H12.1535H12.1534H12.1534H12.1533H12.1533H12.1532H12.1532H12.1531H12.1531H12.153H12.153H12.1529H12.1529H12.1529H12.1528H12.1528H12.1527H12.1527H12.1526H12.1526H12.1525H12.1525H12.1524H12.1524H12.1523H12.1523H12.1522H12.1522H12.1521H12.1521H12.152H12.152H12.1519H12.1519H12.1518H12.1518H12.1517H12.1517H12.1516H12.1516H12.1515H12.1514H12.1514H12.1513H12.1513H12.1512H12.1512H12.1511H12.1511H12.151H12.151H12.1509H12.1509H12.1508H12.1507H12.1507H12.1506H12.1506H12.1505H12.1505H12.1504H12.1503H12.1503H12.1502H12.1502H12.1501H12.1501H12.15H12.1499H12.1498H12.1496H12.1495H12.1494H12.1493H12.1492H12.1491H12.149H12.1488H12.1487H12.1486H12.1485H12.1484H12.1483H12.1482H12.148H12.1479H12.1478H12.1477H12.1476H12.1475H12.1474H12.1473H12.1471H12.147H12.1469H12.1468H12.1467H12.1466H12.1465H12.1464H12.1463H12.1461H12.146H12.1459H12.1458H12.1457H12.1456H12.1455H12.1454H12.1453H12.1452H12.1451H12.1449H12.1448H12.1447H12.1446H12.1445H12.1444H12.1443H12.1442H12.1441H12.144H12.1439H12.1438H12.1437H12.1436H12.1435H12.1433H12.1432H12.1431H12.143H12.1429H12.1428H12.1427H12.1426H12.1425H12.1424H12.1423H12.1422H12.1421H12.142H12.1419H12.1418H12.1417H12.1416H12.1415H12.1414H12.1413H12.1412H12.1411H12.141H12.1409H12.1408H12.1407H12.1406H12.1405H12.1404H12.1403H12.1402H12.1401H12.14H12.1399H12.1398H12.1397H12.1396H12.1395H12.1394H12.1393H12.1392H12.1391H12.139H12.1389H12.1388H12.1387H12.1386H12.1385H12.1384H12.1383H12.1382H12.1381H12.138H12.1379H12.1378H12.1377H12.1376H12.1375H12.1374H12.1373H12.1372H12.1371H12.137H12.1369H12.1368H12.1368H12.1367H12.1366H12.1365H12.1364H12.1363H12.1362H12.1361H12.136H12.1359H12.1358H12.1357H12.1356H12.1355H12.1354H12.1353H12.1352H12.1351H12.1351H12.135H12.1349H12.1348H12.1347H12.1346H12.1345H12.1344H12.1343H12.1342H12.1341H12.134H12.1339H12.1338H12.1338C12.0433 10.9796 11.9492 10.9808 11.8625 10.989C9.52538 10.8911 7.75 9.03575 7.75 6.75Z"
+                      stroke="#9A98B1"
+                    ></path>
+                    <path
+                      d="M7.19868 20.1749L7.19731 20.174C6.03836 19.4013 5.45996 18.4018 5.45996 17.38C5.45996 16.3579 6.03872 15.3485 7.207 14.5662C8.51356 13.7018 10.2518 13.255 12.0125 13.255C13.7738 13.255 15.5067 13.7021 16.8026 14.566C17.958 15.3363 18.5309 16.3356 18.54 17.3621C18.5392 18.3935 17.9603 19.3928 16.8008 20.1752C15.5 21.0484 13.7627 21.5 12 21.5C10.237 21.5 8.49957 21.0483 7.19868 20.1749Z"
+                      stroke="#9A98B1"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <!-- ai reply -->
+              <div class="demo-ai-reply--row">
+                <div class="demo-ai--icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                  >
+                    <circle
+                      cx="20"
+                      cy="20"
+                      r="20"
+                      fill="url(#paint0_linear_775_1065)"
+                    />
+                    <g filter="url(#filter0_ddi_775_1065)">
+                      <path
+                        d="M25.5398 16.8526C25.4742 16.8526 25.4185 16.8395 25.3725 16.8133C25.3266 16.7871 25.2905 16.7412 25.2643 16.6757L24.6936 15.3389L23.2569 14.7097C23.1913 14.6835 23.1454 14.6475 23.1192 14.6016C23.0929 14.5557 23.0798 14.5 23.0798 14.4345C23.0798 14.369 23.0929 14.3133 23.1192 14.2674C23.1454 14.2215 23.1913 14.1855 23.2569 14.1593L24.6936 13.5498L25.2643 12.272C25.2905 12.2064 25.3266 12.1606 25.3725 12.1344C25.4185 12.1081 25.4742 12.095 25.5398 12.095C25.6054 12.095 25.6612 12.1081 25.7071 12.1344C25.753 12.1606 25.7891 12.2064 25.8153 12.272L26.386 13.5498L27.8227 14.1593C27.8883 14.1855 27.9342 14.2215 27.9604 14.2674C27.9867 14.3133 27.9998 14.369 27.9998 14.4345C27.9998 14.5 27.9867 14.5557 27.9604 14.6016C27.9342 14.6475 27.8883 14.6835 27.8227 14.7097L26.386 15.3389L25.8153 16.6757C25.7891 16.7412 25.753 16.7871 25.7071 16.8133C25.6612 16.8395 25.6054 16.8526 25.5398 16.8526ZM25.5398 28.5697C25.4873 28.5697 25.4349 28.5566 25.3824 28.5304C25.3299 28.5042 25.2905 28.4583 25.2643 28.3928L24.6936 27.1149L23.2766 26.5055C23.211 26.4793 23.1651 26.4432 23.1389 26.3973C23.1126 26.3515 23.0995 26.2958 23.0995 26.2302C23.0995 26.1647 23.1126 26.109 23.1389 26.0631C23.1651 26.0173 23.211 25.9812 23.2766 25.955L24.6936 25.3456L25.2643 23.989C25.2905 23.9235 25.3266 23.8776 25.3725 23.8514C25.4185 23.8252 25.4742 23.8121 25.5398 23.8121C25.6054 23.8121 25.6612 23.8252 25.7071 23.8514C25.753 23.8776 25.7891 23.9235 25.8153 23.989L26.386 25.3456L27.803 25.955C27.8686 25.9812 27.9145 26.0173 27.9408 26.0631C27.967 26.109 27.9801 26.1647 27.9801 26.2302C27.9801 26.2958 27.967 26.3515 27.9408 26.3973C27.9145 26.4432 27.8686 26.4793 27.803 26.5055L26.386 27.1149L25.8153 28.3928C25.7891 28.4583 25.7497 28.5042 25.6973 28.5304C25.6448 28.5566 25.5923 28.5697 25.5398 28.5697ZM16.9003 25.1686C16.7953 25.1686 16.6937 25.1391 16.5953 25.0802C16.4969 25.0212 16.4214 24.9393 16.369 24.8344L15.0898 22.1017L12.3346 20.8632C12.2296 20.8108 12.1476 20.7354 12.0886 20.6371C12.0295 20.5388 12 20.4372 12 20.3324C12 20.2275 12.0295 20.1259 12.0886 20.0277C12.1476 19.9294 12.2296 19.854 12.3346 19.8016L15.0898 18.563L16.369 15.85C16.4214 15.732 16.4969 15.6436 16.5953 15.5846C16.6937 15.5256 16.7953 15.4961 16.9003 15.4961C17.0053 15.4961 17.1069 15.5256 17.2053 15.5846C17.3037 15.6436 17.3792 15.7255 17.4317 15.8303L18.7305 18.563L21.4661 19.8016C21.5841 19.854 21.6727 19.9294 21.7317 20.0277C21.7908 20.1259 21.8203 20.2275 21.8203 20.3324C21.8203 20.4372 21.7908 20.5388 21.7317 20.6371C21.6727 20.7354 21.5841 20.8108 21.4661 20.8632L18.7305 22.1017L17.4317 24.8344C17.3792 24.9524 17.3037 25.0376 17.2053 25.09C17.1069 25.1424 17.0053 25.1686 16.9003 25.1686Z"
+                        fill="url(#paint1_linear_775_1065)"
+                        shape-rendering="crispEdges"
+                      />
+                    </g>
+                    <defs>
+                      <filter
+                        id="filter0_ddi_775_1065"
+                        x="5.63323"
+                        y="6.53326"
+                        width="28.0017"
+                        height="29.5741"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood
+                          flood-opacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feColorMatrix
+                          in="SourceAlpha"
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha"
+                        />
+                        <feOffset dx="-1.31726" dy="2.48816" />
+                        <feGaussianBlur stdDeviation="2.52475" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix
+                          type="matrix"
+                          values="0 0 0 0 0.0506089 0 0 0 0 0.0159861 0 0 0 0 0.191833 0 0 0 0.25 0"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in2="BackgroundImageFix"
+                          result="effect1_dropShadow_775_1065"
+                        />
+                        <feColorMatrix
+                          in="SourceAlpha"
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha"
+                        />
+                        <feOffset dx="1.24408" dy="-1.1709" />
+                        <feGaussianBlur stdDeviation="2.19544" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix
+                          type="matrix"
+                          values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.35 0"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in2="effect1_dropShadow_775_1065"
+                          result="effect2_dropShadow_775_1065"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="effect2_dropShadow_775_1065"
+                          result="shape"
+                        />
+                        <feColorMatrix
+                          in="SourceAlpha"
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha"
+                        />
+                        <feOffset dy="3.07361" />
+                        <feGaussianBlur stdDeviation="1.9393" />
+                        <feComposite
+                          in2="hardAlpha"
+                          operator="arithmetic"
+                          k2="-1"
+                          k3="1"
+                        />
+                        <feColorMatrix
+                          type="matrix"
+                          values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in2="shape"
+                          result="effect3_innerShadow_775_1065"
+                        />
+                      </filter>
+                      <linearGradient
+                        id="paint0_linear_775_1065"
+                        x1="23.8824"
+                        y1="33.1765"
+                        x2="32.3889"
+                        y2="2.42592"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#4A25E1" />
+                        <stop offset="0.927091" stop-color="#7B5AFF" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint1_linear_775_1065"
+                        x1="22.7967"
+                        y1="19.8497"
+                        x2="20.3181"
+                        y2="31.3723"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="white" stop-opacity="0.96" />
+                        <stop
+                          offset="1"
+                          stop-color="white"
+                          stop-opacity="0.23"
+                        />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="demo-ai--msg--reply">
+                  <p class="common-demo--ai--msg--text">
+                    Got it! Please provide your city or zip code so I can find
+                    bakers near you.
+                  </p>
+                </div>
+              </div>
+              <!-- my reply -->
+              <div class="demo-my-reply--row">
+                <div class="demo-my--msg--reply">
+                  <p class="common-demo--ai--msg--text">
+                    Chocolate with a superhero theme
+                  </p>
+                </div>
+                <div class="demo-user--icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      opacity="0.4"
+                      d="M7.75 6.75C7.75 4.40614 9.65614 2.5 12 2.5C14.3435 2.5 16.2495 4.40562 16.25 6.74903C16.2405 9.04858 14.4468 10.9052 12.161 10.99H12.161H12.1609H12.1609H12.1609H12.1609H12.1608H12.1608H12.1608H12.1607H12.1607H12.1607H12.1606H12.1606H12.1606H12.1606H12.1605H12.1605H12.1605H12.1604H12.1604H12.1604H12.1604H12.1603H12.1603H12.1603H12.1602H12.1602H12.1602H12.1601H12.1601H12.1601H12.1601H12.16H12.16H12.16H12.1599H12.1599H12.1599H12.1599H12.1598H12.1598H12.1598H12.1597H12.1597H12.1597H12.1596H12.1596H12.1596H12.1596H12.1595H12.1595H12.1595H12.1594H12.1594H12.1594H12.1594H12.1593H12.1593H12.1593H12.1592H12.1592H12.1592H12.1591H12.1591H12.1591H12.1591H12.159H12.159H12.159H12.1589H12.1589H12.1589H12.1588H12.1588H12.1588H12.1588H12.1587H12.1587H12.1587H12.1586H12.1586H12.1586H12.1585H12.1585H12.1585H12.1585H12.1584H12.1584H12.1584H12.1583H12.1583H12.1583H12.1582H12.1582H12.1582H12.1581H12.1581H12.1581H12.1581H12.158H12.158H12.158H12.1579H12.1579H12.1579H12.1578H12.1578H12.1578H12.1577H12.1577H12.1577H12.1576H12.1576H12.1576H12.1575H12.1575H12.1575H12.1575H12.1574H12.1574H12.1574H12.1573H12.1573H12.1573H12.1572H12.1572H12.1572H12.1571H12.1571H12.1571H12.157H12.157H12.157H12.1569H12.1569H12.1569H12.1568H12.1568H12.1568H12.1567H12.1567H12.1566H12.1566H12.1566H12.1565H12.1565H12.1565H12.1564H12.1564H12.1564H12.1563H12.1563H12.1563H12.1562H12.1562H12.1562H12.1561H12.1561H12.156H12.156H12.156H12.1559H12.1559H12.1559H12.1558H12.1558H12.1558H12.1557H12.1557H12.1556H12.1556H12.1556H12.1555H12.1555H12.1555H12.1554H12.1554H12.1553H12.1553H12.1553H12.1552H12.1552H12.1551H12.1551H12.1551H12.155H12.155H12.1549H12.1549H12.1549H12.1548H12.1548H12.1547H12.1547H12.1547H12.1546H12.1546H12.1545H12.1545H12.1545H12.1544H12.1544H12.1543H12.1543H12.1542H12.1542H12.1542H12.1541H12.1541H12.154H12.154H12.1539H12.1539H12.1539H12.1538H12.1538H12.1537H12.1537H12.1536H12.1536H12.1535H12.1535H12.1535H12.1534H12.1534H12.1533H12.1533H12.1532H12.1532H12.1531H12.1531H12.153H12.153H12.1529H12.1529H12.1529H12.1528H12.1528H12.1527H12.1527H12.1526H12.1526H12.1525H12.1525H12.1524H12.1524H12.1523H12.1523H12.1522H12.1522H12.1521H12.1521H12.152H12.152H12.1519H12.1519H12.1518H12.1518H12.1517H12.1517H12.1516H12.1516H12.1515H12.1514H12.1514H12.1513H12.1513H12.1512H12.1512H12.1511H12.1511H12.151H12.151H12.1509H12.1509H12.1508H12.1507H12.1507H12.1506H12.1506H12.1505H12.1505H12.1504H12.1503H12.1503H12.1502H12.1502H12.1501H12.1501H12.15H12.1499H12.1498H12.1496H12.1495H12.1494H12.1493H12.1492H12.1491H12.149H12.1488H12.1487H12.1486H12.1485H12.1484H12.1483H12.1482H12.148H12.1479H12.1478H12.1477H12.1476H12.1475H12.1474H12.1473H12.1471H12.147H12.1469H12.1468H12.1467H12.1466H12.1465H12.1464H12.1463H12.1461H12.146H12.1459H12.1458H12.1457H12.1456H12.1455H12.1454H12.1453H12.1452H12.1451H12.1449H12.1448H12.1447H12.1446H12.1445H12.1444H12.1443H12.1442H12.1441H12.144H12.1439H12.1438H12.1437H12.1436H12.1435H12.1433H12.1432H12.1431H12.143H12.1429H12.1428H12.1427H12.1426H12.1425H12.1424H12.1423H12.1422H12.1421H12.142H12.1419H12.1418H12.1417H12.1416H12.1415H12.1414H12.1413H12.1412H12.1411H12.141H12.1409H12.1408H12.1407H12.1406H12.1405H12.1404H12.1403H12.1402H12.1401H12.14H12.1399H12.1398H12.1397H12.1396H12.1395H12.1394H12.1393H12.1392H12.1391H12.139H12.1389H12.1388H12.1387H12.1386H12.1385H12.1384H12.1383H12.1382H12.1381H12.138H12.1379H12.1378H12.1377H12.1376H12.1375H12.1374H12.1373H12.1372H12.1371H12.137H12.1369H12.1368H12.1368H12.1367H12.1366H12.1365H12.1364H12.1363H12.1362H12.1361H12.136H12.1359H12.1358H12.1357H12.1356H12.1355H12.1354H12.1353H12.1352H12.1351H12.1351H12.135H12.1349H12.1348H12.1347H12.1346H12.1345H12.1344H12.1343H12.1342H12.1341H12.134H12.1339H12.1338H12.1338C12.0433 10.9796 11.9492 10.9808 11.8625 10.989C9.52538 10.8911 7.75 9.03575 7.75 6.75Z"
+                      stroke="#9A98B1"
+                    ></path>
+                    <path
+                      d="M7.19868 20.1749L7.19731 20.174C6.03836 19.4013 5.45996 18.4018 5.45996 17.38C5.45996 16.3579 6.03872 15.3485 7.207 14.5662C8.51356 13.7018 10.2518 13.255 12.0125 13.255C13.7738 13.255 15.5067 13.7021 16.8026 14.566C17.958 15.3363 18.5309 16.3356 18.54 17.3621C18.5392 18.3935 17.9603 19.3928 16.8008 20.1752C15.5 21.0484 13.7627 21.5 12 21.5C10.237 21.5 8.49957 21.0483 7.19868 20.1749Z"
+                      stroke="#9A98B1"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <!-- ai reply -->
+              <div class="demo-ai-reply--row">
+                <div class="demo-ai--icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                  >
+                    <circle
+                      cx="20"
+                      cy="20"
+                      r="20"
+                      fill="url(#paint0_linear_775_1065)"
+                    />
+                    <g filter="url(#filter0_ddi_775_1065)">
+                      <path
+                        d="M25.5398 16.8526C25.4742 16.8526 25.4185 16.8395 25.3725 16.8133C25.3266 16.7871 25.2905 16.7412 25.2643 16.6757L24.6936 15.3389L23.2569 14.7097C23.1913 14.6835 23.1454 14.6475 23.1192 14.6016C23.0929 14.5557 23.0798 14.5 23.0798 14.4345C23.0798 14.369 23.0929 14.3133 23.1192 14.2674C23.1454 14.2215 23.1913 14.1855 23.2569 14.1593L24.6936 13.5498L25.2643 12.272C25.2905 12.2064 25.3266 12.1606 25.3725 12.1344C25.4185 12.1081 25.4742 12.095 25.5398 12.095C25.6054 12.095 25.6612 12.1081 25.7071 12.1344C25.753 12.1606 25.7891 12.2064 25.8153 12.272L26.386 13.5498L27.8227 14.1593C27.8883 14.1855 27.9342 14.2215 27.9604 14.2674C27.9867 14.3133 27.9998 14.369 27.9998 14.4345C27.9998 14.5 27.9867 14.5557 27.9604 14.6016C27.9342 14.6475 27.8883 14.6835 27.8227 14.7097L26.386 15.3389L25.8153 16.6757C25.7891 16.7412 25.753 16.7871 25.7071 16.8133C25.6612 16.8395 25.6054 16.8526 25.5398 16.8526ZM25.5398 28.5697C25.4873 28.5697 25.4349 28.5566 25.3824 28.5304C25.3299 28.5042 25.2905 28.4583 25.2643 28.3928L24.6936 27.1149L23.2766 26.5055C23.211 26.4793 23.1651 26.4432 23.1389 26.3973C23.1126 26.3515 23.0995 26.2958 23.0995 26.2302C23.0995 26.1647 23.1126 26.109 23.1389 26.0631C23.1651 26.0173 23.211 25.9812 23.2766 25.955L24.6936 25.3456L25.2643 23.989C25.2905 23.9235 25.3266 23.8776 25.3725 23.8514C25.4185 23.8252 25.4742 23.8121 25.5398 23.8121C25.6054 23.8121 25.6612 23.8252 25.7071 23.8514C25.753 23.8776 25.7891 23.9235 25.8153 23.989L26.386 25.3456L27.803 25.955C27.8686 25.9812 27.9145 26.0173 27.9408 26.0631C27.967 26.109 27.9801 26.1647 27.9801 26.2302C27.9801 26.2958 27.967 26.3515 27.9408 26.3973C27.9145 26.4432 27.8686 26.4793 27.803 26.5055L26.386 27.1149L25.8153 28.3928C25.7891 28.4583 25.7497 28.5042 25.6973 28.5304C25.6448 28.5566 25.5923 28.5697 25.5398 28.5697ZM16.9003 25.1686C16.7953 25.1686 16.6937 25.1391 16.5953 25.0802C16.4969 25.0212 16.4214 24.9393 16.369 24.8344L15.0898 22.1017L12.3346 20.8632C12.2296 20.8108 12.1476 20.7354 12.0886 20.6371C12.0295 20.5388 12 20.4372 12 20.3324C12 20.2275 12.0295 20.1259 12.0886 20.0277C12.1476 19.9294 12.2296 19.854 12.3346 19.8016L15.0898 18.563L16.369 15.85C16.4214 15.732 16.4969 15.6436 16.5953 15.5846C16.6937 15.5256 16.7953 15.4961 16.9003 15.4961C17.0053 15.4961 17.1069 15.5256 17.2053 15.5846C17.3037 15.6436 17.3792 15.7255 17.4317 15.8303L18.7305 18.563L21.4661 19.8016C21.5841 19.854 21.6727 19.9294 21.7317 20.0277C21.7908 20.1259 21.8203 20.2275 21.8203 20.3324C21.8203 20.4372 21.7908 20.5388 21.7317 20.6371C21.6727 20.7354 21.5841 20.8108 21.4661 20.8632L18.7305 22.1017L17.4317 24.8344C17.3792 24.9524 17.3037 25.0376 17.2053 25.09C17.1069 25.1424 17.0053 25.1686 16.9003 25.1686Z"
+                        fill="url(#paint1_linear_775_1065)"
+                        shape-rendering="crispEdges"
+                      />
+                    </g>
+                    <defs>
+                      <filter
+                        id="filter0_ddi_775_1065"
+                        x="5.63323"
+                        y="6.53326"
+                        width="28.0017"
+                        height="29.5741"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood
+                          flood-opacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feColorMatrix
+                          in="SourceAlpha"
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha"
+                        />
+                        <feOffset dx="-1.31726" dy="2.48816" />
+                        <feGaussianBlur stdDeviation="2.52475" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix
+                          type="matrix"
+                          values="0 0 0 0 0.0506089 0 0 0 0 0.0159861 0 0 0 0 0.191833 0 0 0 0.25 0"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in2="BackgroundImageFix"
+                          result="effect1_dropShadow_775_1065"
+                        />
+                        <feColorMatrix
+                          in="SourceAlpha"
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha"
+                        />
+                        <feOffset dx="1.24408" dy="-1.1709" />
+                        <feGaussianBlur stdDeviation="2.19544" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix
+                          type="matrix"
+                          values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.35 0"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in2="effect1_dropShadow_775_1065"
+                          result="effect2_dropShadow_775_1065"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="effect2_dropShadow_775_1065"
+                          result="shape"
+                        />
+                        <feColorMatrix
+                          in="SourceAlpha"
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha"
+                        />
+                        <feOffset dy="3.07361" />
+                        <feGaussianBlur stdDeviation="1.9393" />
+                        <feComposite
+                          in2="hardAlpha"
+                          operator="arithmetic"
+                          k2="-1"
+                          k3="1"
+                        />
+                        <feColorMatrix
+                          type="matrix"
+                          values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in2="shape"
+                          result="effect3_innerShadow_775_1065"
+                        />
+                      </filter>
+                      <linearGradient
+                        id="paint0_linear_775_1065"
+                        x1="23.8824"
+                        y1="33.1765"
+                        x2="32.3889"
+                        y2="2.42592"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#4A25E1" />
+                        <stop offset="0.927091" stop-color="#7B5AFF" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint1_linear_775_1065"
+                        x1="22.7967"
+                        y1="19.8497"
+                        x2="20.3181"
+                        y2="31.3723"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="white" stop-opacity="0.96" />
+                        <stop
+                          offset="1"
+                          stop-color="white"
+                          stop-opacity="0.23"
+                        />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="demo-ai--msg--reply">
+                  <p class="common-demo--ai--msg--text">
+                    Got it! Do you want me to suggest you some best baker
+                    profile
+                  </p>
+                </div>
+              </div>
+              <!-- my reply -->
+              <div class="demo-my-reply--row">
+                <div class="demo-my--msg--reply">
+                  <p class="common-demo--ai--msg--text">
+                    Yes that will be great
+                  </p>
+                </div>
+                <div class="demo-user--icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      opacity="0.4"
+                      d="M7.75 6.75C7.75 4.40614 9.65614 2.5 12 2.5C14.3435 2.5 16.2495 4.40562 16.25 6.74903C16.2405 9.04858 14.4468 10.9052 12.161 10.99H12.161H12.1609H12.1609H12.1609H12.1609H12.1608H12.1608H12.1608H12.1607H12.1607H12.1607H12.1606H12.1606H12.1606H12.1606H12.1605H12.1605H12.1605H12.1604H12.1604H12.1604H12.1604H12.1603H12.1603H12.1603H12.1602H12.1602H12.1602H12.1601H12.1601H12.1601H12.1601H12.16H12.16H12.16H12.1599H12.1599H12.1599H12.1599H12.1598H12.1598H12.1598H12.1597H12.1597H12.1597H12.1596H12.1596H12.1596H12.1596H12.1595H12.1595H12.1595H12.1594H12.1594H12.1594H12.1594H12.1593H12.1593H12.1593H12.1592H12.1592H12.1592H12.1591H12.1591H12.1591H12.1591H12.159H12.159H12.159H12.1589H12.1589H12.1589H12.1588H12.1588H12.1588H12.1588H12.1587H12.1587H12.1587H12.1586H12.1586H12.1586H12.1585H12.1585H12.1585H12.1585H12.1584H12.1584H12.1584H12.1583H12.1583H12.1583H12.1582H12.1582H12.1582H12.1581H12.1581H12.1581H12.1581H12.158H12.158H12.158H12.1579H12.1579H12.1579H12.1578H12.1578H12.1578H12.1577H12.1577H12.1577H12.1576H12.1576H12.1576H12.1575H12.1575H12.1575H12.1575H12.1574H12.1574H12.1574H12.1573H12.1573H12.1573H12.1572H12.1572H12.1572H12.1571H12.1571H12.1571H12.157H12.157H12.157H12.1569H12.1569H12.1569H12.1568H12.1568H12.1568H12.1567H12.1567H12.1566H12.1566H12.1566H12.1565H12.1565H12.1565H12.1564H12.1564H12.1564H12.1563H12.1563H12.1563H12.1562H12.1562H12.1562H12.1561H12.1561H12.156H12.156H12.156H12.1559H12.1559H12.1559H12.1558H12.1558H12.1558H12.1557H12.1557H12.1556H12.1556H12.1556H12.1555H12.1555H12.1555H12.1554H12.1554H12.1553H12.1553H12.1553H12.1552H12.1552H12.1551H12.1551H12.1551H12.155H12.155H12.1549H12.1549H12.1549H12.1548H12.1548H12.1547H12.1547H12.1547H12.1546H12.1546H12.1545H12.1545H12.1545H12.1544H12.1544H12.1543H12.1543H12.1542H12.1542H12.1542H12.1541H12.1541H12.154H12.154H12.1539H12.1539H12.1539H12.1538H12.1538H12.1537H12.1537H12.1536H12.1536H12.1535H12.1535H12.1535H12.1534H12.1534H12.1533H12.1533H12.1532H12.1532H12.1531H12.1531H12.153H12.153H12.1529H12.1529H12.1529H12.1528H12.1528H12.1527H12.1527H12.1526H12.1526H12.1525H12.1525H12.1524H12.1524H12.1523H12.1523H12.1522H12.1522H12.1521H12.1521H12.152H12.152H12.1519H12.1519H12.1518H12.1518H12.1517H12.1517H12.1516H12.1516H12.1515H12.1514H12.1514H12.1513H12.1513H12.1512H12.1512H12.1511H12.1511H12.151H12.151H12.1509H12.1509H12.1508H12.1507H12.1507H12.1506H12.1506H12.1505H12.1505H12.1504H12.1503H12.1503H12.1502H12.1502H12.1501H12.1501H12.15H12.1499H12.1498H12.1496H12.1495H12.1494H12.1493H12.1492H12.1491H12.149H12.1488H12.1487H12.1486H12.1485H12.1484H12.1483H12.1482H12.148H12.1479H12.1478H12.1477H12.1476H12.1475H12.1474H12.1473H12.1471H12.147H12.1469H12.1468H12.1467H12.1466H12.1465H12.1464H12.1463H12.1461H12.146H12.1459H12.1458H12.1457H12.1456H12.1455H12.1454H12.1453H12.1452H12.1451H12.1449H12.1448H12.1447H12.1446H12.1445H12.1444H12.1443H12.1442H12.1441H12.144H12.1439H12.1438H12.1437H12.1436H12.1435H12.1433H12.1432H12.1431H12.143H12.1429H12.1428H12.1427H12.1426H12.1425H12.1424H12.1423H12.1422H12.1421H12.142H12.1419H12.1418H12.1417H12.1416H12.1415H12.1414H12.1413H12.1412H12.1411H12.141H12.1409H12.1408H12.1407H12.1406H12.1405H12.1404H12.1403H12.1402H12.1401H12.14H12.1399H12.1398H12.1397H12.1396H12.1395H12.1394H12.1393H12.1392H12.1391H12.139H12.1389H12.1388H12.1387H12.1386H12.1385H12.1384H12.1383H12.1382H12.1381H12.138H12.1379H12.1378H12.1377H12.1376H12.1375H12.1374H12.1373H12.1372H12.1371H12.137H12.1369H12.1368H12.1368H12.1367H12.1366H12.1365H12.1364H12.1363H12.1362H12.1361H12.136H12.1359H12.1358H12.1357H12.1356H12.1355H12.1354H12.1353H12.1352H12.1351H12.1351H12.135H12.1349H12.1348H12.1347H12.1346H12.1345H12.1344H12.1343H12.1342H12.1341H12.134H12.1339H12.1338H12.1338C12.0433 10.9796 11.9492 10.9808 11.8625 10.989C9.52538 10.8911 7.75 9.03575 7.75 6.75Z"
+                      stroke="#9A98B1"
+                    ></path>
+                    <path
+                      d="M7.19868 20.1749L7.19731 20.174C6.03836 19.4013 5.45996 18.4018 5.45996 17.38C5.45996 16.3579 6.03872 15.3485 7.207 14.5662C8.51356 13.7018 10.2518 13.255 12.0125 13.255C13.7738 13.255 15.5067 13.7021 16.8026 14.566C17.958 15.3363 18.5309 16.3356 18.54 17.3621C18.5392 18.3935 17.9603 19.3928 16.8008 20.1752C15.5 21.0484 13.7627 21.5 12 21.5C10.237 21.5 8.49957 21.0483 7.19868 20.1749Z"
+                      stroke="#9A98B1"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <form action="" class="demo-ai--chat--send--message--form">
+              <input
+                class="demo-ai--chat--input"
+                type="text"
+                placeholder="Type your message here"
+              />
+              <button type="submit" class="common-btn demo-chat-btn">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- live chatbot experience section ends  -->
+      <!-- testimonial section starts -->
+      <!-- <div class="testimonial-section">
+        <img
+          class="testimonial-image testimonial-image-1"
+          src="assets/images/testimonial-2.png"
+          alt=""
+          srcset=""
+        />
+        <div class="container testimonial-container">
+          <div class="bottom-banner-title">What our customers says to us</div>
+          <div class="benifits-of-hoobake-subtitle">
+            Discover the smartest way to connect with local bakers and enjoy
+            delicious baked goods with Hoobake.
+          </div>
+          <div class="testimonial-slide-wrapper owl-carousel">
+            <div class="testimonial-reviews-item">
+              <img
+                class="comma comma-1"
+                src="assets/images/comma-1.png"
+                alt=""
+                srcset=""
+              />
+              <div class="testimonial-text">
+                Elementum delivered the site with inthe timeline as they
+                requested. Inthe end, the client found a 50% increase in traffic
+                with in days since its launch. They also had an impressive
+                ability to use technologies that the company hasn`t used, which
+                have also proved to be easy to use and reliable
+              </div>
+              <img
+                class="comma comma-2"
+                src="assets/images/comma-2.png"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+        </div>
+        <img
+          class="testimonial-image testimonial-image-2"
+          src="assets/images/testimonial-1.png"
+          alt=""
+          srcset=""
+        />
+      </div> -->
+      <!-- testimonial section ends -->
+      <!-- faq lists section starts -->
+      <div class="faq-lists-section" id="faqs">
+        <div class="container faq-list-container">
+          <div class="faq-list-top">
+            <div class="faq-title">FAQs</div>
+            <div class="faq-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </div>
+          </div>
+          <div class="faq-list-wrapper">
+            <div class="accordion" id="accordionExample-customer">
+              <!-- item 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq1-customer"
+                    aria-expanded="false"
+                    aria-controls="faq1-customer"
+                  >
+                    Increased Visibility
+                  </button>
+                </h2>
+                <div
+                  id="faq1-customer"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample-customer"
+                >
+                  <div class="accordion-body">
+                    -customer Hoobake provides local bakers with a platform to
+                    showcase their talents and reach a broader audience,
+                    increasing their chances of attracting new customers.
+                  </div>
+                </div>
+              </div>
+              <!-- item 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq1-customer"
+                    aria-expanded="false"
+                    aria-controls="faq1-customer"
+                  >
+                    Increased Visibility
+                  </button>
+                </h2>
+                <div
+                  id="faq1-customer"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample-customer"
+                >
+                  <div class="accordion-body">
+                    -customer Hoobake provides local bakers with a platform to
+                    showcase their talents and reach a broader audience,
+                    increasing their chances of attracting new customers.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- faq lists section ends -->
+      <!-- find best bakers section starts -->
+      <!-- <div class="find-best-bakers-section">
+        <div class="container bottom-banner">
+          <div class="bottom-banner-title">
+            What make this platform different from Traditional bakery
+          </div>
+          <div class="bottom-banner-subtitle">
+            Just Ask, Our Ai will give you best bakers near you
+          </div>
+          <a href="join-option.html" class="common-btn find-bakers"
+            >Find Best bakers</a
+          >
+          <div class="banner-chat-ui-screen">
+            <div class="chef-card chef-card-1">
+              <img
+                class="chef-img"
+                src="assets/images/chef.png"
+                alt=""
+                srcset=""
+              />
+              <div class="chef-name">Leslie Alexander</div>
+              <div class="chef-position">Marketing Coordinator</div>
+              <div class="chef-rating">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                >
+                  <path
+                    d="M7.06466 1.54673C7.20662 0.822031 8.19299 0.702379 8.50411 1.37211L10.3157 5.27195C10.4549 5.57146 10.771 5.74732 11.0989 5.70755L15.3677 5.18972C16.1008 5.10079 16.5194 6.00191 15.9785 6.50476L12.8294 9.43282C12.5875 9.6577 12.518 10.0127 12.6571 10.3123L14.4687 14.2121C14.7799 14.8818 14.0522 15.5584 13.4068 15.1994L9.64895 13.1093C9.36034 12.9487 9.00118 12.9923 8.75932 13.2172L5.61018 16.1452C5.06937 16.6481 4.20104 16.1651 4.343 15.4404L5.16964 11.2205C5.23313 10.8964 5.08071 10.5683 4.79209 10.4078L1.0342 8.31761C0.388843 7.95865 0.579852 6.98358 1.31295 6.89465L5.58173 6.37682C5.90958 6.33705 6.17453 6.09069 6.23802 5.7666L7.06466 1.54673Z"
+                    fill="#FFA903"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                >
+                  <path
+                    d="M7.06466 1.54673C7.20662 0.822031 8.19299 0.702379 8.50411 1.37211L10.3157 5.27195C10.4549 5.57146 10.771 5.74732 11.0989 5.70755L15.3677 5.18972C16.1008 5.10079 16.5194 6.00191 15.9785 6.50476L12.8294 9.43282C12.5875 9.6577 12.518 10.0127 12.6571 10.3123L14.4687 14.2121C14.7799 14.8818 14.0522 15.5584 13.4068 15.1994L9.64895 13.1093C9.36034 12.9487 9.00118 12.9923 8.75932 13.2172L5.61018 16.1452C5.06937 16.6481 4.20104 16.1651 4.343 15.4404L5.16964 11.2205C5.23313 10.8964 5.08071 10.5683 4.79209 10.4078L1.0342 8.31761C0.388843 7.95865 0.579852 6.98358 1.31295 6.89465L5.58173 6.37682C5.90958 6.33705 6.17453 6.09069 6.23802 5.7666L7.06466 1.54673Z"
+                    fill="#FFA903"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                >
+                  <path
+                    d="M7.06466 1.54673C7.20662 0.822031 8.19299 0.702379 8.50411 1.37211L10.3157 5.27195C10.4549 5.57146 10.771 5.74732 11.0989 5.70755L15.3677 5.18972C16.1008 5.10079 16.5194 6.00191 15.9785 6.50476L12.8294 9.43282C12.5875 9.6577 12.518 10.0127 12.6571 10.3123L14.4687 14.2121C14.7799 14.8818 14.0522 15.5584 13.4068 15.1994L9.64895 13.1093C9.36034 12.9487 9.00118 12.9923 8.75932 13.2172L5.61018 16.1452C5.06937 16.6481 4.20104 16.1651 4.343 15.4404L5.16964 11.2205C5.23313 10.8964 5.08071 10.5683 4.79209 10.4078L1.0342 8.31761C0.388843 7.95865 0.579852 6.98358 1.31295 6.89465L5.58173 6.37682C5.90958 6.33705 6.17453 6.09069 6.23802 5.7666L7.06466 1.54673Z"
+                    fill="#FFA903"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                >
+                  <path
+                    d="M7.06466 1.54673C7.20662 0.822031 8.19299 0.702379 8.50411 1.37211L10.3157 5.27195C10.4549 5.57146 10.771 5.74732 11.0989 5.70755L15.3677 5.18972C16.1008 5.10079 16.5194 6.00191 15.9785 6.50476L12.8294 9.43282C12.5875 9.6577 12.518 10.0127 12.6571 10.3123L14.4687 14.2121C14.7799 14.8818 14.0522 15.5584 13.4068 15.1994L9.64895 13.1093C9.36034 12.9487 9.00118 12.9923 8.75932 13.2172L5.61018 16.1452C5.06937 16.6481 4.20104 16.1651 4.343 15.4404L5.16964 11.2205C5.23313 10.8964 5.08071 10.5683 4.79209 10.4078L1.0342 8.31761C0.388843 7.95865 0.579852 6.98358 1.31295 6.89465L5.58173 6.37682C5.90958 6.33705 6.17453 6.09069 6.23802 5.7666L7.06466 1.54673Z"
+                    fill="#FFA903"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                >
+                  <path
+                    d="M7.24925 1.60389C7.32023 1.24154 7.81342 1.18171 7.96898 1.51658L9.78059 5.41641C9.9893 5.86568 10.4636 6.12947 10.9553 6.06982L15.2241 5.55198C15.5907 5.50752 15.8 5.95808 15.5296 6.20951L12.3804 9.13757C12.0176 9.47489 11.9133 10.0075 12.122 10.4567L13.9336 14.3566C14.0892 14.6914 13.7253 15.0297 13.4027 14.8502L9.64477 12.76C9.21185 12.5192 8.67312 12.5846 8.31033 12.9219L5.16119 15.85C4.89078 16.1014 4.45662 15.8599 4.5276 15.4976L5.35423 11.2777C5.44947 10.7916 5.22083 10.2994 4.78791 10.0586L1.03002 7.9684C0.707344 7.78892 0.802846 7.30139 1.1694 7.25692L5.43818 6.73909C5.92995 6.67943 6.32739 6.3099 6.42262 5.82376L7.24925 1.60389Z"
+                    stroke="#FFA903"
+                    stroke-width="0.762313"
+                  />
+                </svg>
+                <span>4.0 Rating</span>
+              </div>
+            </div>
+            <div class="ui-img">
+              <img src="assets/images/chat-ui.png" alt="" srcset="" />
+            </div>
+            <div class="chef-card chef-card-2">
+              <img
+                class="chef-img"
+                src="assets/images/chef-4.png"
+                alt=""
+                srcset=""
+              />
+              <div class="chef-name">Leslie Alexander</div>
+              <div class="chef-position">Marketing Coordinator</div>
+              <div class="chef-rating">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                >
+                  <path
+                    d="M7.06466 1.54673C7.20662 0.822031 8.19299 0.702379 8.50411 1.37211L10.3157 5.27195C10.4549 5.57146 10.771 5.74732 11.0989 5.70755L15.3677 5.18972C16.1008 5.10079 16.5194 6.00191 15.9785 6.50476L12.8294 9.43282C12.5875 9.6577 12.518 10.0127 12.6571 10.3123L14.4687 14.2121C14.7799 14.8818 14.0522 15.5584 13.4068 15.1994L9.64895 13.1093C9.36034 12.9487 9.00118 12.9923 8.75932 13.2172L5.61018 16.1452C5.06937 16.6481 4.20104 16.1651 4.343 15.4404L5.16964 11.2205C5.23313 10.8964 5.08071 10.5683 4.79209 10.4078L1.0342 8.31761C0.388843 7.95865 0.579852 6.98358 1.31295 6.89465L5.58173 6.37682C5.90958 6.33705 6.17453 6.09069 6.23802 5.7666L7.06466 1.54673Z"
+                    fill="#FFA903"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                >
+                  <path
+                    d="M7.06466 1.54673C7.20662 0.822031 8.19299 0.702379 8.50411 1.37211L10.3157 5.27195C10.4549 5.57146 10.771 5.74732 11.0989 5.70755L15.3677 5.18972C16.1008 5.10079 16.5194 6.00191 15.9785 6.50476L12.8294 9.43282C12.5875 9.6577 12.518 10.0127 12.6571 10.3123L14.4687 14.2121C14.7799 14.8818 14.0522 15.5584 13.4068 15.1994L9.64895 13.1093C9.36034 12.9487 9.00118 12.9923 8.75932 13.2172L5.61018 16.1452C5.06937 16.6481 4.20104 16.1651 4.343 15.4404L5.16964 11.2205C5.23313 10.8964 5.08071 10.5683 4.79209 10.4078L1.0342 8.31761C0.388843 7.95865 0.579852 6.98358 1.31295 6.89465L5.58173 6.37682C5.90958 6.33705 6.17453 6.09069 6.23802 5.7666L7.06466 1.54673Z"
+                    fill="#FFA903"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                >
+                  <path
+                    d="M7.06466 1.54673C7.20662 0.822031 8.19299 0.702379 8.50411 1.37211L10.3157 5.27195C10.4549 5.57146 10.771 5.74732 11.0989 5.70755L15.3677 5.18972C16.1008 5.10079 16.5194 6.00191 15.9785 6.50476L12.8294 9.43282C12.5875 9.6577 12.518 10.0127 12.6571 10.3123L14.4687 14.2121C14.7799 14.8818 14.0522 15.5584 13.4068 15.1994L9.64895 13.1093C9.36034 12.9487 9.00118 12.9923 8.75932 13.2172L5.61018 16.1452C5.06937 16.6481 4.20104 16.1651 4.343 15.4404L5.16964 11.2205C5.23313 10.8964 5.08071 10.5683 4.79209 10.4078L1.0342 8.31761C0.388843 7.95865 0.579852 6.98358 1.31295 6.89465L5.58173 6.37682C5.90958 6.33705 6.17453 6.09069 6.23802 5.7666L7.06466 1.54673Z"
+                    fill="#FFA903"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                >
+                  <path
+                    d="M7.06466 1.54673C7.20662 0.822031 8.19299 0.702379 8.50411 1.37211L10.3157 5.27195C10.4549 5.57146 10.771 5.74732 11.0989 5.70755L15.3677 5.18972C16.1008 5.10079 16.5194 6.00191 15.9785 6.50476L12.8294 9.43282C12.5875 9.6577 12.518 10.0127 12.6571 10.3123L14.4687 14.2121C14.7799 14.8818 14.0522 15.5584 13.4068 15.1994L9.64895 13.1093C9.36034 12.9487 9.00118 12.9923 8.75932 13.2172L5.61018 16.1452C5.06937 16.6481 4.20104 16.1651 4.343 15.4404L5.16964 11.2205C5.23313 10.8964 5.08071 10.5683 4.79209 10.4078L1.0342 8.31761C0.388843 7.95865 0.579852 6.98358 1.31295 6.89465L5.58173 6.37682C5.90958 6.33705 6.17453 6.09069 6.23802 5.7666L7.06466 1.54673Z"
+                    fill="#FFA903"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                >
+                  <path
+                    d="M7.24925 1.60389C7.32023 1.24154 7.81342 1.18171 7.96898 1.51658L9.78059 5.41641C9.9893 5.86568 10.4636 6.12947 10.9553 6.06982L15.2241 5.55198C15.5907 5.50752 15.8 5.95808 15.5296 6.20951L12.3804 9.13757C12.0176 9.47489 11.9133 10.0075 12.122 10.4567L13.9336 14.3566C14.0892 14.6914 13.7253 15.0297 13.4027 14.8502L9.64477 12.76C9.21185 12.5192 8.67312 12.5846 8.31033 12.9219L5.16119 15.85C4.89078 16.1014 4.45662 15.8599 4.5276 15.4976L5.35423 11.2777C5.44947 10.7916 5.22083 10.2994 4.78791 10.0586L1.03002 7.9684C0.707344 7.78892 0.802846 7.30139 1.1694 7.25692L5.43818 6.73909C5.92995 6.67943 6.32739 6.3099 6.42262 5.82376L7.24925 1.60389Z"
+                    stroke="#FFA903"
+                    stroke-width="0.762313"
+                  />
+                </svg>
+                <span>4.0 Rating</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- find best bakers section ends -->
+    </main>
+    <!-- main area starts -->
+
+    <!-- footer area starts -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-inner-container">
+          <div class="footer-links" style="display: none">
+            <!-- box 1 -->
+            <div class="footer-link-box">
+              <div class="footer-text-title">For Clients</div>
+              <a href="#" class="footer-link">How to Hire</a>
+              <a href="#" class="footer-link">Talent Marketplace</a>
+              <a href="#" class="footer-link">Project Catalog</a>
+              <a href="#" class="footer-link">Hire Agency</a>
+              <a href="#" class="footer-link">Enterprise</a>
+              <a href="#" class="footer-link">Any Hire</a>
+              <a href="#" class="footer-link">Hire in Worldwide</a>
+              <a href="#" class="footer-link">Hire in USA</a>
+            </div>
+
+            <!-- box 2 -->
+            <div class="footer-link-box">
+              <div class="footer-text-title">For Talent</div>
+              <a href="#" class="footer-link">How to Find Work</a>
+              <a href="#" class="footer-link">Find Freelance Jobs Worldwide</a>
+              <a href="#" class="footer-link">Find Freelance Jobs in the USA</a>
+              <a href="#" class="footer-link">Win Work with Ads</a>
+              <a href="#" class="footer-link"
+                >Exclusive resources with Freelancer Plus</a
+              >
+            </div>
+            <!-- box 3 -->
+            <div class="footer-link-box">
+              <div class="footer-text-title">Resources</div>
+              <a href="#" class="footer-link">Help & Support</a>
+              <a href="#" class="footer-link">Success Stories</a>
+              <a href="#" class="footer-link">Reviews</a>
+              <a href="#" class="footer-link">Resources Blog</a>
+              <a href="#" class="footer-link">Community</a>
+            </div>
+            <!-- box 4 -->
+            <div class="footer-link-box">
+              <div class="footer-text-title">Careers</div>
+              <a href="#" class="footer-link">About Us</a>
+              <a href="#" class="footer-link">Leadership</a>
+              <a href="#" class="footer-link">Investor Relations</a>
+              <a href="#" class="footer-link">Careers</a>
+              <a href="#" class="footer-link">Our Impact</a>
+              <a href="#" class="footer-link">Careers</a>
+              <a href="#" class="footer-link">Press</a>
+              <a href="#" class="footer-link">Contact Us</a>
+              <a href="#" class="footer-link">Trust, Safety & Security</a>
+              <a href="#" class="footer-link">Modern Slavery Statement</a>
+            </div>
+          </div>
+          <div class="footer-logo-and-socials">
+            <div class="footer-logo">
+              <svg
+                width="277"
+                height="55"
+                viewBox="0 0 277 55"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M153.588 21.8404C151.015 20.4068 148.075 19.6881 144.784 19.6881C141.993 19.6881 139.482 20.3113 137.245 21.5575C136.003 22.2495 134.909 23.1517 133.95 24.245L133.946 6.17798H126.094L126.098 53.9566H133.636V49.6367C134.619 50.8295 135.777 51.8005 137.123 52.5345C139.405 53.777 141.959 54.4001 144.784 54.4001C148.075 54.4001 151.015 53.6852 153.588 52.2478C156.161 50.8142 158.202 48.7995 159.701 46.2C161.199 43.6042 161.949 40.5535 161.949 37.0479C161.949 33.5882 161.199 30.5452 159.701 27.9303C158.202 25.304 156.161 23.2778 153.588 21.8404ZM152.571 42.6485C151.684 44.2732 150.492 45.5195 148.993 46.3873C147.494 47.2513 145.774 47.6871 143.832 47.6871C141.97 47.6871 140.284 47.2513 138.767 46.3873C137.245 45.5233 136.045 44.277 135.158 42.6485C134.271 41.0237 133.827 39.1544 133.827 37.0441C133.827 34.8918 134.271 33.0224 135.158 31.4397C136.045 29.857 137.249 28.6337 138.767 27.7659C140.288 26.9019 141.974 26.47 143.832 26.47C145.774 26.47 147.494 26.9058 148.993 27.7659C150.492 28.6337 151.684 29.857 152.571 31.4397C153.458 33.0224 153.902 34.8918 153.902 37.0441C153.902 39.1544 153.458 41.0237 152.571 42.6485Z"
+                  fill="#C8A88A"
+                />
+                <path
+                  d="M63.2969 28.2627V31.581C66.015 31.581 68.2246 34.0467 68.2246 37.0783H71.5429C71.5429 32.2156 67.8423 28.2627 63.2969 28.2627Z"
+                  fill="#C8A88A"
+                />
+                <path
+                  d="M72.6053 21.9359C69.8834 20.4373 66.7678 19.688 63.266 19.688C59.8024 19.688 56.7212 20.4373 54.0145 21.9359C51.3118 23.4383 49.1786 25.4759 47.6188 28.0525C46.0553 30.6253 45.2754 33.6263 45.2754 37.044C45.2754 40.3814 46.0591 43.3594 47.6188 45.9743C49.1824 48.593 51.327 50.6497 54.049 52.1483C56.7709 53.6468 59.8445 54.3961 63.266 54.3961C66.7257 54.3961 69.8299 53.6468 72.5786 52.1483C75.3196 50.6497 77.4642 48.6006 79.0087 46.001C80.5455 43.4053 81.3177 40.4196 81.3177 37.0401C81.3177 33.6225 80.5455 30.6215 79.0087 28.0487C77.4642 25.472 75.3349 23.4344 72.6053 21.9359ZM72.0357 42.6483C71.1717 44.2731 69.9752 45.5194 68.4575 46.3871C66.936 47.2511 65.2042 47.6869 63.2622 47.6869C61.4004 47.6869 59.7145 47.2511 58.1968 46.3871C56.6753 45.5232 55.4711 44.2769 54.5842 42.6483C53.7011 41.0236 53.2538 39.1542 53.2538 37.044C53.2538 34.8917 53.6972 33.0223 54.5842 31.4396C55.4711 29.8569 56.6753 28.6336 58.1968 27.7658C59.7145 26.9018 61.4272 26.4698 63.3271 26.4698C65.2271 26.4698 66.936 26.9056 68.4575 27.7658C69.9752 28.6336 71.1679 29.8569 72.0357 31.4396C72.8997 33.0223 73.3393 34.8917 73.3393 37.044C73.3393 39.1542 72.9035 41.0236 72.0357 42.6483Z"
+                  fill="#C8A88A"
+                />
+                <path
+                  d="M112.156 21.9359C109.434 20.4373 106.319 19.688 102.813 19.688C99.3532 19.688 96.2681 20.4373 93.5653 21.9359C90.8625 23.4383 88.7294 25.4759 87.1696 28.0525C85.606 30.6253 84.8262 33.6263 84.8262 37.044C84.8262 40.3814 85.6099 43.3594 87.1696 45.9743C88.7332 48.593 90.874 50.6497 93.5997 52.1483C96.3216 53.6468 99.3953 54.3961 102.813 54.3961C106.276 54.3961 109.381 53.6468 112.126 52.1483C114.874 50.6497 117.015 48.6006 118.552 46.001C120.096 43.4053 120.865 40.4196 120.865 37.0401C120.865 33.6225 120.092 30.6215 118.552 28.0487C117.015 25.472 114.878 23.4344 112.156 21.9359ZM111.587 42.6483C110.723 44.2731 109.526 45.5194 108.008 46.3871C106.487 47.2511 104.759 47.6869 102.813 47.6869C100.955 47.6869 99.2653 47.2511 97.7476 46.3871C96.2261 45.5232 95.0257 44.2769 94.1388 42.6483C93.2519 41.0236 92.8046 39.1542 92.8046 37.044C92.8046 34.8917 93.248 33.0223 94.1388 31.4396C95.0219 29.8569 96.2261 28.6336 97.7476 27.7658C99.2691 26.9018 100.982 26.4698 102.878 26.4698C104.782 26.4698 106.487 26.9056 108.008 27.7658C109.53 28.6336 110.726 29.8569 111.587 31.4396C112.454 33.0223 112.886 34.8917 112.886 37.044C112.886 39.1542 112.454 41.0236 111.587 42.6483Z"
+                  fill="#C8A88A"
+                />
+                <path
+                  d="M91.2599 19.275L89.2606 16.2319C85.1662 18.7665 81.0681 18.7665 76.9776 16.2319L74.9629 19.3017C77.8989 21.0603 80.2538 23.3999 81.9741 26.2747C82.3908 26.9705 82.7616 27.693 83.0866 28.4385C83.4192 27.6854 83.7938 26.959 84.2181 26.2556C85.9614 23.3808 88.3278 21.0335 91.2599 19.275Z"
+                  fill="#C8A88A"
+                />
+                <path
+                  d="M102.76 28.2627V31.581C105.478 31.581 107.687 34.0467 107.687 37.0783H111.006C111.002 32.2156 107.305 28.2627 102.76 28.2627Z"
+                  fill="#C8A88A"
+                />
+                <path
+                  d="M31.3019 27.9226H8.23454V9.61475H0V53.9528H8.23454V34.953H31.3019V53.9528H39.5365V9.61475H31.3019V27.9226Z"
+                  fill="#C8A88A"
+                />
+                <path
+                  d="M242.215 20.1277H232.711L216.307 35.3008V6.17407H208.451V53.9527H216.307V45.0262L222.137 39.4677L233.977 53.9527H243.542L228.04 34.303L242.215 20.1277Z"
+                  fill="#C8A88A"
+                />
+                <path
+                  d="M266.387 46.7962C264.893 47.4308 263.188 47.7481 261.291 47.7481C259.051 47.7481 257.086 47.3123 255.396 46.4483C253.711 45.5843 252.399 44.3151 251.467 42.6483C251.291 42.3349 251.142 42.0023 251 41.6659L276.996 36.7267C276.912 33.137 276.097 30.0748 274.557 27.5402C273.012 25.0095 270.967 23.0636 268.413 21.7141C265.86 20.3608 263.019 19.688 259.892 19.688C256.475 19.688 253.451 20.4373 250.832 21.9359C248.213 23.4383 246.157 25.4835 244.658 28.0793C243.156 30.675 242.406 33.6645 242.406 37.0401C242.406 40.4196 243.178 43.4053 244.723 46.001C246.26 48.6006 248.439 50.6497 251.245 52.1483C254.055 53.6468 257.335 54.3961 261.096 54.3961C264.006 54.3961 266.617 53.9336 268.918 53.0046C271.219 52.0795 273.131 50.7223 274.652 48.9523L270.47 44.0131C269.251 45.2365 267.886 46.1654 266.387 46.7962ZM250.079 36.6005C250.079 34.4482 250.492 32.5788 251.314 30.9961C252.136 29.4135 253.29 28.2092 254.762 27.3873C256.245 26.5654 257.95 26.1525 259.896 26.1525C261.796 26.1525 263.463 26.5654 264.904 27.3873C266.338 28.2092 267.473 29.3599 268.322 30.8394C268.712 31.5122 268.991 32.2424 269.186 33.0146L250.079 36.6273V36.6005Z"
+                  fill="#C8A88A"
+                />
+                <path
+                  d="M193.477 24.2369C192.533 23.1436 191.447 22.2452 190.216 21.5532C189.78 21.3162 189.345 21.0945 188.886 20.8995L187.338 23.6214C187.685 23.9846 187.957 24.4281 188.117 24.9403C188.546 26.3281 189.046 28.3198 189.253 30.4874C193.902 30.8353 197.178 31.5845 197.403 32.4523C197.415 32.4867 197.419 32.5173 197.419 32.5517C197.419 33.3049 195.113 33.9777 191.581 34.3944C190.839 34.4747 190.044 34.5511 189.203 34.6085C188.649 34.6505 188.075 34.6849 187.487 34.7117C187.724 33.2934 187.705 31.7948 187.548 30.3842C187.494 29.8642 187.418 29.3596 187.334 28.8665C187.196 29.352 187.024 29.8489 186.833 30.3497C186.412 31.4507 185.877 32.5747 185.266 33.6527C185.04 34.0427 184.811 34.425 184.57 34.8034C184.199 34.8073 183.824 34.8149 183.442 34.8149C183.136 34.8149 182.834 34.8149 182.54 34.8111C182.957 34.2185 183.381 33.561 183.794 32.827C184.306 31.9286 184.715 31.0837 185.04 30.3039C186.405 27.0429 186.325 24.8371 185.755 24.516C185.048 24.1146 182.272 25.8273 179.669 30.3765C179.654 30.4033 179.634 30.43 179.623 30.4568C178.736 32.0165 178.144 33.431 177.777 34.6276C177.582 34.6123 177.39 34.6008 177.203 34.5855C176.813 34.5511 176.431 34.5205 176.064 34.4823C176.431 33.194 176.993 31.8254 177.681 30.4912C177.834 30.2007 177.991 29.9139 178.155 29.6272C179.046 28.056 180.108 26.5765 181.206 25.3953C178.801 26.3128 176.148 27.7425 174.561 29.9101C174.328 30.2312 174.137 30.56 173.984 30.8888C173.537 31.921 173.499 33.0181 173.881 34.2109C173.204 34.1077 172.593 33.9968 172.057 33.8706C170.444 33.4998 169.496 33.0487 169.477 32.567C169.477 32.5632 169.477 32.5632 169.477 32.5594C169.477 32.5517 169.477 32.5517 169.477 32.5441C169.477 32.4982 169.492 32.4485 169.515 32.395C169.695 31.9668 170.628 31.5654 172.103 31.229C172.298 30.4186 172.665 29.6387 173.2 28.9085C175.93 25.1812 181.252 23.4226 184.184 22.7078C184.704 22.5778 185.224 22.5854 185.713 22.7001L187.089 20.2764C185.694 19.8903 184.191 19.6953 182.593 19.6953C179.344 19.6953 176.427 20.4102 173.85 21.8476C171.278 23.285 169.248 25.3073 167.768 27.9298C166.293 30.5447 165.555 33.5916 165.555 37.0513C165.555 40.5531 166.296 43.6038 167.768 46.1995C169.248 48.7991 171.278 50.8137 173.85 52.2512C176.427 53.6886 179.344 54.4035 182.593 54.4035C185.548 54.4035 188.14 53.7765 190.35 52.5379C191.7 51.7771 192.869 50.7717 193.871 49.5216V53.96H201.406V20.1273H193.477V24.2369ZM195.714 40.2167C194.463 42.4951 192.781 44.2422 190.66 45.4464C190.239 45.6834 189.807 45.9013 189.36 46.0963V46.3295C189.36 47.6522 188.286 48.7264 186.963 48.7264H179.818C178.488 48.7264 177.413 47.6522 177.413 46.3295V45.9701C177.065 45.8134 176.718 45.6375 176.381 45.4464C174.256 44.2384 172.566 42.4913 171.343 40.2167C170.394 38.4925 169.806 36.5696 169.576 34.4517C170.268 34.792 171.232 35.0787 172.493 35.3195C172.765 35.373 173.051 35.4189 173.353 35.4686C173.724 35.5298 174.118 35.5871 174.519 35.6368C174.921 35.6942 175.33 35.74 175.754 35.7859C176.217 35.8318 176.691 35.8777 177.18 35.9159C177.184 35.9197 177.184 35.9197 177.188 35.9159C177.268 35.9197 177.356 35.9312 177.44 35.935C178.728 36.0344 180.097 36.1032 181.519 36.1338C182.15 36.1491 182.788 36.1529 183.438 36.1529H183.645C184.841 36.1491 186.023 36.1262 187.154 36.0726C187.766 36.0459 188.362 36.0115 188.939 35.9732C189.222 35.9541 189.498 35.935 189.769 35.9121H189.773C191.149 35.8012 192.418 35.6559 193.535 35.4724C195.339 35.1819 196.627 34.834 197.468 34.3791C197.25 36.5237 196.665 38.4734 195.714 40.2167Z"
+                  fill="#C8A88A"
+                />
+                <path
+                  d="M192.717 14.1486L194.804 15.3375L200.68 4.98889C201.586 3.38327 201.024 1.34566 199.426 0.435811C198.903 0.137625 198.341 0 197.782 0C196.624 0 195.485 0.611665 194.877 1.68972L189.001 12.0383L191.089 13.2234L187.086 20.2729C187.713 20.4449 188.309 20.6552 188.89 20.9036L192.717 14.1486Z"
+                  fill="#C8A88A"
+                />
+              </svg>
+            </div>
+            <div class="footer-socials">
+              <a href="#" class="social-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                >
+                  <path
+                    d="M12.5039 2.396C6.98106 2.396 2.50391 6.87315 2.50391 12.396C2.50391 17.3873 6.16076 21.5243 10.9414 22.2745V15.2866H8.40234V12.396H10.9414V10.1929C10.9414 7.68663 12.4343 6.30225 14.7185 6.30225C15.8126 6.30225 16.957 6.49756 16.957 6.49756V8.9585H15.696C14.4538 8.9585 14.0664 9.72934 14.0664 10.5202V12.396H16.8398L16.3965 15.2866H14.0664V22.2745C18.847 21.5243 22.5039 17.3873 22.5039 12.396C22.5039 6.87315 18.0267 2.396 12.5039 2.396Z"
+                    fill="white"
+                    fill-opacity="0.79"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                >
+                  <path
+                    d="M8.49609 2.396H1.49609L9.75695 13.4105L1.94604 22.3959H4.59607L10.9844 15.047L16.4961 22.396H23.4961L14.8878 10.9183L22.2962 2.396H19.6462L13.6604 9.28178L8.49609 2.396ZM17.4961 20.396L5.49609 4.396H7.49609L19.4961 20.396H17.4961Z"
+                    fill="white"
+                    fill-opacity="0.79"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                >
+                  <path
+                    d="M12.002 9.396C10.3446 9.396 9.00195 10.7391 9.00195 12.396C9.00195 14.0533 10.3451 15.396 12.002 15.396C13.6593 15.396 15.002 14.0529 15.002 12.396C15.002 10.7387 13.6589 9.396 12.002 9.396ZM12.002 7.396C14.7624 7.396 17.002 9.6331 17.002 12.396C17.002 15.1565 14.7649 17.396 12.002 17.396C9.24148 17.396 7.00195 15.1589 7.00195 12.396C7.00195 9.63553 9.23905 7.396 12.002 7.396ZM18.502 7.14515C18.502 7.83526 17.9412 8.39517 17.252 8.39517C16.5619 8.39517 16.002 7.8344 16.002 7.14515C16.002 6.4559 16.5627 5.896 17.252 5.896C17.9403 5.89513 18.502 6.4559 18.502 7.14515ZM12.002 4.396C9.52747 4.396 9.12415 4.40255 7.97324 4.4538C7.18912 4.49061 6.6635 4.59607 6.17513 4.78567C5.74113 4.95399 5.42806 5.15498 5.09449 5.48855C4.75964 5.8234 4.55901 6.13563 4.39137 6.56983C4.20133 7.05932 4.0959 7.58411 4.05975 8.36715C4.008 9.4712 4.00195 9.85705 4.00195 12.396C4.00195 14.8705 4.0085 15.2738 4.05974 16.4246C4.09657 17.2084 4.20217 17.7348 4.39131 18.222C4.56007 18.6566 4.76147 18.9704 5.09343 19.3024C5.4296 19.6381 5.74276 19.8394 6.17284 20.0054C6.66716 20.1965 7.19245 20.3021 7.97309 20.3382C9.07715 20.3899 9.463 20.396 12.002 20.396C14.4765 20.396 14.8798 20.3894 16.0306 20.3382C16.8127 20.3015 17.3395 20.1956 17.828 20.0066C18.2614 19.8383 18.5762 19.6362 18.9084 19.3045C19.2446 18.9678 19.4455 18.6554 19.6117 18.2243C19.8023 17.7318 19.9081 17.2058 19.9442 16.4249C19.9959 15.3208 20.002 14.9349 20.002 12.396C20.002 9.92152 19.9954 9.51821 19.9442 8.36737C19.9074 7.58506 19.8015 7.05749 19.6123 6.56918C19.4444 6.13638 19.2427 5.82235 18.9094 5.48855C18.574 5.15315 18.2626 4.95293 17.8281 4.78542C17.339 4.59554 16.8134 4.48996 16.0308 4.45381C14.9268 4.40205 14.5409 4.396 12.002 4.396ZM12.002 2.396C14.7186 2.396 15.0578 2.406 16.1245 2.456C17.1886 2.50517 17.9145 2.6735 18.552 2.921C19.2111 3.17517 19.7678 3.5185 20.3236 4.07433C20.8786 4.63017 21.222 5.1885 21.477 5.846C21.7236 6.48267 21.892 7.20933 21.942 8.2735C21.9895 9.34017 22.002 9.67933 22.002 12.396C22.002 15.1127 21.992 15.4518 21.942 16.5185C21.8928 17.5827 21.7236 18.3085 21.477 18.946C21.2228 19.6052 20.8786 20.1618 20.3236 20.7177C19.7678 21.2727 19.2086 21.616 18.552 21.871C17.9145 22.1177 17.1886 22.286 16.1245 22.336C15.0578 22.3835 14.7186 22.396 12.002 22.396C9.28528 22.396 8.94611 22.386 7.87945 22.336C6.81528 22.2868 6.09028 22.1177 5.45195 21.871C4.79361 21.6168 4.23611 21.2727 3.68028 20.7177C3.12445 20.1618 2.78195 19.6027 2.52695 18.946C2.27945 18.3085 2.11195 17.5827 2.06195 16.5185C2.01445 15.4518 2.00195 15.1127 2.00195 12.396C2.00195 9.67933 2.01195 9.34017 2.06195 8.2735C2.11111 7.2085 2.27945 6.4835 2.52695 5.846C2.78111 5.18767 3.12445 4.63017 3.68028 4.07433C4.23611 3.5185 4.79445 3.176 5.45195 2.921C6.08945 2.6735 6.81445 2.506 7.87945 2.456C8.94611 2.4085 9.28528 2.396 12.002 2.396Z"
+                    fill="white"
+                    fill-opacity="0.79"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                >
+                  <path
+                    d="M19 13.396H5V20.396H19V13.396ZM19 11.396C19 7.53001 15.866 4.396 12 4.396C8.13401 4.396 5 7.53001 5 11.396H19ZM6.38231 4.3641C7.92199 3.13247 9.87499 2.396 12 2.396C14.125 2.396 16.078 3.13247 17.6177 4.3641L19.0711 2.91072L20.4853 4.32493L19.0319 5.77831C20.2635 7.31799 21 9.27099 21 11.396V21.396C21 21.9483 20.5523 22.396 20 22.396H4C3.44772 22.396 3 21.9483 3 21.396V11.396C3 9.27099 3.73647 7.31799 4.9681 5.77831L3.51472 4.32493L4.92893 2.91072L6.38231 4.3641ZM9 9.396C8.44772 9.396 8 8.94828 8 8.396C8 7.84372 8.44772 7.396 9 7.396C9.55228 7.396 10 7.84372 10 8.396C10 8.94828 9.55228 9.396 9 9.396ZM15 9.396C14.4477 9.396 14 8.94828 14 8.396C14 7.84372 14.4477 7.396 15 7.396C15.5523 7.396 16 7.84372 16 8.396C16 8.94828 15.5523 9.396 15 9.396Z"
+                    fill="white"
+                    fill-opacity="0.79"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="copy-right">
+          © 2024 Hoobake. All rights Reserved | Terms of Service | Privacy |
+          Legal
+        </div>
+      </div>
+    </footer>
+    <!-- footer area ends -->
+
+    <!-- Javascript Links -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

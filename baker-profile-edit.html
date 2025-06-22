@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>Set Your Profile</title>
+    <!-- ==== Favicon ==== -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+    <!-- All Plugins CSS -->
+    <link rel="stylesheet" href="./assets/css/plugins/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/plugins/aos.css" />
+    <link rel="stylesheet" href="./assets/css/plugins/nice-select.min.css" />
+    <link rel="stylesheet" href="./assets/css/plugins/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/plugins/flatpickr.min.css" />
+    <!-- telephone flag ----- intl-tel-input -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"
+    />
+    <link
+    href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+    rel="stylesheet"
+  />
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./assets/css/custom/profile-edit.css" />
+    <link rel="stylesheet" href="./assets/css/helper.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- main area starts -->
+    <main>
+      <section class="profile-edit-page">
+        <div class="bi-profile-edit-page-container">
+          <!-- banner image -->
+          <div class="bi-banner-images">
+            <img src="assets/images/profile-edit-banner.png" alt="" srcset="" />
+          </div>
+          <!-- profile user name and image email -->
+          <div class="container bi-banner-user-info">
+            <div
+              class="bi-profile-image"
+              data-bs-toggle="modal"
+              data-bs-target="#crop_image_modal"
+            >
+              <img
+                src="assets/images/chef.png"
+                alt=""
+                srcset=""
+                id="profile-image"
+              />
+            </div>
+            <h2 class="bi-profile-user-name">Azunyan U. Wu</h2>
+            <p class="bi-user-email">elementary221b@gmail.com</p>
+          </div>
+
+          <form
+            action="baker-dashboard-orders.html"
+            class="container bi-profile-edit-content"
+          >
+            <!-- Company Info -->
+            <div class="bi-profile-edit-common-section">
+              <div class="bi-common-section-left">
+                <h3 class="bi-edit-section-title">Company Info</h3>
+                <p class="bi-edit-section-des">
+                  You can change your company information settings here.
+                </p>
+              </div>
+              <div class="bi-common-section-right" id="company-info-section">
+                <!-- company name and email address  -->
+                <div class="profile-edit-input-field-wrapper">
+                  <!-- company name -->
+                  <div class="profile-edit-input-field-inner-wrapper">
+                    <label
+                      for="companyName"
+                      class="bi-profile-edit-common-label"
+                      >Company Name</label
+                    >
+                    <input
+                      type="text"
+                      id="companyName"
+                      name="companyName"
+                      class="bi-common-input-field"
+                      placeholder="Azusa Nakano"
+                    />
+                  </div>
+                  <!-- company email -->
+                  <div class="profile-edit-input-field-inner-wrapper">
+                    <label
+                      for="companyEmail"
+                      class="bi-profile-edit-common-label"
+                      >Email Address</label
+                    >
+                    <input
+                      type="email"
+                      id="companyEmail"
+                      name="companyEmail"
+                      class="bi-common-input-field"
+                      placeholder="elementary221b@gmail.com"
+                    />
+                  </div>
+                </div>
+                <!-- phone number and country  -->
+                <div class="profile-edit-input-field-wrapper">
+                  <!-- company phone -->
+                  <div class="profile-edit-input-field-inner-wrapper">
+                    <label for="phone" class="bi-profile-edit-common-label"
+                      >Phone Number</label
+                    >
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      class="bi-common-input-field"
+                    />
+                  </div>
+                  <!-- company country -->
+                  <div class="profile-edit-input-field-inner-wrapper">
+                    <label for="country" class="bi-profile-edit-common-label"
+                      >Country</label
+                    >
+                    <select
+                      name="country"
+                      id="country"
+                      class="bi-common-input-field"
+                    >
+                      <option value="Bangladesh">Bangladesh</option>
+                      <option value="India">India</option>
+                      <option value="Australia">Australia</option>
+                      <option value="Pakistan">Pakistan</option>
+                      <option value="United States">United States</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Language and location -->
+                <div class="profile-edit-input-field-wrapper">
+                  <!-- language  -->
+                  <div class="profile-edit-input-field-inner-wrapper">
+                    <label for="language" class="bi-profile-edit-common-label"
+                      >Language</label
+                    >
+                    <select
+                      name="language"
+                      id="language"
+                      class="bi-common-input-field"
+                    >
+                      <option value="English">English</option>
+                      <option value="India">India</option>
+                      <option value="Australia">Australia</option>
+                      <option value="Pakistan">Pakistan</option>
+                      <option value="United States">United States</option>
+                    </select>
+                  </div>
+                  <!-- location  -->
+                  <div class="profile-edit-input-field-inner-wrapper dob">
+                    <label for="location" class="bi-profile-edit-common-label"
+                      >Location</label
+                    >
+                    <input
+                      type="text"
+                      id="location"
+                      name="location"
+                      class="bi-common-input-field"
+                      placeholder="123 Sample St, Sydney NSW 2000 AU"
+                    />
+                  </div>
+                </div>
+                <!--  work categories -->
+                <div class="profile-edit-input-field-wrapper">
+                  <div class="profile-edit-input-field-inner-wrapper">
+                    <label
+                      for="work_category"
+                      class="bi-profile-edit-common-label"
+                      >Work Categories</label
+                    >
+                    <select
+                      id="work_category"
+                      class="bi-common-input-field"
+                      name="work_category[]"
+                      multiple="multiple"
+                    >
+                      <option value="cake">Cake</option>
+                      <option value="dessert">Dessert</option>
+                      <option value="baking">Baking</option>
+                      <option value="cake">Cake</option>
+                      <option value="dessert">Dessert</option>
+                      <option value="baking">Baking</option>
+                      <option value="cake">Cake</option>
+                      <option value="dessert">Dessert</option>
+                      <option value="baking">Baking</option>
+                      <option value="cake">Cake</option>
+                      <option value="dessert">Dessert</option>
+                      <option value="baking">Baking</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- company website and social link  -->
+                <div class="profile-edit-input-field-wrapper">
+                  <!-- company website -->
+                  <div class="profile-edit-input-field-inner-wrapper">
+                    <label
+                      for="companyWebsite"
+                      class="bi-profile-edit-common-label"
+                      >Company Website (Optional)</label
+                    >
+                    <input
+                      type="text"
+                      id="companyWebsite"
+                      name="companyWebsite"
+                      class="bi-common-input-field"
+                      placeholder="https://heroicons.com/"
+                    />
+                  </div>
+                  <!-- company social -->
+                  <div class="profile-edit-input-field-inner-wrapper">
+                    <label
+                      for="companySocial"
+                      class="bi-profile-edit-common-label"
+                      >Social link</label
+                    >
+                    <input
+                      type="text"
+                      id="companySocial"
+                      name="companySocial"
+                      class="bi-common-input-field"
+                      placeholder="https://heroicons.com/"
+                    />
+                  </div>
+                </div>
+
+                <!-- add more links -->
+                <div
+                  class="bi-profile-edit-common-label text-decoration-underline cursor-pointer"
+                  id="add-social-media-btn"
+                >
+                  Add another social media
+                </div>
+
+                <!-- image section -->
+                <div class="profile-edit-image-field-wrapper">
+                  <h1 class="bi-profile-edit-common-label">Set Avatar</h1>
+                  <div class="profile-edit-image-field-inner-wrapper">
+                    <div class="image" id="avater-image">
+                      <img src="assets/images/user-1.png" alt="" srcset="" />
+                    </div>
+                    <label for="avatar" class="avatar-upload-area">
+                      <span class="upload-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M9 17V11L7 13"
+                            stroke="white"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M9 11L11 13"
+                            stroke="white"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M22 10V15C22 20 20 22 15 22H9C4 22 2 20 2 15V9C2 4 4 2 9 2H14"
+                            stroke="white"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M22 10H18C15 10 14 9 14 6V2L22 10Z"
+                            stroke="white"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </span>
+                      <h5 class="image-text">
+                        <b>Click here</b> to upload your file or drag.
+                      </h5>
+                      <h5 class="image-text">
+                        Supported Format: SVG, JPG, PNG (10mb each)
+                      </h5>
+                    </label>
+                    <input
+                      type="file"
+                      id="avatar"
+                      name="avatar"
+                      accept="image/*"
+                    />
+                  </div>
+                </div>
+                <!-- add a bio -->
+                <div class="profile-edit-input-field-wrapper">
+                  <div class="profile-edit-input-field-inner-wrapper">
+                    <label for="companyBio" class="bi-profile-edit-common-label"
+                      >Company Bio</label
+                    >
+                    <textarea
+                      class="bi-common-input-field textarea"
+                      name="companyBio"
+                      id="companyBio"
+                      placeholder="Write here"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- previous work -->
+            <div class="bi-profile-edit-common-section">
+              <div class="bi-common-section-left">
+                <h3 class="bi-edit-section-title">Previous work</h3>
+                <p class="bi-edit-section-des">Add a previous work of you</p>
+              </div>
+              <div class="bi-common-section-right">
+                <!-- Product name and weight  -->
+                <div class="profile-edit-input-field-wrapper">
+                  <!-- product name -->
+                  <div class="profile-edit-input-field-inner-wrapper">
+                    <label
+                      for="productName"
+                      class="bi-profile-edit-common-label"
+                      >Product Name</label
+                    >
+                    <input
+                      type="text"
+                      id="productName"
+                      name="productName"
+                      class="bi-common-input-field"
+                      placeholder="Azusa Nakano"
+                    />
+                  </div>
+                  <!-- company email -->
+                  <div class="profile-edit-input-field-inner-wrapper">
+                    <label
+                      for="productWeight"
+                      class="bi-profile-edit-common-label"
+                      >Product Weight</label
+                    >
+                    <input
+                      type="email"
+                      id="productWeight"
+                      name="productWeight"
+                      class="bi-common-input-field"
+                      placeholder="40 pound"
+                    />
+                  </div>
+                </div>
+                <!-- image section -->
+                <div class="profile-edit-image-field-wrapper">
+                  <h1 class="bi-profile-edit-common-label">
+                    Add product image
+                  </h1>
+                  <div class="profile-edit-image-field-inner-wrapper">
+                    <div class="image" id="product_preview_img">
+                      <img src="assets/images/food-1.png" alt="" srcset="" />
+                    </div>
+                    <label for="product_img" class="avatar-upload-area">
+                      <span class="upload-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M9 17V11L7 13"
+                            stroke="white"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M9 11L11 13"
+                            stroke="white"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M22 10V15C22 20 20 22 15 22H9C4 22 2 20 2 15V9C2 4 4 2 9 2H14"
+                            stroke="white"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M22 10H18C15 10 14 9 14 6V2L22 10Z"
+                            stroke="white"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </span>
+                      <h5 class="image-text">
+                        <b>Click here</b> to upload your file or drag.
+                      </h5>
+                      <h5 class="image-text">
+                        Supported Format: SVG, JPG, PNG (10mb each)
+                      </h5>
+                    </label>
+                    <input
+                      type="file"
+                      id="product_img"
+                      name="product_img"
+                      accept="image/*"
+                    />
+                  </div>
+                </div>
+                <!-- add product description -->
+                <div class="profile-edit-input-field-wrapper">
+                  <div class="profile-edit-input-field-inner-wrapper">
+                    <label
+                      for="productDescription"
+                      class="bi-profile-edit-common-label"
+                      >Product Description</label
+                    >
+                    <textarea
+                      class="bi-common-input-field textarea"
+                      name="productDescription"
+                      id="productDescription"
+                      placeholder="Write here"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- billing infos -->
+            <div class="bi-profile-edit-common-section">
+              <div class="bi-common-section-left">
+                <h3 class="bi-edit-section-title">Billing information</h3>
+                <p class="bi-edit-section-des">
+                  You can change your personal information settings here.
+                </p>
+              </div>
+              <div class="bi-common-section-right">
+                <div class="bi-profile-edit-password-field-wrapper">
+                  <label
+                    for="stripe_account_key_pvt"
+                    class="bi-profile-edit-common-label"
+                  >
+                    Stripe account secret key
+                  </label>
+                  <input
+                    type="password"
+                    id="stripe_account_key_pvt"
+                    name="stripe_account_key_pvt"
+                    class="bi-common-input-field"
+                    placeholder=""
+                  />
+                  <svg
+                    class="eye-icon-btn"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M14.5299 9.47001L9.46992 14.53C8.81992 13.88 8.41992 12.99 8.41992 12C8.41992 10.02 10.0199 8.42001 11.9999 8.42001C12.9899 8.42001 13.8799 8.82001 14.5299 9.47001Z"
+                      stroke="#6C688D"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M17.8198 5.77001C16.0698 4.45001 14.0698 3.73001 11.9998 3.73001C8.46984 3.73001 5.17984 5.81001 2.88984 9.41001C1.98984 10.82 1.98984 13.19 2.88984 14.6C3.67984 15.84 4.59984 16.91 5.59984 17.77"
+                      stroke="#6C688D"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8.41992 19.53C9.55992 20.01 10.7699 20.27 11.9999 20.27C15.5299 20.27 18.8199 18.19 21.1099 14.59C22.0099 13.18 22.0099 10.81 21.1099 9.39999C20.7799 8.87999 20.4199 8.38999 20.0499 7.92999"
+                      stroke="#6C688D"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M15.5104 12.7C15.2504 14.11 14.1004 15.26 12.6904 15.52"
+                      stroke="#6C688D"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9.47 14.53L2 22"
+                      stroke="#6C688D"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M22.0003 2L14.5303 9.47"
+                      stroke="#6C688D"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+
+                <div class="bi-profile-edit-password-field-wrapper">
+                  <label
+                    for="stipe_account_key_public"
+                    class="bi-profile-edit-common-label"
+                  >
+                    Stripe account public key
+                  </label>
+                  <input
+                    type="password"
+                    id="stipe_account_key_public"
+                    name="stipe_account_key_public"
+                    class="bi-common-input-field"
+                    placeholder=""
+                  />
+
+                  <svg
+                    class="eye-icon-btn"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M14.5299 9.47001L9.46992 14.53C8.81992 13.88 8.41992 12.99 8.41992 12C8.41992 10.02 10.0199 8.42001 11.9999 8.42001C12.9899 8.42001 13.8799 8.82001 14.5299 9.47001Z"
+                      stroke="#6C688D"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M17.8198 5.77001C16.0698 4.45001 14.0698 3.73001 11.9998 3.73001C8.46984 3.73001 5.17984 5.81001 2.88984 9.41001C1.98984 10.82 1.98984 13.19 2.88984 14.6C3.67984 15.84 4.59984 16.91 5.59984 17.77"
+                      stroke="#6C688D"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8.41992 19.53C9.55992 20.01 10.7699 20.27 11.9999 20.27C15.5299 20.27 18.8199 18.19 21.1099 14.59C22.0099 13.18 22.0099 10.81 21.1099 9.39999C20.7799 8.87999 20.4199 8.38999 20.0499 7.92999"
+                      stroke="#6C688D"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M15.5104 12.7C15.2504 14.11 14.1004 15.26 12.6904 15.52"
+                      stroke="#6C688D"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9.47 14.53L2 22"
+                      stroke="#6C688D"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M22.0003 2L14.5303 9.47"
+                      stroke="#6C688D"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- button fields -->
+            <div class="bi-profile-edit-common-section">
+              <div class="profile-edit-btn-section">
+                <button type="reset" class="bi-profile-edit-common-btn cancel">
+                  Cancel
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="21"
+                    height="20"
+                    viewBox="0 0 21 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M16.7887 14.9617C16.9649 15.1378 17.0638 15.3767 17.0638 15.6258C17.0638 15.8749 16.9649 16.1137 16.7887 16.2898C16.6126 16.466 16.3737 16.5649 16.1247 16.5649C15.8756 16.5649 15.6367 16.466 15.4606 16.2898L10.5005 11.3281L5.53874 16.2883C5.36261 16.4644 5.12374 16.5633 4.87467 16.5633C4.6256 16.5633 4.38673 16.4644 4.21061 16.2883C4.03449 16.1122 3.93555 15.8733 3.93555 15.6242C3.93555 15.3751 4.03449 15.1363 4.21061 14.9602L9.17233 10L4.21217 5.03828C4.03605 4.86216 3.93711 4.62329 3.93711 4.37422C3.93711 4.12515 4.03605 3.88628 4.21217 3.71016C4.38829 3.53404 4.62716 3.43509 4.87624 3.43509C5.12531 3.43509 5.36418 3.53404 5.5403 3.71016L10.5005 8.67187L15.4622 3.70937C15.6383 3.53325 15.8772 3.43431 16.1262 3.43431C16.3753 3.43431 16.6142 3.53325 16.7903 3.70937C16.9664 3.88549 17.0654 4.12437 17.0654 4.37344C17.0654 4.62251 16.9664 4.86138 16.7903 5.0375L11.8286 10L16.7887 14.9617Z"
+                      fill="url(#paint0_linear_363_756)"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_363_756"
+                        x1="11.7748"
+                        y1="14.325"
+                        x2="14.5674"
+                        y2="4.23074"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#4A25E1" />
+                        <stop offset="0.927091" stop-color="#7B5AFF" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </button>
+                <button type="submit" class="bi-profile-edit-common-btn submit">
+                  Save
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="21"
+                    height="20"
+                    viewBox="0 0 21 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M18.6637 6.28829L8.66374 16.2883C8.57664 16.3757 8.47314 16.445 8.35919 16.4924C8.24524 16.5397 8.12306 16.564 7.99967 16.564C7.87628 16.564 7.75411 16.5397 7.64016 16.4924C7.5262 16.445 7.42271 16.3757 7.33561 16.2883L2.96061 11.9133C2.8734 11.8261 2.80423 11.7226 2.75703 11.6086C2.70984 11.4947 2.68555 11.3726 2.68555 11.2492C2.68555 11.1259 2.70984 11.0038 2.75703 10.8898C2.80423 10.7759 2.8734 10.6724 2.96061 10.5852C3.04782 10.498 3.15134 10.4288 3.26528 10.3816C3.37922 10.3344 3.50135 10.3101 3.62467 10.3101C3.748 10.3101 3.87012 10.3344 3.98406 10.3816C4.098 10.4288 4.20153 10.498 4.28874 10.5852L8.00045 14.2969L17.3372 4.96172C17.5133 4.7856 17.7522 4.68666 18.0012 4.68666C18.2503 4.68666 18.4892 4.7856 18.6653 4.96172C18.8414 5.13784 18.9404 5.37672 18.9404 5.62579C18.9404 5.87486 18.8414 6.11373 18.6653 6.28985L18.6637 6.28829Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- main area starts -->
+
+    <!-- Javascript Links -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <!--  intl-tel-input JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <!-- Optionally include the utils script for additional functionality -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+      
+    </script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

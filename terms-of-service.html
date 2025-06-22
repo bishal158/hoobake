@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>HOOBAKE</title>
+  <!-- ==== Favicon ==== -->
+  <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+  <!-- All Plugins CSS -->
+  <link rel="stylesheet" href="./assets/css/plugins/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/css/plugins/aos.css" />
+  <link rel="stylesheet" href="./assets/css/plugins/nice-select.min.css" />
+  <link rel="stylesheet" href="./assets/css/plugins/owl.carousel.min.css" />
+  <!-- Custom Css -->
+  <link rel="stylesheet" href="./assets/css/helper.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
+</head>
+
+<body>
+  <!-- header area starts -->
+  <header class="container page-top-header">
+    <div class="bi-header-logo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="123" height="24" viewBox="0 0 123 24" fill="none">
+        <g clip-path="url(#clip0_162_310)">
+          <path
+            d="M32.2411 9.6783C31.0325 9.01712 29.649 8.68652 28.0941 8.68652C26.5561 8.68652 25.1879 9.01712 23.986 9.6783C22.7859 10.3412 21.8387 11.2402 21.1461 12.377C20.4518 13.5122 20.1055 14.8362 20.1055 16.3441C20.1055 17.8166 20.4535 19.1305 21.1461 20.2842C21.8403 21.4396 22.7927 22.3471 24.0013 23.0083C25.21 23.6694 26.5748 24 28.0941 24C29.6303 24 31.0087 23.6694 32.2293 23.0083C33.4464 22.3471 34.3987 21.443 35.0845 20.2961C35.7669 19.1508 36.1098 17.8335 36.1098 16.3424C36.1098 14.8345 35.7669 13.5105 35.0845 12.3753C34.3987 11.2385 33.4532 10.3395 32.2411 9.6783ZM31.9882 18.8168C31.6046 19.5337 31.0732 20.0835 30.3993 20.4664C29.7237 20.8476 28.9547 21.0399 28.0924 21.0399C27.2657 21.0399 26.5171 20.8476 25.8431 20.4664C25.1675 20.0852 24.6328 19.5354 24.239 18.8168C23.8468 18.1 23.6482 17.2752 23.6482 16.3441C23.6482 15.3945 23.8451 14.5697 24.239 13.8714C24.6328 13.1731 25.1675 12.6334 25.8431 12.2505C26.5171 11.8693 27.2776 11.6787 28.1212 11.6787C28.9649 11.6787 29.7237 11.871 30.3993 12.2505C31.0732 12.6334 31.6029 13.1731 31.9882 13.8714C32.3719 14.5697 32.5671 15.3945 32.5671 16.3441C32.5671 17.2752 32.3736 18.1 31.9882 18.8168Z"
+            fill="#231E55" />
+          <path
+            d="M49.8036 9.6783C48.595 9.01712 47.2115 8.68652 45.6549 8.68652C44.1186 8.68652 42.7487 9.01712 41.5485 9.6783C40.3484 10.3412 39.4012 11.2402 38.7086 12.377C38.0143 13.5122 37.668 14.8362 37.668 16.3441C37.668 17.8166 38.016 19.1305 38.7086 20.2842C39.4029 21.4396 40.3535 22.3471 41.5638 23.0083C42.7725 23.6694 44.1373 24 45.6549 24C47.1928 24 48.5712 23.6694 49.7901 23.0083C51.0106 22.3471 51.9612 21.443 52.6436 20.2961C53.3294 19.1508 53.6706 17.8335 53.6706 16.3424C53.6706 14.8345 53.3277 13.5105 52.6436 12.3753C51.9612 11.2385 51.0123 10.3395 49.8036 9.6783ZM49.5507 18.8168C49.1671 19.5337 48.6357 20.0835 47.9618 20.4664C47.2862 20.8476 46.5189 21.0399 45.6549 21.0399C44.8299 21.0399 44.0796 20.8476 43.4056 20.4664C42.73 20.0852 42.197 19.5354 41.8032 18.8168C41.4093 18.1 41.2107 17.2752 41.2107 16.3441C41.2107 15.3945 41.4076 14.5697 41.8032 13.8714C42.1953 13.1731 42.73 12.6334 43.4056 12.2505C44.0813 11.8693 44.8417 11.6787 45.6837 11.6787C46.5291 11.6787 47.2862 11.871 47.9618 12.2505C48.6374 12.6334 49.1688 13.1731 49.5507 13.8714C49.9361 14.5697 50.1279 15.3945 50.1279 16.3441C50.1279 17.2752 49.9361 18.1 49.5507 18.8168Z"
+            fill="#231E55" />
+          <path
+            d="M68.2009 9.63598C67.0584 9.00347 65.753 8.68637 64.2914 8.68637C63.0522 8.68637 61.937 8.9613 60.9439 9.51117C60.3922 9.81646 59.9067 10.2145 59.4806 10.6969L59.4789 2.72559H55.9922L55.9939 23.8059H59.3414V21.8999C59.7777 22.4262 60.292 22.8546 60.8896 23.1785C61.903 23.7266 63.037 24.0016 64.2914 24.0016C65.753 24.0016 67.0584 23.6862 68.2009 23.052C69.3433 22.4195 70.2498 21.5306 70.9152 20.3836C71.5807 19.2383 71.9134 17.8924 71.9134 16.3457C71.9134 14.8192 71.5807 13.4766 70.9152 12.3229C70.2498 11.1641 69.3433 10.2702 68.2009 9.63598ZM67.7493 18.8167C67.3555 19.5335 66.8259 20.0834 66.1604 20.4663C65.495 20.8475 64.7311 21.0397 63.8687 21.0397C63.042 21.0397 62.2934 20.8475 61.6195 20.4663C60.9439 20.0851 60.4109 19.5352 60.017 18.8167C59.6232 18.0998 59.4263 17.275 59.4263 16.344C59.4263 15.3944 59.6232 14.5696 60.017 13.8713C60.4109 13.173 60.9456 12.6332 61.6195 12.2504C62.2951 11.8692 63.0437 11.6786 63.8687 11.6786C64.7311 11.6786 65.495 11.8709 66.1604 12.2504C66.8259 12.6332 67.3555 13.173 67.7493 13.8713C68.1431 14.5696 68.3401 15.3944 68.3401 16.344C68.3401 17.275 68.1431 18.0998 67.7493 18.8167Z"
+            fill="#231E55" />
+          <path
+            d="M40.5237 8.50423L39.6359 7.16162C37.8178 8.2799 35.9981 8.2799 34.1817 7.16162L33.2871 8.51604C34.5908 9.29192 35.6365 10.3242 36.4004 11.5926C36.5854 11.8996 36.7501 12.2183 36.8944 12.5472C37.0421 12.215 37.2084 11.8945 37.3968 11.5841C38.1709 10.3157 39.2217 9.28011 40.5237 8.50423Z"
+            fill="#231E55" />
+          <path
+            d="M28.1055 12.4697V13.9338C29.3124 13.9338 30.2936 15.0217 30.2936 16.3592H31.7671C31.7671 14.2138 30.1238 12.4697 28.1055 12.4697Z"
+            fill="#231E55" />
+          <path
+            d="M45.6289 12.4697V13.9338C46.8359 13.9338 47.817 15.0217 47.817 16.3592H49.2905C49.2888 14.2138 47.6473 12.4697 45.6289 12.4697Z"
+            fill="#231E55" />
+          <path
+            d="M13.8994 12.3198H3.65649V4.24219H0V23.8045H3.65649V15.4216H13.8994V23.8045H17.5559V4.24219H13.8994V12.3198Z"
+            fill="#231E55" />
+          <path
+            d="M107.555 8.88056H103.335L96.0509 15.5751V2.72412H92.5625V23.8045H96.0509V19.866L98.6397 17.4136L103.897 23.8045H108.144L101.261 15.1348L107.555 8.88056Z"
+            fill="#231E55" />
+          <path
+            d="M118.287 20.6469C117.624 20.9269 116.866 21.0669 116.024 21.0669C115.03 21.0669 114.157 20.8746 113.407 20.4934C112.658 20.1122 112.076 19.5522 111.662 18.8168C111.584 18.6785 111.518 18.5318 111.455 18.3833L122.998 16.2041C122.961 14.6203 122.599 13.2693 121.915 12.151C121.229 11.0344 120.321 10.1759 119.187 9.58047C118.053 8.98338 116.792 8.68652 115.403 8.68652C113.886 8.68652 112.543 9.01712 111.38 9.6783C110.217 10.3412 109.304 11.2436 108.639 12.3888C107.971 13.5341 107.639 14.8531 107.639 16.3424C107.639 17.8335 107.982 19.1508 108.667 20.2961C109.35 21.443 110.317 22.3471 111.563 23.0083C112.811 23.6694 114.268 24 115.938 24C117.23 24 118.389 23.7959 119.411 23.3861C120.433 22.9779 121.282 22.3791 121.957 21.5982L120.1 19.419C119.559 19.9587 118.953 20.3686 118.287 20.6469ZM111.046 16.1485C111.046 15.1989 111.229 14.3741 111.594 13.6758C111.959 12.9775 112.472 12.4462 113.125 12.0835C113.784 11.7209 114.541 11.5387 115.405 11.5387C116.249 11.5387 116.989 11.7209 117.629 12.0835C118.265 12.4462 118.769 12.9539 119.146 13.6066C119.319 13.9035 119.443 14.2256 119.53 14.5663L111.046 16.1603V16.1485Z"
+            fill="#231E55" />
+          <path
+            d="M85.9125 10.6937C85.4932 10.2113 85.0111 9.81497 84.4645 9.50968C84.271 9.4051 84.0774 9.30727 83.8737 9.22125L83.1862 10.4222C83.3407 10.5824 83.4612 10.7781 83.5325 11.0041C83.7226 11.6164 83.945 12.4951 84.0367 13.4515C86.1009 13.605 87.5557 13.9356 87.6558 14.3184C87.6609 14.3336 87.6626 14.3471 87.6626 14.3623C87.6626 14.6946 86.639 14.9914 85.0705 15.1753C84.7412 15.2107 84.3881 15.2444 84.0146 15.2697C83.7685 15.2883 83.5138 15.3035 83.2524 15.3153C83.3577 14.6895 83.3492 14.0283 83.2796 13.4059C83.2558 13.1766 83.2219 12.9539 83.1845 12.7363C83.1234 12.9505 83.047 13.1698 82.9622 13.3908C82.7754 13.8765 82.5378 14.3724 82.2662 14.8481C82.166 15.0201 82.0642 15.1888 81.9572 15.3558C81.7925 15.3575 81.6262 15.3608 81.4564 15.3608C81.3206 15.3608 81.1865 15.3608 81.0558 15.3591C81.2408 15.0977 81.4293 14.8076 81.6126 14.4837C81.8401 14.0874 82.0217 13.7146 82.166 13.3705C82.772 11.9318 82.7364 10.9585 82.4834 10.8169C82.1694 10.6398 80.937 11.3954 79.781 13.4026C79.7742 13.4144 79.7657 13.4262 79.7606 13.438C79.3668 14.1262 79.1037 14.7502 78.9407 15.2782C78.8541 15.2714 78.7692 15.2664 78.6861 15.2596C78.5129 15.2444 78.3432 15.2309 78.1802 15.2141C78.3432 14.6457 78.5927 14.0418 78.8983 13.4532C78.9662 13.325 79.0358 13.1985 79.1087 13.072C79.5043 12.3787 79.9762 11.726 80.4634 11.2048C79.3956 11.6096 78.2175 12.2404 77.5131 13.1968C77.4095 13.3385 77.3246 13.4835 77.2567 13.6286C77.0581 14.084 77.0411 14.5681 77.2109 15.0943C76.9104 15.0488 76.6388 14.9999 76.4012 14.9442C75.6848 14.7806 75.2638 14.5816 75.2553 14.369C75.2553 14.3674 75.2553 14.3674 75.2553 14.3657C75.2553 14.3623 75.2553 14.3623 75.2553 14.3589C75.2553 14.3387 75.2621 14.3168 75.2723 14.2931C75.3521 14.1042 75.7663 13.9271 76.4216 13.7787C76.5081 13.4211 76.6711 13.077 76.9087 12.7549C78.1208 11.1104 80.4838 10.3345 81.7858 10.0191C82.0166 9.96171 82.2475 9.96508 82.4648 10.0157L83.0759 8.94632C82.4563 8.77596 81.7892 8.68994 81.0796 8.68994C79.6367 8.68994 78.3415 9.00535 77.1973 9.63955C76.0549 10.2737 75.1535 11.166 74.4965 12.3231C73.8413 13.4768 73.5137 14.8211 73.5137 16.3475C73.5137 17.8926 73.843 19.2385 74.4965 20.3838C75.1535 21.5308 76.0549 22.4196 77.1973 23.0538C78.3415 23.688 79.6367 24.0035 81.0796 24.0035C82.3918 24.0035 83.5427 23.7268 84.5239 23.1803C85.1231 22.8447 85.6426 22.4011 86.0873 21.8495V23.8078H89.4332V8.88054H85.9125V10.6937ZM86.9055 17.7441C86.3504 18.7494 85.6035 19.5202 84.6614 20.0515C84.4747 20.1561 84.2828 20.2522 84.0842 20.3383V20.4412C84.0842 21.0248 83.6072 21.4987 83.0199 21.4987H79.8472C79.2564 21.4987 78.7794 21.0248 78.7794 20.4412V20.2826C78.6249 20.2134 78.4705 20.1359 78.3211 20.0515C77.3773 19.5185 76.627 18.7477 76.0837 17.7441C75.6628 16.9834 75.4013 16.135 75.2995 15.2006C75.6067 15.3507 76.0345 15.4772 76.5947 15.5835C76.7152 15.6071 76.8425 15.6273 76.9766 15.6493C77.1413 15.6762 77.3162 15.7015 77.4944 15.7235C77.6726 15.7488 77.8543 15.769 78.0427 15.7892C78.2481 15.8095 78.4586 15.8297 78.6759 15.8466C78.6776 15.8483 78.6776 15.8483 78.6793 15.8466C78.7149 15.8483 78.754 15.8533 78.7913 15.855C79.3634 15.8989 79.9711 15.9292 80.6026 15.9427C80.8827 15.9495 81.1662 15.9512 81.4547 15.9512H81.5464C82.0777 15.9495 82.6023 15.9394 83.1047 15.9157C83.3763 15.9039 83.6412 15.8888 83.8975 15.8719C84.0231 15.8635 84.1453 15.855 84.2659 15.8449H84.2676C84.8787 15.796 85.4423 15.7319 85.9379 15.6509C86.7392 15.5227 87.3112 15.3693 87.6847 15.1685C87.5879 16.1148 87.3282 16.975 86.9055 17.7441Z"
+            fill="#231E55" />
+          <path
+            d="M85.5747 6.24246L86.5015 6.76702L89.1107 2.20114C89.513 1.49273 89.2634 0.593717 88.5539 0.192283C88.3213 0.0607211 88.0718 0 87.8239 0C87.3096 0 86.8037 0.269871 86.5338 0.74552L83.9247 5.31141L84.8515 5.83428L83.0742 8.94455C83.3526 9.02045 83.6174 9.11322 83.8755 9.22285L85.5747 6.24246Z"
+            fill="#231E55" />
+        </g>
+        <defs>
+          <clipPath id="clip0_162_310">
+            <rect width="123" height="24" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+    <div class="bi-header-routes">
+      <a href="index.html" class="bi-header-route active"> Home page </a>
+      <a href="about.html" class="bi-header-route "> About Us </a>
+      <a href="#faqs" class="bi-header-route"> FAQ </a>
+      <a href="join-option.html" class="common-btn"> Join now </a>
+    </div>
+    <!-- mobile header routes  -->
+    <div class="mobile-header-routes">
+      <svg id="open-mobile-header" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+        fill="none">
+        <path d="M12 4.5H3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12 9.5H3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M21 14.5H3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M21 19.5H3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <div class="mobile-header-routes-box">
+        <a href="index.html" class="bi-header-route active"> Home page </a>
+        <a href="about.html" class="bi-header-route "> About Us </a>
+        <a href="#faqs" class="bi-header-route"> FAQ </a>
+        <a href="join-option.html" class="bi-header-route join-now">
+          Join Now
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- header area starts -->
+
+  <!-- main area starts -->
+  <main>
+    <div class="hoobake-terms-and-policy--page--wrapper">
+      <div class="container hoobake-terms-and-policy--page--container">
+        <!-- heading -->
+        <div class="terms-and-privacy--heading">
+          <h1 class="terms-and-privacy--heading-title">Hoobake Terms of Service Agreement</h1>
+          <h2 class="terms-and-privacy--heading-subtitle"> Effective date: August 24, 2024</h2>
+        </div>
+        <!-- description -->
+        <p class="terms-and-privacy--heading-des">Welcome to Hoobake! By accessing or using our website and services,
+          you agree to comply with and be bound by the
+          following Terms of Service Agreement (“Agreement”). If you do not agree with any part of these terms, please
+          do not use
+          our services.</p>
+        <!-- rules -->
+        <div class="terms-policy--rules--container">
+
+          <!-- rule 1 -->
+          <div class="terms-policy--rule">
+            <div class="terms-policy--rule--title">1. Acceptance of Terms</div>
+            <p class="terms-policy--rule--text">By using Hoobake's website and services, you acknowledge that you have
+              read, understood, and agree to be bound by this
+              Agreement.</p>
+          </div>
+          <!-- rule 2 -->
+          <div class="terms-policy--rule">
+            <div class="terms-policy--rule--title">2. Eligibility</div>
+            <p class="terms-policy--rule--text">You must be at least 18 years old to use our services. By using Hoobake,
+              you represent and warrant that you are at least
+              18 years of age and have the legal capacity to enter into this Agreement.</p>
+          </div>
+          <!-- rule 3 -->
+          <div class="terms-policy--rule">
+            <div class="terms-policy--rule--title">3. Services Provided</div>
+            <p class="terms-policy--rule--text">Hoobake is designed to connect customers with local bakers based on the
+              customers’ specific needs. Our services include
+              an AI-powered search engine, customer reviews, and communication tools to facilitate interactions between
+              customers and
+              bakers.</p>
+          </div>
+          <!-- rule 4 -->
+          <div class="terms-policy--rule">
+            <div class="terms-policy--rule--title">4. User Responsibilities</div>
+            <p class="terms-policy--rule--text">
+              - Account Creation: If you create an account on our website, you are responsible for maintaining the
+              confidentiality of
+              your account information and for all activities that occur under your account. <br>
+              - User Conduct: You agree not to engage in any conduct that is illegal, harmful, or disruptive to other
+              users and the
+              services we provide. This includes, but is not limited to, harassment, spamming, or impersonating other
+              users.
+            </p>
+          </div>
+          <!-- rule 5 -->
+          <div class="terms-policy--rule">
+            <div class="terms-policy--rule--title">5. Baker Responsibilities</div>
+            <p class="terms-policy--rule--text">
+              As a baker using our platform, you agree to provide accurate information in your profile and maintain the
+              quality of
+              service you advertise. You are responsible for fulfilling orders placed by customers and ensuring that all
+              products meet
+              local health and safety standards.
+            </p>
+          </div>
+
+          <!-- rule 6 -->
+          <div class="terms-policy--rule">
+            <div class="terms-policy--rule--title">6. Payments and Fees</div>
+            <p class="terms-policy--rule--text">
+              All financial transactions conducted through Hoobake will be subject to the fees and payment terms
+              established on our
+              platform. We reserve the right to change our fees at any time with notice provided to you.
+            </p>
+          </div>
+          <!-- rule 7 -->
+          <div class="terms-policy--rule">
+            <div class="terms-policy--rule--title">7. Intellectual Property</div>
+            <p class="terms-policy--rule--text">
+              All content on the Hoobake website, including text, graphics, logos, and software, is the property of
+              Hoobake or our
+              content providers and is protected by applicable intellectual property laws. You are granted a limited,
+              non-exclusive
+              license to access and use our services for personal, non-commercial use.
+            </p>
+          </div>
+
+          <!-- rule 8 -->
+          <div class="terms-policy--rule">
+            <div class="terms-policy--rule--title">8. Limitation of Liability</div>
+            <p class="terms-policy--rule--text">
+              Hoobake shall not be liable for any indirect, incidental, consequential, or punitive damages arising from
+              your use of
+              our services or inability to use our services. We do not guarantee the quality, safety, or legitimacy of
+              the services
+              provided by bakers on our platform..
+            </p>
+          </div>
+
+          <!-- rule 9 -->
+          <div class="terms-policy--rule">
+            <div class="terms-policy--rule--title">9. Indemnification</div>
+            <p class="terms-policy--rule--text">
+              You agree to indemnify, defend, and hold harmless Hoobake, its affiliates, and their respective officers,
+              directors,
+              employees, and agents from any claims, liabilities, losses, damages, costs, or expenses (including
+              attorney’s fees)
+              arising from your use of the services, your violation of these terms, or your infringement of any
+              third-party rights.
+            </p>
+          </div>
+
+          <!-- rule 10 -->
+          <div class="terms-policy--rule">
+            <div class="terms-policy--rule--title">10. Modifications to Terms</div>
+            <p class="terms-policy--rule--text">
+              Hoobake reserves the right to modify these Terms of Service at any time. We will notify you of any changes
+              by posting
+              the new terms on our website. Your continued use of our services after such modifications constitutes your
+              acceptance of
+              the new terms.
+            </p>
+          </div>
+
+          <!-- rule 11 -->
+          <div class="terms-policy--rule">
+            <div class="terms-policy--rule--title">11. Governing Law</div>
+            <p class="terms-policy--rule--text">
+              This Agreement shall be governed by and construed in accordance with the laws of the state in which
+              Hoobake operates,
+              without regard to its conflict of law principles.
+            </p>
+          </div>
+
+          <!-- rule 12 -->
+          <div class="terms-policy--rule">
+            <div class="terms-policy--rule--title">12. Contact Information</div>
+            <p class="terms-policy--rule--text">
+              For any questions or concerns regarding these Terms of Service, please contact us at support@hoobake.com .
+            </p>
+          </div>
+
+          <!-- rule 13 -->
+          <div class="terms-policy--rule">
+            <div class="terms-policy--rule--title">13. Services Disputes and Resolutions</div>
+            <p class="terms-policy--rule--text">
+              If you enter into a contract or otherwise reach an agreement with a baker through Hoobake, we will not
+              guarantee or
+              warrant their performance, outcome, or quality of the services performed. The bakers listed on our
+              platform are
+              independent and are not employees or agents of Hoobake, nor are we an agent of the bakers. We do not
+              perform, and will
+              not be responsible for, any of the services requested by you in your service request. The applicable
+              federal, state,
+              provincial, and/or local laws shall govern your rights. <br>
+              Should you have a dispute or claim for damages with any baker, you must address such dispute directly with
+              the baker.
+              YOU HEREBY AGREE TO RELEASE HOOBAKE (AND OUR OFFICERS, DIRECTORS, AFFILIATES, EMPLOYEES, AND AGENTS) FROM
+              ANY DAMAGES OR
+              CLAIMS (INCLUDING CONSEQUENTIAL AND INCIDENTAL DAMAGES) OF EVERY KIND OR NATURE, SUSPECTED AND
+              UNSUSPECTED, KNOWN AND
+              UNKNOWN, AND DISCLOSED OR UNDISCLOSED, ARISING OUT OF OR IN ANY WAY CONNECTED WITH SUCH DISPUTES AND YOUR
+              DEALINGS WITH
+              BAKERS. <br>
+              In the event of a dispute, we encourage users to engage in good faith communication to resolve issues
+              amicably. However,
+              if a resolution cannot be reached, you retain the right to pursue available legal remedies through the
+              appropriate
+              channels.
+            </p>
+          </div>
+
+          <!-- rule 14 -->
+          <div class="terms-policy--rule">
+            <div class="terms-policy--rule--title">14. Information You Provide to Us</div>
+            <p class="terms-policy--rule--text">
+              Upon using Hoobake's services, you will be prompted to disclose certain information about yourself and
+              your baking
+              requirements on our site. Some of this information may be shared with bakers who will use this information
+              to respond to
+              your inquiries or to other persons or entities in connection with our business. <br>
+              By providing this information to us, or by submitting a service request, you are expressly consenting to
+              be contacted by
+              us and by the bakers through our platform via phone, email, or other reasonable means at any of your
+              contact numbers or
+              addresses, even if you are listed on any federal, state, provincial, or other applicable “Do Not Contact”
+              list. This
+              communication may include information necessary for us to provide the services set forth on our site, to
+              service your
+              account, to reasonably address matters pertaining to your account, or for other purposes reasonably
+              related to your
+              service request and our business, including marketing-related emails, provided you agree to receive such
+              emails. <br>
+              For complete details on our use of your information, please see our Privacy Statement. By completing a
+              service inquiry,
+              you acknowledge that you are entering into a business relationship with Hoobake and our partners, and
+              therefore agree to
+              be contacted by Hoobake and/or its partners regarding your inquiries and other related matters. <br>
+              You promise that all information you provide will be accurate, current, and truthful to the best of your
+              knowledge. If
+              you provide any information that is untrue, not current, or incomplete, or if Hoobake has reasonable
+              grounds to suspect
+              that such information is untrue, inaccurate, not current, or incomplete, Hoobake has the right to refuse
+              any current or
+              future use of the services (or any portion thereof) by you. You are responsible for any use of Hoobake
+              services by
+              persons to whom you intentionally or negligently allow access to your account or password. <br>
+              By using Hoobake, you acknowledge that you have read, understood, and agree to be bound by these Terms of
+              Service. Thank
+              you for choosing Hoobake!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- main area starts -->
+
+  <!-- footer area starts -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-inner-container">
+        <div class="footer-links">
+          <!-- box 1 -->
+          <div class="footer-link-box">
+            <div class="footer-text-title">For Clients</div>
+            <a href="#" class="footer-link">How to Hire</a>
+            <a href="#" class="footer-link">Talent Marketplace</a>
+            <a href="#" class="footer-link">Project Catalog</a>
+            <a href="#" class="footer-link">Hire Agency</a>
+            <a href="#" class="footer-link">Enterprise</a>
+            <a href="#" class="footer-link">Any Hire</a>
+            <a href="#" class="footer-link">Hire in Worldwide</a>
+            <a href="#" class="footer-link">Hire in USA</a>
+          </div>
+
+          <!-- box 2 -->
+          <div class="footer-link-box">
+            <div class="footer-text-title">For Talent</div>
+            <a href="#" class="footer-link">How to Find Work</a>
+            <a href="#" class="footer-link">Find Freelance Jobs Worldwide</a>
+            <a href="#" class="footer-link">Find Freelance Jobs in the USA</a>
+            <a href="#" class="footer-link">Win Work with Ads</a>
+            <a href="#" class="footer-link">Exclusive resources with Freelancer Plus</a>
+          </div>
+          <!-- box 3 -->
+          <div class="footer-link-box">
+            <div class="footer-text-title">Resources</div>
+            <a href="#" class="footer-link">Help & Support</a>
+            <a href="#" class="footer-link">Success Stories</a>
+            <a href="#" class="footer-link">Reviews</a>
+            <a href="#" class="footer-link">Resources Blog</a>
+            <a href="#" class="footer-link">Community</a>
+          </div>
+          <!-- box 4 -->
+          <div class="footer-link-box">
+            <div class="footer-text-title">Careers</div>
+            <a href="#" class="footer-link">About Us</a>
+            <a href="#" class="footer-link">Leadership</a>
+            <a href="#" class="footer-link">Investor Relations</a>
+            <a href="#" class="footer-link">Careers</a>
+            <a href="#" class="footer-link">Our Impact</a>
+            <a href="#" class="footer-link">Careers</a>
+            <a href="#" class="footer-link">Press</a>
+            <a href="#" class="footer-link">Contact Us</a>
+            <a href="#" class="footer-link">Trust, Safety & Security</a>
+            <a href="#" class="footer-link">Modern Slavery Statement</a>
+          </div>
+        </div>
+        <div class="footer-logo-and-socials">
+          <div class="footer-logo">
+            <svg width="277" height="55" viewBox="0 0 277 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M153.588 21.8404C151.015 20.4068 148.075 19.6881 144.784 19.6881C141.993 19.6881 139.482 20.3113 137.245 21.5575C136.003 22.2495 134.909 23.1517 133.95 24.245L133.946 6.17798H126.094L126.098 53.9566H133.636V49.6367C134.619 50.8295 135.777 51.8005 137.123 52.5345C139.405 53.777 141.959 54.4001 144.784 54.4001C148.075 54.4001 151.015 53.6852 153.588 52.2478C156.161 50.8142 158.202 48.7995 159.701 46.2C161.199 43.6042 161.949 40.5535 161.949 37.0479C161.949 33.5882 161.199 30.5452 159.701 27.9303C158.202 25.304 156.161 23.2778 153.588 21.8404ZM152.571 42.6485C151.684 44.2732 150.492 45.5195 148.993 46.3873C147.494 47.2513 145.774 47.6871 143.832 47.6871C141.97 47.6871 140.284 47.2513 138.767 46.3873C137.245 45.5233 136.045 44.277 135.158 42.6485C134.271 41.0237 133.827 39.1544 133.827 37.0441C133.827 34.8918 134.271 33.0224 135.158 31.4397C136.045 29.857 137.249 28.6337 138.767 27.7659C140.288 26.9019 141.974 26.47 143.832 26.47C145.774 26.47 147.494 26.9058 148.993 27.7659C150.492 28.6337 151.684 29.857 152.571 31.4397C153.458 33.0224 153.902 34.8918 153.902 37.0441C153.902 39.1544 153.458 41.0237 152.571 42.6485Z"
+                fill="#C8A88A" />
+              <path
+                d="M63.2969 28.2627V31.581C66.015 31.581 68.2246 34.0467 68.2246 37.0783H71.5429C71.5429 32.2156 67.8423 28.2627 63.2969 28.2627Z"
+                fill="#C8A88A" />
+              <path
+                d="M72.6053 21.9359C69.8834 20.4373 66.7678 19.688 63.266 19.688C59.8024 19.688 56.7212 20.4373 54.0145 21.9359C51.3118 23.4383 49.1786 25.4759 47.6188 28.0525C46.0553 30.6253 45.2754 33.6263 45.2754 37.044C45.2754 40.3814 46.0591 43.3594 47.6188 45.9743C49.1824 48.593 51.327 50.6497 54.049 52.1483C56.7709 53.6468 59.8445 54.3961 63.266 54.3961C66.7257 54.3961 69.8299 53.6468 72.5786 52.1483C75.3196 50.6497 77.4642 48.6006 79.0087 46.001C80.5455 43.4053 81.3177 40.4196 81.3177 37.0401C81.3177 33.6225 80.5455 30.6215 79.0087 28.0487C77.4642 25.472 75.3349 23.4344 72.6053 21.9359ZM72.0357 42.6483C71.1717 44.2731 69.9752 45.5194 68.4575 46.3871C66.936 47.2511 65.2042 47.6869 63.2622 47.6869C61.4004 47.6869 59.7145 47.2511 58.1968 46.3871C56.6753 45.5232 55.4711 44.2769 54.5842 42.6483C53.7011 41.0236 53.2538 39.1542 53.2538 37.044C53.2538 34.8917 53.6972 33.0223 54.5842 31.4396C55.4711 29.8569 56.6753 28.6336 58.1968 27.7658C59.7145 26.9018 61.4272 26.4698 63.3271 26.4698C65.2271 26.4698 66.936 26.9056 68.4575 27.7658C69.9752 28.6336 71.1679 29.8569 72.0357 31.4396C72.8997 33.0223 73.3393 34.8917 73.3393 37.044C73.3393 39.1542 72.9035 41.0236 72.0357 42.6483Z"
+                fill="#C8A88A" />
+              <path
+                d="M112.156 21.9359C109.434 20.4373 106.319 19.688 102.813 19.688C99.3532 19.688 96.2681 20.4373 93.5653 21.9359C90.8625 23.4383 88.7294 25.4759 87.1696 28.0525C85.606 30.6253 84.8262 33.6263 84.8262 37.044C84.8262 40.3814 85.6099 43.3594 87.1696 45.9743C88.7332 48.593 90.874 50.6497 93.5997 52.1483C96.3216 53.6468 99.3953 54.3961 102.813 54.3961C106.276 54.3961 109.381 53.6468 112.126 52.1483C114.874 50.6497 117.015 48.6006 118.552 46.001C120.096 43.4053 120.865 40.4196 120.865 37.0401C120.865 33.6225 120.092 30.6215 118.552 28.0487C117.015 25.472 114.878 23.4344 112.156 21.9359ZM111.587 42.6483C110.723 44.2731 109.526 45.5194 108.008 46.3871C106.487 47.2511 104.759 47.6869 102.813 47.6869C100.955 47.6869 99.2653 47.2511 97.7476 46.3871C96.2261 45.5232 95.0257 44.2769 94.1388 42.6483C93.2519 41.0236 92.8046 39.1542 92.8046 37.044C92.8046 34.8917 93.248 33.0223 94.1388 31.4396C95.0219 29.8569 96.2261 28.6336 97.7476 27.7658C99.2691 26.9018 100.982 26.4698 102.878 26.4698C104.782 26.4698 106.487 26.9056 108.008 27.7658C109.53 28.6336 110.726 29.8569 111.587 31.4396C112.454 33.0223 112.886 34.8917 112.886 37.044C112.886 39.1542 112.454 41.0236 111.587 42.6483Z"
+                fill="#C8A88A" />
+              <path
+                d="M91.2599 19.275L89.2606 16.2319C85.1662 18.7665 81.0681 18.7665 76.9776 16.2319L74.9629 19.3017C77.8989 21.0603 80.2538 23.3999 81.9741 26.2747C82.3908 26.9705 82.7616 27.693 83.0866 28.4385C83.4192 27.6854 83.7938 26.959 84.2181 26.2556C85.9614 23.3808 88.3278 21.0335 91.2599 19.275Z"
+                fill="#C8A88A" />
+              <path
+                d="M102.76 28.2627V31.581C105.478 31.581 107.687 34.0467 107.687 37.0783H111.006C111.002 32.2156 107.305 28.2627 102.76 28.2627Z"
+                fill="#C8A88A" />
+              <path
+                d="M31.3019 27.9226H8.23454V9.61475H0V53.9528H8.23454V34.953H31.3019V53.9528H39.5365V9.61475H31.3019V27.9226Z"
+                fill="#C8A88A" />
+              <path
+                d="M242.215 20.1277H232.711L216.307 35.3008V6.17407H208.451V53.9527H216.307V45.0262L222.137 39.4677L233.977 53.9527H243.542L228.04 34.303L242.215 20.1277Z"
+                fill="#C8A88A" />
+              <path
+                d="M266.387 46.7962C264.893 47.4308 263.188 47.7481 261.291 47.7481C259.051 47.7481 257.086 47.3123 255.396 46.4483C253.711 45.5843 252.399 44.3151 251.467 42.6483C251.291 42.3349 251.142 42.0023 251 41.6659L276.996 36.7267C276.912 33.137 276.097 30.0748 274.557 27.5402C273.012 25.0095 270.967 23.0636 268.413 21.7141C265.86 20.3608 263.019 19.688 259.892 19.688C256.475 19.688 253.451 20.4373 250.832 21.9359C248.213 23.4383 246.157 25.4835 244.658 28.0793C243.156 30.675 242.406 33.6645 242.406 37.0401C242.406 40.4196 243.178 43.4053 244.723 46.001C246.26 48.6006 248.439 50.6497 251.245 52.1483C254.055 53.6468 257.335 54.3961 261.096 54.3961C264.006 54.3961 266.617 53.9336 268.918 53.0046C271.219 52.0795 273.131 50.7223 274.652 48.9523L270.47 44.0131C269.251 45.2365 267.886 46.1654 266.387 46.7962ZM250.079 36.6005C250.079 34.4482 250.492 32.5788 251.314 30.9961C252.136 29.4135 253.29 28.2092 254.762 27.3873C256.245 26.5654 257.95 26.1525 259.896 26.1525C261.796 26.1525 263.463 26.5654 264.904 27.3873C266.338 28.2092 267.473 29.3599 268.322 30.8394C268.712 31.5122 268.991 32.2424 269.186 33.0146L250.079 36.6273V36.6005Z"
+                fill="#C8A88A" />
+              <path
+                d="M193.477 24.2369C192.533 23.1436 191.447 22.2452 190.216 21.5532C189.78 21.3162 189.345 21.0945 188.886 20.8995L187.338 23.6214C187.685 23.9846 187.957 24.4281 188.117 24.9403C188.546 26.3281 189.046 28.3198 189.253 30.4874C193.902 30.8353 197.178 31.5845 197.403 32.4523C197.415 32.4867 197.419 32.5173 197.419 32.5517C197.419 33.3049 195.113 33.9777 191.581 34.3944C190.839 34.4747 190.044 34.5511 189.203 34.6085C188.649 34.6505 188.075 34.6849 187.487 34.7117C187.724 33.2934 187.705 31.7948 187.548 30.3842C187.494 29.8642 187.418 29.3596 187.334 28.8665C187.196 29.352 187.024 29.8489 186.833 30.3497C186.412 31.4507 185.877 32.5747 185.266 33.6527C185.04 34.0427 184.811 34.425 184.57 34.8034C184.199 34.8073 183.824 34.8149 183.442 34.8149C183.136 34.8149 182.834 34.8149 182.54 34.8111C182.957 34.2185 183.381 33.561 183.794 32.827C184.306 31.9286 184.715 31.0837 185.04 30.3039C186.405 27.0429 186.325 24.8371 185.755 24.516C185.048 24.1146 182.272 25.8273 179.669 30.3765C179.654 30.4033 179.634 30.43 179.623 30.4568C178.736 32.0165 178.144 33.431 177.777 34.6276C177.582 34.6123 177.39 34.6008 177.203 34.5855C176.813 34.5511 176.431 34.5205 176.064 34.4823C176.431 33.194 176.993 31.8254 177.681 30.4912C177.834 30.2007 177.991 29.9139 178.155 29.6272C179.046 28.056 180.108 26.5765 181.206 25.3953C178.801 26.3128 176.148 27.7425 174.561 29.9101C174.328 30.2312 174.137 30.56 173.984 30.8888C173.537 31.921 173.499 33.0181 173.881 34.2109C173.204 34.1077 172.593 33.9968 172.057 33.8706C170.444 33.4998 169.496 33.0487 169.477 32.567C169.477 32.5632 169.477 32.5632 169.477 32.5594C169.477 32.5517 169.477 32.5517 169.477 32.5441C169.477 32.4982 169.492 32.4485 169.515 32.395C169.695 31.9668 170.628 31.5654 172.103 31.229C172.298 30.4186 172.665 29.6387 173.2 28.9085C175.93 25.1812 181.252 23.4226 184.184 22.7078C184.704 22.5778 185.224 22.5854 185.713 22.7001L187.089 20.2764C185.694 19.8903 184.191 19.6953 182.593 19.6953C179.344 19.6953 176.427 20.4102 173.85 21.8476C171.278 23.285 169.248 25.3073 167.768 27.9298C166.293 30.5447 165.555 33.5916 165.555 37.0513C165.555 40.5531 166.296 43.6038 167.768 46.1995C169.248 48.7991 171.278 50.8137 173.85 52.2512C176.427 53.6886 179.344 54.4035 182.593 54.4035C185.548 54.4035 188.14 53.7765 190.35 52.5379C191.7 51.7771 192.869 50.7717 193.871 49.5216V53.96H201.406V20.1273H193.477V24.2369ZM195.714 40.2167C194.463 42.4951 192.781 44.2422 190.66 45.4464C190.239 45.6834 189.807 45.9013 189.36 46.0963V46.3295C189.36 47.6522 188.286 48.7264 186.963 48.7264H179.818C178.488 48.7264 177.413 47.6522 177.413 46.3295V45.9701C177.065 45.8134 176.718 45.6375 176.381 45.4464C174.256 44.2384 172.566 42.4913 171.343 40.2167C170.394 38.4925 169.806 36.5696 169.576 34.4517C170.268 34.792 171.232 35.0787 172.493 35.3195C172.765 35.373 173.051 35.4189 173.353 35.4686C173.724 35.5298 174.118 35.5871 174.519 35.6368C174.921 35.6942 175.33 35.74 175.754 35.7859C176.217 35.8318 176.691 35.8777 177.18 35.9159C177.184 35.9197 177.184 35.9197 177.188 35.9159C177.268 35.9197 177.356 35.9312 177.44 35.935C178.728 36.0344 180.097 36.1032 181.519 36.1338C182.15 36.1491 182.788 36.1529 183.438 36.1529H183.645C184.841 36.1491 186.023 36.1262 187.154 36.0726C187.766 36.0459 188.362 36.0115 188.939 35.9732C189.222 35.9541 189.498 35.935 189.769 35.9121H189.773C191.149 35.8012 192.418 35.6559 193.535 35.4724C195.339 35.1819 196.627 34.834 197.468 34.3791C197.25 36.5237 196.665 38.4734 195.714 40.2167Z"
+                fill="#C8A88A" />
+              <path
+                d="M192.717 14.1486L194.804 15.3375L200.68 4.98889C201.586 3.38327 201.024 1.34566 199.426 0.435811C198.903 0.137625 198.341 0 197.782 0C196.624 0 195.485 0.611665 194.877 1.68972L189.001 12.0383L191.089 13.2234L187.086 20.2729C187.713 20.4449 188.309 20.6552 188.89 20.9036L192.717 14.1486Z"
+                fill="#C8A88A" />
+            </svg>
+          </div>
+          <div class="footer-socials">
+            <a href="#" class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                <path
+                  d="M12.5039 2.396C6.98106 2.396 2.50391 6.87315 2.50391 12.396C2.50391 17.3873 6.16076 21.5243 10.9414 22.2745V15.2866H8.40234V12.396H10.9414V10.1929C10.9414 7.68663 12.4343 6.30225 14.7185 6.30225C15.8126 6.30225 16.957 6.49756 16.957 6.49756V8.9585H15.696C14.4538 8.9585 14.0664 9.72934 14.0664 10.5202V12.396H16.8398L16.3965 15.2866H14.0664V22.2745C18.847 21.5243 22.5039 17.3873 22.5039 12.396C22.5039 6.87315 18.0267 2.396 12.5039 2.396Z"
+                  fill="white" fill-opacity="0.79" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                <path
+                  d="M8.49609 2.396H1.49609L9.75695 13.4105L1.94604 22.3959H4.59607L10.9844 15.047L16.4961 22.396H23.4961L14.8878 10.9183L22.2962 2.396H19.6462L13.6604 9.28178L8.49609 2.396ZM17.4961 20.396L5.49609 4.396H7.49609L19.4961 20.396H17.4961Z"
+                  fill="white" fill-opacity="0.79" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <path
+                  d="M12.002 9.396C10.3446 9.396 9.00195 10.7391 9.00195 12.396C9.00195 14.0533 10.3451 15.396 12.002 15.396C13.6593 15.396 15.002 14.0529 15.002 12.396C15.002 10.7387 13.6589 9.396 12.002 9.396ZM12.002 7.396C14.7624 7.396 17.002 9.6331 17.002 12.396C17.002 15.1565 14.7649 17.396 12.002 17.396C9.24148 17.396 7.00195 15.1589 7.00195 12.396C7.00195 9.63553 9.23905 7.396 12.002 7.396ZM18.502 7.14515C18.502 7.83526 17.9412 8.39517 17.252 8.39517C16.5619 8.39517 16.002 7.8344 16.002 7.14515C16.002 6.4559 16.5627 5.896 17.252 5.896C17.9403 5.89513 18.502 6.4559 18.502 7.14515ZM12.002 4.396C9.52747 4.396 9.12415 4.40255 7.97324 4.4538C7.18912 4.49061 6.6635 4.59607 6.17513 4.78567C5.74113 4.95399 5.42806 5.15498 5.09449 5.48855C4.75964 5.8234 4.55901 6.13563 4.39137 6.56983C4.20133 7.05932 4.0959 7.58411 4.05975 8.36715C4.008 9.4712 4.00195 9.85705 4.00195 12.396C4.00195 14.8705 4.0085 15.2738 4.05974 16.4246C4.09657 17.2084 4.20217 17.7348 4.39131 18.222C4.56007 18.6566 4.76147 18.9704 5.09343 19.3024C5.4296 19.6381 5.74276 19.8394 6.17284 20.0054C6.66716 20.1965 7.19245 20.3021 7.97309 20.3382C9.07715 20.3899 9.463 20.396 12.002 20.396C14.4765 20.396 14.8798 20.3894 16.0306 20.3382C16.8127 20.3015 17.3395 20.1956 17.828 20.0066C18.2614 19.8383 18.5762 19.6362 18.9084 19.3045C19.2446 18.9678 19.4455 18.6554 19.6117 18.2243C19.8023 17.7318 19.9081 17.2058 19.9442 16.4249C19.9959 15.3208 20.002 14.9349 20.002 12.396C20.002 9.92152 19.9954 9.51821 19.9442 8.36737C19.9074 7.58506 19.8015 7.05749 19.6123 6.56918C19.4444 6.13638 19.2427 5.82235 18.9094 5.48855C18.574 5.15315 18.2626 4.95293 17.8281 4.78542C17.339 4.59554 16.8134 4.48996 16.0308 4.45381C14.9268 4.40205 14.5409 4.396 12.002 4.396ZM12.002 2.396C14.7186 2.396 15.0578 2.406 16.1245 2.456C17.1886 2.50517 17.9145 2.6735 18.552 2.921C19.2111 3.17517 19.7678 3.5185 20.3236 4.07433C20.8786 4.63017 21.222 5.1885 21.477 5.846C21.7236 6.48267 21.892 7.20933 21.942 8.2735C21.9895 9.34017 22.002 9.67933 22.002 12.396C22.002 15.1127 21.992 15.4518 21.942 16.5185C21.8928 17.5827 21.7236 18.3085 21.477 18.946C21.2228 19.6052 20.8786 20.1618 20.3236 20.7177C19.7678 21.2727 19.2086 21.616 18.552 21.871C17.9145 22.1177 17.1886 22.286 16.1245 22.336C15.0578 22.3835 14.7186 22.396 12.002 22.396C9.28528 22.396 8.94611 22.386 7.87945 22.336C6.81528 22.2868 6.09028 22.1177 5.45195 21.871C4.79361 21.6168 4.23611 21.2727 3.68028 20.7177C3.12445 20.1618 2.78195 19.6027 2.52695 18.946C2.27945 18.3085 2.11195 17.5827 2.06195 16.5185C2.01445 15.4518 2.00195 15.1127 2.00195 12.396C2.00195 9.67933 2.01195 9.34017 2.06195 8.2735C2.11111 7.2085 2.27945 6.4835 2.52695 5.846C2.78111 5.18767 3.12445 4.63017 3.68028 4.07433C4.23611 3.5185 4.79445 3.176 5.45195 2.921C6.08945 2.6735 6.81445 2.506 7.87945 2.456C8.94611 2.4085 9.28528 2.396 12.002 2.396Z"
+                  fill="white" fill-opacity="0.79" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <path
+                  d="M19 13.396H5V20.396H19V13.396ZM19 11.396C19 7.53001 15.866 4.396 12 4.396C8.13401 4.396 5 7.53001 5 11.396H19ZM6.38231 4.3641C7.92199 3.13247 9.87499 2.396 12 2.396C14.125 2.396 16.078 3.13247 17.6177 4.3641L19.0711 2.91072L20.4853 4.32493L19.0319 5.77831C20.2635 7.31799 21 9.27099 21 11.396V21.396C21 21.9483 20.5523 22.396 20 22.396H4C3.44772 22.396 3 21.9483 3 21.396V11.396C3 9.27099 3.73647 7.31799 4.9681 5.77831L3.51472 4.32493L4.92893 2.91072L6.38231 4.3641ZM9 9.396C8.44772 9.396 8 8.94828 8 8.396C8 7.84372 8.44772 7.396 9 7.396C9.55228 7.396 10 7.84372 10 8.396C10 8.94828 9.55228 9.396 9 9.396ZM15 9.396C14.4477 9.396 14 8.94828 14 8.396C14 7.84372 14.4477 7.396 15 7.396C15.5523 7.396 16 7.84372 16 8.396C16 8.94828 15.5523 9.396 15 9.396Z"
+                  fill="white" fill-opacity="0.79" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right">
+        © 2024 Hoobake. All rights Reserved | Terms of Service | Privacy |
+        Legal
+      </div>
+    </div>
+  </footer>
+  <!-- footer area ends -->
+
+  <!-- Javascript Links -->
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

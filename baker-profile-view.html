@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>See the Baker Profile</title>
+    <!-- ==== Favicon ==== -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+    <!-- All Plugins CSS -->
+    <link rel="stylesheet" href="./assets/css/plugins/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/plugins/aos.css" />
+    <link rel="stylesheet" href="./assets/css/plugins/nice-select.min.css" />
+    <link rel="stylesheet" href="./assets/css/plugins/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/plugins/flatpickr.min.css" />
+    <!-- telephone flag ----- intl-tel-input -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"
+    />
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./assets/css/custom/baker-profile-view.css" />
+    <link rel="stylesheet" href="./assets/css/helper.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <aside class="contact-with-baker-sidebar">
+      <div class="contact-with-baker-sidebar-container">
+        <!-- initial step -->
+        <div class="sidebar-steps active" data-steps>
+          <div class="common-sidebar-header">
+            <div class="sidebar-header-text">Professional briefing</div>
+            <!-- close sidebar btn -->
+            <svg
+              class="close-side-bar"
+              data-sidebar-toggler
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+            >
+              <path
+                d="M16.25 16.25L23.75 23.75M23.75 16.25L16.25 23.75M35 20C35 21.9698 34.612 23.9204 33.8582 25.7403C33.1044 27.5601 31.9995 29.2137 30.6066 30.6066C29.2137 31.9995 27.5601 33.1044 25.7403 33.8582C23.9204 34.612 21.9698 35 20 35C18.0302 35 16.0796 34.612 14.2597 33.8582C12.4399 33.1044 10.7863 31.9995 9.3934 30.6066C8.00052 29.2137 6.89563 27.5601 6.14181 25.7403C5.38799 23.9204 5 21.9698 5 20C5 16.0218 6.58035 12.2064 9.3934 9.3934C12.2064 6.58035 16.0218 5 20 5C23.9782 5 27.7936 6.58035 30.6066 9.3934C33.4196 12.2064 35 16.0218 35 20Z"
+                stroke="url(#paint0_linear_196_1028)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_196_1028"
+                  x1="22.9118"
+                  y1="29.8824"
+                  x2="29.2917"
+                  y2="6.81944"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#4A25E1" />
+                  <stop offset="0.927091" stop-color="#7B5AFF" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+
+          <div class="common-contents-container">
+            <div class="common-brief-box" data-next-btns>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M12 9V15M15 12H9M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z"
+                  stroke="#231E55"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <div class="brief-text">
+                <h3 class="brief-title">New Brief</h3>
+                <p class="brief-subtitle">Start from scratch</p>
+              </div>
+            </div>
+          </div>
+          <!-- previous briefs -->
+          <div class="common-contents-container previous-briefs">
+            <div class="previous-brief-title">Previous brief</div>
+            <!-- box 1 -->
+            <div class="common-brief-box previous-chat" data-go-to-last-btn>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M15.75 17.25V20.625C15.75 21.246 15.246 21.75 14.625 21.75H4.875C4.57663 21.75 4.29048 21.6315 4.0795 21.4205C3.86853 21.2095 3.75 20.9234 3.75 20.625V7.875C3.75 7.254 4.254 6.75 4.875 6.75H6.75C7.25257 6.74966 7.7543 6.79114 8.25 6.874M15.75 17.25H19.125C19.746 17.25 20.25 16.746 20.25 16.125V11.25C20.25 6.79 17.007 3.089 12.75 2.374C12.2543 2.29114 11.7526 2.24966 11.25 2.25H9.375C8.754 2.25 8.25 2.754 8.25 3.375V6.874M15.75 17.25H9.375C9.07663 17.25 8.79048 17.1315 8.5795 16.9205C8.36853 16.7095 8.25 16.4234 8.25 16.125V6.874M20.25 13.5V11.625C20.25 10.7299 19.8944 9.87145 19.2615 9.23852C18.6286 8.60558 17.7701 8.25 16.875 8.25H15.375C15.0766 8.25 14.7905 8.13148 14.5795 7.9205C14.3685 7.70952 14.25 7.42337 14.25 7.125V5.625C14.25 5.18179 14.1627 4.74292 13.9931 4.33345C13.8235 3.92397 13.5749 3.55191 13.2615 3.23852C12.9481 2.92512 12.576 2.67652 12.1666 2.50691C11.7571 2.3373 11.3182 2.25 10.875 2.25H9.75"
+                  stroke="#231E55"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <div class="brief-text">
+                <h3 class="brief-title">Wedding cake in rose theme</h3>
+                <p class="brief-subtitle">1 Aug, 24 | Danish</p>
+              </div>
+            </div>
+            <!-- box 2 -->
+            <div class="common-brief-box previous-chat" data-go-to-last-btn>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M15.75 17.25V20.625C15.75 21.246 15.246 21.75 14.625 21.75H4.875C4.57663 21.75 4.29048 21.6315 4.0795 21.4205C3.86853 21.2095 3.75 20.9234 3.75 20.625V7.875C3.75 7.254 4.254 6.75 4.875 6.75H6.75C7.25257 6.74966 7.7543 6.79114 8.25 6.874M15.75 17.25H19.125C19.746 17.25 20.25 16.746 20.25 16.125V11.25C20.25 6.79 17.007 3.089 12.75 2.374C12.2543 2.29114 11.7526 2.24966 11.25 2.25H9.375C8.754 2.25 8.25 2.754 8.25 3.375V6.874M15.75 17.25H9.375C9.07663 17.25 8.79048 17.1315 8.5795 16.9205C8.36853 16.7095 8.25 16.4234 8.25 16.125V6.874M20.25 13.5V11.625C20.25 10.7299 19.8944 9.87145 19.2615 9.23852C18.6286 8.60558 17.7701 8.25 16.875 8.25H15.375C15.0766 8.25 14.7905 8.13148 14.5795 7.9205C14.3685 7.70952 14.25 7.42337 14.25 7.125V5.625C14.25 5.18179 14.1627 4.74292 13.9931 4.33345C13.8235 3.92397 13.5749 3.55191 13.2615 3.23852C12.9481 2.92512 12.576 2.67652 12.1666 2.50691C11.7571 2.3373 11.3182 2.25 10.875 2.25H9.75"
+                  stroke="#231E55"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <div class="brief-text">
+                <h3 class="brief-title">Wedding cake in rose theme</h3>
+                <p class="brief-subtitle">1 Aug, 24 | Danish</p>
+              </div>
+            </div>
+          </div>
+          <div class="brief-or">
+            <hr />
+            <span>or</span>
+          </div>
+          <div class="common-contents-container">
+            <div class="go-to-message-text">
+              <span>Want to ask through message?</span><a href="#">Message</a>
+            </div>
+          </div>
+        </div>
+        <!-- second step -->
+        <div class="sidebar-steps" data-steps>
+          <div class="common-sidebar-header">
+            <div class="sidebar-header-text">
+              <svg
+                data-previous-btns
+                style="margin-right: 15px"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M15.75 19.5L8.25 12L15.75 4.5"
+                  stroke="black"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>Professional briefing</span>
+            </div>
+            <!-- close sidebar btn -->
+            <svg
+              data-sidebar-toggler
+              class="close-side-bar"
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+            >
+              <path
+                d="M16.25 16.25L23.75 23.75M23.75 16.25L16.25 23.75M35 20C35 21.9698 34.612 23.9204 33.8582 25.7403C33.1044 27.5601 31.9995 29.2137 30.6066 30.6066C29.2137 31.9995 27.5601 33.1044 25.7403 33.8582C23.9204 34.612 21.9698 35 20 35C18.0302 35 16.0796 34.612 14.2597 33.8582C12.4399 33.1044 10.7863 31.9995 9.3934 30.6066C8.00052 29.2137 6.89563 27.5601 6.14181 25.7403C5.38799 23.9204 5 21.9698 5 20C5 16.0218 6.58035 12.2064 9.3934 9.3934C12.2064 6.58035 16.0218 5 20 5C23.9782 5 27.7936 6.58035 30.6066 9.3934C33.4196 12.2064 35 16.0218 35 20Z"
+                stroke="url(#paint0_linear_196_1028)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_196_1028"
+                  x1="22.9118"
+                  y1="29.8824"
+                  x2="29.2917"
+                  y2="6.81944"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#4A25E1" />
+                  <stop offset="0.927091" stop-color="#7B5AFF" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="common-contents-container">
+            <div class="common-brief-box">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_202_524)">
+                  <path
+                    d="M19.5 9.97559C11.4188 11.4052 11.3332 12.974 10.204 19.2454C9.0244 13.0654 8.5032 11.1302 0.5 10.0214C8.511 8.87279 9.0026 6.94999 10.155 0.754395C11.3174 7.00379 11.423 8.58659 19.5 9.97559ZM17.9652 3.92119C16.3564 4.20579 16.3392 4.51819 16.1146 5.76659C15.8796 4.53639 15.7758 4.15119 14.1826 3.93039C15.7774 3.70179 15.8754 3.31899 16.1046 2.08559C16.3362 3.32959 16.3572 3.64479 17.9652 3.92119Z"
+                    fill="url(#paint0_linear_202_524)"
+                  />
+                  <path
+                    d="M6.77521 15.2638C5.03641 15.5714 5.01801 15.909 4.77521 17.2584C4.52121 15.9286 4.40921 15.5124 2.68701 15.2736C4.41081 15.0266 4.51661 14.6128 4.76461 13.2796C5.01461 14.6244 5.03741 14.965 6.77521 15.2638Z"
+                    fill="url(#paint1_linear_202_524)"
+                  />
+                </g>
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_202_524"
+                    x1="11.8441"
+                    y1="16.091"
+                    x2="15.6856"
+                    y2="1.82222"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#4A25E1" />
+                    <stop offset="0.927091" stop-color="#7B5AFF" />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint1_linear_202_524"
+                    x1="5.12791"
+                    y1="16.5797"
+                    x2="5.95451"
+                    y2="13.5094"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#4A25E1" />
+                    <stop offset="0.927091" stop-color="#7B5AFF" />
+                  </linearGradient>
+                  <clipPath id="clip0_202_524">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <div class="brief-text">
+                <p class="brief-subtitle">
+                  With the help of our Ai, Write a detailed brief that describe
+                  your need and send a offers to bakers
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- describe your needs -->
+          <div class="common-contents-container describe-your-need">
+            <div class="previous-brief-title">Describe your need</div>
+            <textarea
+              class="describe-textarea"
+              name=""
+              id=""
+              placeholder="Write here"
+            ></textarea>
+            <button data-next-btns class="common-btn genarate-with-ai-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="29"
+                height="30"
+                viewBox="0 0 29 30"
+                fill="none"
+              >
+                <g filter="url(#filter0_ddi_202_539)">
+                  <path
+                    d="M20.0398 10.5203C19.9742 10.5203 19.9185 10.5072 19.8725 10.481C19.8266 10.4547 19.7905 10.4089 19.7643 10.3433L19.1936 9.00649L17.7569 8.37738C17.6913 8.35117 17.6454 8.31513 17.6192 8.26925C17.5929 8.22338 17.5798 8.16768 17.5798 8.10215C17.5798 8.03662 17.5929 7.98091 17.6192 7.93504C17.6454 7.88917 17.6913 7.85313 17.7569 7.82692L19.1936 7.21747L19.7643 5.9396C19.7905 5.87407 19.8266 5.8282 19.8725 5.80198C19.9185 5.77577 19.9742 5.76266 20.0398 5.76266C20.1054 5.76266 20.1612 5.77577 20.2071 5.80198C20.253 5.8282 20.2891 5.87407 20.3153 5.9396L20.886 7.21747L22.3227 7.82692C22.3883 7.85313 22.4342 7.88917 22.4604 7.93504C22.4867 7.98091 22.4998 8.03662 22.4998 8.10215C22.4998 8.16768 22.4867 8.22338 22.4604 8.26925C22.4342 8.31513 22.3883 8.35117 22.3227 8.37738L20.886 9.00649L20.3153 10.3433C20.2891 10.4089 20.253 10.4547 20.2071 10.481C20.1612 10.5072 20.1054 10.5203 20.0398 10.5203ZM20.0398 22.2374C19.9873 22.2374 19.9349 22.2242 19.8824 22.198C19.8299 22.1718 19.7905 22.1259 19.7643 22.0604L19.1936 20.7825L17.7766 20.1731C17.711 20.1469 17.6651 20.1108 17.6389 20.065C17.6126 20.0191 17.5995 19.9634 17.5995 19.8979C17.5995 19.8323 17.6126 19.7766 17.6389 19.7308C17.6651 19.6849 17.711 19.6488 17.7766 19.6226L19.1936 19.0132L19.7643 17.6567C19.7905 17.5911 19.8266 17.5453 19.8725 17.5191C19.9185 17.4929 19.9742 17.4797 20.0398 17.4797C20.1054 17.4797 20.1612 17.4929 20.2071 17.5191C20.253 17.5453 20.2891 17.5911 20.3153 17.6567L20.886 19.0132L22.303 19.6226C22.3686 19.6488 22.4145 19.6849 22.4408 19.7308C22.467 19.7766 22.4801 19.8323 22.4801 19.8979C22.4801 19.9634 22.467 20.0191 22.4408 20.065C22.4145 20.1108 22.3686 20.1469 22.303 20.1731L20.886 20.7825L20.3153 22.0604C20.2891 22.1259 20.2497 22.1718 20.1973 22.198C20.1448 22.2242 20.0923 22.2374 20.0398 22.2374ZM11.4003 18.8363C11.2953 18.8363 11.1937 18.8068 11.0953 18.7478C10.9969 18.6888 10.9214 18.6069 10.869 18.502L9.58975 15.7694L6.83456 14.5308C6.7296 14.4784 6.6476 14.403 6.58856 14.3047C6.52952 14.2064 6.5 14.1049 6.5 14C6.5 13.8952 6.52952 13.7936 6.58856 13.6953C6.6476 13.597 6.7296 13.5216 6.83456 13.4692L9.58975 12.2306L10.869 9.51763C10.9214 9.39968 10.9969 9.31121 11.0953 9.25223C11.1937 9.19325 11.2953 9.16376 11.4003 9.16376C11.5053 9.16376 11.6069 9.19325 11.7053 9.25223C11.8037 9.31121 11.8792 9.39312 11.9317 9.49798L13.2305 12.2306L15.9661 13.4692C16.0841 13.5216 16.1727 13.597 16.2317 13.6953C16.2908 13.7936 16.3203 13.8952 16.3203 14C16.3203 14.1049 16.2908 14.2064 16.2317 14.3047C16.1727 14.403 16.0841 14.4784 15.9661 14.5308L13.2305 15.7694L11.9317 18.502C11.8792 18.62 11.8037 18.7052 11.7053 18.7576C11.6069 18.81 11.5053 18.8363 11.4003 18.8363Z"
+                    fill="url(#paint0_linear_202_539)"
+                    shape-rendering="crispEdges"
+                  />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_ddi_202_539"
+                    x="0.133232"
+                    y="0.200891"
+                    width="28.0017"
+                    height="29.5741"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset dx="-1.31726" dy="2.48816" />
+                    <feGaussianBlur stdDeviation="2.52475" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0.0506089 0 0 0 0 0.0159861 0 0 0 0 0.191833 0 0 0 0.25 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_202_539"
+                    />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset dx="1.24408" dy="-1.1709" />
+                    <feGaussianBlur stdDeviation="2.19544" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.35 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="effect1_dropShadow_202_539"
+                      result="effect2_dropShadow_202_539"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect2_dropShadow_202_539"
+                      result="shape"
+                    />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset dy="3.07361" />
+                    <feGaussianBlur stdDeviation="1.9393" />
+                    <feComposite
+                      in2="hardAlpha"
+                      operator="arithmetic"
+                      k2="-1"
+                      k3="1"
+                    />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="shape"
+                      result="effect3_innerShadow_202_539"
+                    />
+                  </filter>
+                  <linearGradient
+                    id="paint0_linear_202_539"
+                    x1="17.2967"
+                    y1="13.5174"
+                    x2="14.8181"
+                    y2="25.0399"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="white" stop-opacity="0.96" />
+                    <stop offset="1" stop-color="white" stop-opacity="0.23" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              Generate with AI
+            </button>
+          </div>
+          <div class="brief-or">
+            <hr />
+            <span>or</span>
+          </div>
+          <div class="common-contents-container">
+            <div class="go-to-message-text">
+              <span>Want to ask through message?</span><a href="#">Message</a>
+            </div>
+          </div>
+        </div>
+        <!-- last step -->
+        <form action="" class="sidebar-steps" data-steps>
+          <div class="common-sidebar-header">
+            <div class="sidebar-header-text">Professional briefing</div>
+            <!-- close sidebar btn -->
+            <svg
+              class="close-side-bar"
+              data-sidebar-toggler
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+            >
+              <path
+                d="M16.25 16.25L23.75 23.75M23.75 16.25L16.25 23.75M35 20C35 21.9698 34.612 23.9204 33.8582 25.7403C33.1044 27.5601 31.9995 29.2137 30.6066 30.6066C29.2137 31.9995 27.5601 33.1044 25.7403 33.8582C23.9204 34.612 21.9698 35 20 35C18.0302 35 16.0796 34.612 14.2597 33.8582C12.4399 33.1044 10.7863 31.9995 9.3934 30.6066C8.00052 29.2137 6.89563 27.5601 6.14181 25.7403C5.38799 23.9204 5 21.9698 5 20C5 16.0218 6.58035 12.2064 9.3934 9.3934C12.2064 6.58035 16.0218 5 20 5C23.9782 5 27.7936 6.58035 30.6066 9.3934C33.4196 12.2064 35 16.0218 35 20Z"
+                stroke="url(#paint0_linear_196_1028)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_196_1028"
+                  x1="22.9118"
+                  y1="29.8824"
+                  x2="29.2917"
+                  y2="6.81944"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#4A25E1" />
+                  <stop offset="0.927091" stop-color="#7B5AFF" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+
+          <div class="common-contents-container brief-container">
+            <p class="brief-container-brief-title">
+              Wedding cake in rose theme
+            </p>
+            <div  class="brief-container-brief-text">
+              I am flexible and hardworking, and I pride myself on being
+              punctual and meeting deadlines efficiently. Reliable for growing
+              your business by finding authentic leads and doing web research. I
+              am an expert in Lead Generation, Data Mining, Data Collection,
+              Email Finding, Data Cleansing, Web Research, CRM data entry, Data
+              entry, and Contact Finding. I can provide First Name, Last Name,
+              Title, Email, LinkedIn URL, Company Name, Website, Revenue, and
+              Company address. I am an expert in finding potential leads for the
+              sales team. I have Paid subscriptions to many tools to get the
+              best services.
+            </div>
+          </div>
+
+          <div class="common-contents-container third-step-btns">
+              <div class="common-btn back-to-2nd-step" data-go-to-first-btn >Back</div>
+              <button type="submit" class="common-btn submit-btn-step"> Send </button>
+          </div>
+
+
+        </form>
+      </div>
+    </aside>
+    <!-- main area starts -->
+
+    <main>
+      <section class="profile-edit-page" data-page-wrapper >
+        <div class="bi-profile-edit-page-container">
+          <div class="bi-banner-images">
+            <img src="assets/images/profile-edit-banner.png" alt="" srcset="" />
+          </div>
+
+          <div class="container bi-banner-user-info">
+            <div
+              class="bi-profile-image"
+              data-bs-toggle="modal"
+              data-bs-target="#crop_image_modal"
+            >
+              <img
+                src="assets/images/chef.png"
+                alt=""
+                srcset=""
+                id="profile-image"
+              />
+            </div>
+            <h2 class="bi-profile-user-name">Azunyan U. Wu</h2>
+            <p class="bi-user-email">elementary221b@gmail.com</p>
+          </div>
+          <div class="container contact-with-baker-container">
+            <button
+              data-sidebar-toggler
+              class="common-btn contact-with-baker-btn"
+            >
+              Contact with me
+            </button>
+          </div>
+          <div class="container bi-profile-edit-content">
+            <!-- first section -->
+            <div class="bi-profile-edit-common-section">
+              <div class="bi-common-section-left">
+                <h3 class="bi-edit-section-title">Company Info</h3>
+                <p class="bi-edit-section-des">
+                  You can change your personal information settings here.
+                </p>
+              </div>
+              <div class="bi-common-section-right">
+                <div class="company-info-container">
+                  <div class="company-description">
+                    I am flexible and hardworking, and I pride myself on being
+                    punctual and meeting deadlines efficiently. Reliable for
+                    growing your business by finding authentic leads and doing
+                    web research. I am an expert in Lead Generation, Data
+                    Mining, Data Collection, Email Finding, Data Cleansing, Web
+                    Research, CRM data entry, Data entry, and Contact Finding. I
+                    can provide First Name, Last Name, Title, Email, LinkedIn
+                    URL, Company Name, Website, Revenue, and Company address. I
+                    am an expert in finding potential leads for the sales team.
+                    I have Paid subscriptions to many tools to get the best
+                    services.
+                  </div>
+                  <div class="company-contacts-container">
+                    <div class="company-info-title">Contacts</div>
+                    <div class="all-info-section">
+                      <!-- box 1 -->
+                      <div class="common-info-box">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M22 10.5V15.5C22 19 20 20.5 17 20.5H7C4 20.5 2 19 2 15.5V8.5C2 5 4 3.5 7 3.5H14"
+                            stroke="url(#paint0_linear_377_495)"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M7 9L10.13 11.5C11.16 12.32 12.85 12.32 13.88 11.5L15.06 10.56"
+                            stroke="url(#paint1_linear_377_495)"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M19.5 8C20.8807 8 22 6.88071 22 5.5C22 4.11929 20.8807 3 19.5 3C18.1193 3 17 4.11929 17 5.5C17 6.88071 18.1193 8 19.5 8Z"
+                            stroke="url(#paint2_linear_377_495)"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <defs>
+                            <linearGradient
+                              id="paint0_linear_377_495"
+                              x1="13.9412"
+                              y1="17.6"
+                              x2="17.076"
+                              y2="4.26803"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stop-color="#4A25E1" />
+                              <stop offset="0.927091" stop-color="#7B5AFF" />
+                            </linearGradient>
+                            <linearGradient
+                              id="paint1_linear_377_495"
+                              x1="11.8123"
+                              y1="11.5836"
+                              x2="12.0848"
+                              y2="9.0348"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stop-color="#4A25E1" />
+                              <stop offset="0.927091" stop-color="#7B5AFF" />
+                            </linearGradient>
+                            <linearGradient
+                              id="paint2_linear_377_495"
+                              x1="19.9853"
+                              y1="7.14706"
+                              x2="21.0486"
+                              y2="3.30324"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stop-color="#4A25E1" />
+                              <stop offset="0.927091" stop-color="#7B5AFF" />
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                        <div class="info-details">
+                          <div class="info-name">Email</div>
+                          <div class="info-value">hello@relume.io</div>
+                        </div>
+                      </div>
+
+                      <!-- box 2 -->
+                      <div class="common-info-box">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M21.97 18.33C21.97 18.69 21.89 19.06 21.72 19.42C21.55 19.78 21.33 20.12 21.04 20.44C20.55 20.98 20.01 21.37 19.4 21.62C18.8 21.87 18.15 22 17.45 22C16.43 22 15.34 21.76 14.19 21.27C13.04 20.78 11.89 20.12 10.75 19.29C9.6 18.45 8.51 17.52 7.47 16.49C6.44 15.45 5.51 14.36 4.68 13.22C3.86 12.08 3.2 10.94 2.72 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C11.27 13.75 11.79 14.24 12.32 14.69C12.84 15.13 13.27 15.43 13.61 15.61C13.66 15.63 13.72 15.66 13.79 15.69C13.87 15.72 13.95 15.73 14.04 15.73C14.21 15.73 14.34 15.67 14.45 15.56L15.21 14.81C15.46 14.56 15.7 14.37 15.93 14.25C16.16 14.11 16.39 14.04 16.64 14.04C16.83 14.04 17.03 14.08 17.25 14.17C17.47 14.26 17.7 14.39 17.95 14.56L21.26 16.91C21.52 17.09 21.7 17.3 21.81 17.55C21.91 17.8 21.97 18.05 21.97 18.33Z"
+                            stroke="url(#paint0_linear_377_502)"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                          />
+                          <defs>
+                            <linearGradient
+                              id="paint0_linear_377_502"
+                              x1="13.9233"
+                              y1="18.5882"
+                              x2="18.182"
+                              y2="3.21625"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stop-color="#4A25E1" />
+                              <stop offset="0.927091" stop-color="#7B5AFF" />
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                        <div class="info-details">
+                          <div class="info-name">Phone</div>
+                          <div class="info-value">+1 (555) 000-0000</div>
+                        </div>
+                      </div>
+
+                      <!-- box 3 -->
+                      <div class="common-info-box">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M11.9999 13.4299C13.723 13.4299 15.1199 12.0331 15.1199 10.3099C15.1199 8.58681 13.723 7.18994 11.9999 7.18994C10.2768 7.18994 8.87988 8.58681 8.87988 10.3099C8.87988 12.0331 10.2768 13.4299 11.9999 13.4299Z"
+                            stroke="url(#paint0_linear_377_507)"
+                            stroke-width="1.5"
+                          />
+                          <path
+                            d="M3.6202 8.49C5.5902 -0.169998 18.4202 -0.159997 20.3802 8.5C21.5302 13.58 18.3702 17.88 15.6002 20.54C13.5902 22.48 10.4102 22.48 8.3902 20.54C5.6302 17.88 2.4702 13.57 3.6202 8.49Z"
+                            stroke="url(#paint1_linear_377_507)"
+                            stroke-width="1.5"
+                          />
+                          <defs>
+                            <linearGradient
+                              id="paint0_linear_377_507"
+                              x1="12.6055"
+                              y1="12.3655"
+                              x2="13.9325"
+                              y2="7.56839"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stop-color="#4A25E1" />
+                              <stop offset="0.927091" stop-color="#7B5AFF" />
+                            </linearGradient>
+                            <linearGradient
+                              id="paint1_linear_377_507"
+                              x1="13.674"
+                              y1="18.5841"
+                              x2="18.4864"
+                              y2="3.57987"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stop-color="#4A25E1" />
+                              <stop offset="0.927091" stop-color="#7B5AFF" />
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                        <div class="info-details">
+                          <div class="info-name">Office</div>
+                          <div class="info-value">
+                            123 Sample St, Sydney NSW 2000 AU
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- box 4 -->
+                      <div class="common-info-box">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M12 21C13.995 20.9999 15.9335 20.3372 17.511 19.116C19.0886 17.8948 20.2159 16.1843 20.716 14.253M12 21C10.005 20.9999 8.06654 20.3372 6.48898 19.116C4.91141 17.8948 3.78408 16.1843 3.284 14.253M12 21C14.485 21 16.5 16.97 16.5 12C16.5 7.03 14.485 3 12 3M12 21C9.515 21 7.5 16.97 7.5 12C7.5 7.03 9.515 3 12 3M20.716 14.253C20.901 13.533 21 12.778 21 12C21.0025 10.4521 20.6039 8.92999 19.843 7.582M20.716 14.253C18.0492 15.7314 15.0492 16.5048 12 16.5C8.838 16.5 5.867 15.685 3.284 14.253M3.284 14.253C3.09475 13.517 2.99933 12.76 3 12C3 10.395 3.42 8.887 4.157 7.582M12 3C13.5962 2.99933 15.1639 3.42336 16.5422 4.22856C17.9205 5.03377 19.0597 6.19117 19.843 7.582M12 3C10.4038 2.99933 8.83608 3.42336 7.45781 4.22856C6.07954 5.03377 4.94031 6.19117 4.157 7.582M19.843 7.582C17.6657 9.46793 14.8805 10.5041 12 10.5C9.002 10.5 6.26 9.4 4.157 7.582"
+                            stroke="url(#paint0_linear_173_415)"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <defs>
+                            <linearGradient
+                              id="paint0_linear_173_415"
+                              x1="13.7471"
+                              y1="17.9294"
+                              x2="17.575"
+                              y2="4.09166"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stop-color="#4A25E1" />
+                              <stop offset="0.927091" stop-color="#7B5AFF" />
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                        <div class="info-details">
+                          <div class="info-name">Website</div>
+                          <a href="#" class="info-value"
+                            >https://heroicons.com/</a
+                          >
+                        </div>
+                      </div>
+
+                      <!-- box 5 -->
+                      <div class="common-info-box">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M14 9.3V12.2H16.6C16.8 12.2 16.9 12.4 16.9 12.6L16.5 14.5C16.5 14.6 16.3 14.7 16.2 14.7H14V22H11V14.8H9.3C9.1 14.8 9 14.7 9 14.5V12.6C9 12.4 9.1 12.3 9.3 12.3H11V9C11 7.3 12.3 6 14 6H16.7C16.9 6 17 6.1 17 6.3V8.7C17 8.9 16.9 9 16.7 9H14.3C14.1 9 14 9.1 14 9.3Z"
+                            stroke="url(#paint0_linear_377_517)"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                          />
+                          <path
+                            d="M15 22H9C4 22 2 20 2 15V9C2 4 4 2 9 2H15C20 2 22 4 22 9V15C22 20 20 22 15 22Z"
+                            stroke="url(#paint1_linear_377_517)"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <defs>
+                            <linearGradient
+                              id="paint0_linear_377_517"
+                              x1="13.7765"
+                              y1="19.2706"
+                              x2="19.3855"
+                              y2="9.13238"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stop-color="#4A25E1" />
+                              <stop offset="0.927091" stop-color="#7B5AFF" />
+                            </linearGradient>
+                            <linearGradient
+                              id="paint1_linear_377_517"
+                              x1="13.9412"
+                              y1="18.5882"
+                              x2="18.1944"
+                              y2="3.21296"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stop-color="#4A25E1" />
+                              <stop offset="0.927091" stop-color="#7B5AFF" />
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                        <div class="info-details">
+                          <div class="info-name">Facebook</div>
+                          <a href="#" class="info-value"
+                            >https://heroicons.com/</a
+                          >
+                        </div>
+                      </div>
+
+                      <!-- box 6 -->
+
+                      <div class="common-info-box">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"
+                            stroke="url(#paint0_linear_377_528)"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M12 15.5C13.933 15.5 15.5 13.933 15.5 12C15.5 10.067 13.933 8.5 12 8.5C10.067 8.5 8.5 10.067 8.5 12C8.5 13.933 10.067 15.5 12 15.5Z"
+                            stroke="url(#paint1_linear_377_528)"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M17.6361 7H17.6477"
+                            stroke="url(#paint2_linear_377_528)"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <defs>
+                            <linearGradient
+                              id="paint0_linear_377_528"
+                              x1="13.9412"
+                              y1="18.5882"
+                              x2="18.1944"
+                              y2="3.21296"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stop-color="#4A25E1" />
+                              <stop offset="0.927091" stop-color="#7B5AFF" />
+                            </linearGradient>
+                            <linearGradient
+                              id="paint1_linear_377_528"
+                              x1="12.6794"
+                              y1="14.3059"
+                              x2="14.1681"
+                              y2="8.92454"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stop-color="#4A25E1" />
+                              <stop offset="0.927091" stop-color="#7B5AFF" />
+                            </linearGradient>
+                            <linearGradient
+                              id="paint2_linear_377_528"
+                              x1="17.7665"
+                              y1="7.32941"
+                              x2="17.9369"
+                              y2="6.53854"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stop-color="#4A25E1" />
+                              <stop offset="0.927091" stop-color="#7B5AFF" />
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                        <div class="info-details">
+                          <div class="info-name">Instagram</div>
+                          <a href="#" class="info-value"
+                            >https://heroicons.com/</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- second section -->
+            <div class="bi-profile-edit-common-section">
+              <div class="bi-common-section-left">
+                <h3 class="bi-edit-section-title">Previous work</h3>
+                <p class="bi-edit-section-des">
+                  You can change your personal information settings here.
+                </p>
+              </div>
+              <div class="bi-common-section-right">
+                <div class="previous-work-wrapper owl-carousel">
+                  <a href="#" class="previous-work-card">
+                    <div class="work-img">
+                      <img src="assets/images/food-1.png" alt="" srcset="" />
+                    </div>
+                    <div class="work-description">
+                      Red Velvet & Cream Cheese ( 500g )
+                    </div>
+                  </a>
+                  <a href="#" class="previous-work-card">
+                    <div class="work-img">
+                      <img src="assets/images/food-4.png" alt="" srcset="" />
+                    </div>
+                    <div class="work-description">
+                      Red Velvet & Cream Cheese ( 500g )
+                    </div>
+                  </a>
+                  <a href="#" class="previous-work-card">
+                    <div class="work-img">
+                      <img src="assets/images/food-2.png" alt="" srcset="" />
+                    </div>
+                    <div class="work-description">
+                      Cup Cream Chess Donate ( 500g )
+                    </div>
+                  </a>
+                  <a href="#" class="previous-work-card">
+                    <div class="work-img">
+                      <img src="assets/images/food-3.png" alt="" srcset="" />
+                    </div>
+                    <div class="work-description">
+                      Red Velvet & Cream Cheese ( 500g )
+                    </div>
+                  </a>
+                  <a href="#" class="previous-work-card">
+                    <div class="work-img">
+                      <img src="assets/images/food-1.png" alt="" srcset="" />
+                    </div>
+                    <div class="work-description">
+                      Red Velvet & Cream Cheese ( 500g )
+                    </div>
+                  </a>
+                  <a href="#" class="previous-work-card">
+                    <div class="work-img">
+                      <img src="assets/images/food-4.png" alt="" srcset="" />
+                    </div>
+                    <div class="work-description">
+                      Red Velvet & Cream Cheese ( 500g )
+                    </div>
+                  </a>
+                  <a href="#" class="previous-work-card">
+                    <div class="work-img">
+                      <img src="assets/images/food-2.png" alt="" srcset="" />
+                    </div>
+                    <div class="work-description">
+                      Cup Cream Chess Donate ( 500g )
+                    </div>
+                  </a>
+                  <a href="#" class="previous-work-card">
+                    <div class="work-img">
+                      <img src="assets/images/food-3.png" alt="" srcset="" />
+                    </div>
+                    <div class="work-description">
+                      Red Velvet & Cream Cheese ( 500g )
+                    </div>
+                  </a>
+                  <a href="#" class="previous-work-card">
+                    <div class="work-img">
+                      <img src="assets/images/food-1.png" alt="" srcset="" />
+                    </div>
+                    <div class="work-description">
+                      Red Velvet & Cream Cheese ( 500g )
+                    </div>
+                  </a>
+                  <a href="#" class="previous-work-card">
+                    <div class="work-img">
+                      <img src="assets/images/food-4.png" alt="" srcset="" />
+                    </div>
+                    <div class="work-description">
+                      Red Velvet & Cream Cheese ( 500g )
+                    </div>
+                  </a>
+                  <a href="#" class="previous-work-card">
+                    <div class="work-img">
+                      <img src="assets/images/food-2.png" alt="" srcset="" />
+                    </div>
+                    <div class="work-description">
+                      Cup Cream Chess Donate ( 500g )
+                    </div>
+                  </a>
+                  <a href="#" class="previous-work-card">
+                    <div class="work-img">
+                      <img src="assets/images/food-3.png" alt="" srcset="" />
+                    </div>
+                    <div class="work-description">
+                      Red Velvet & Cream Cheese ( 500g )
+                    </div>
+                  </a>
+                  <a href="#" class="previous-work-card">
+                    <div class="work-img">
+                      <img src="assets/images/food-1.png" alt="" srcset="" />
+                    </div>
+                    <div class="work-description">
+                      Red Velvet & Cream Cheese ( 500g )
+                    </div>
+                  </a>
+                  <a href="#" class="previous-work-card">
+                    <div class="work-img">
+                      <img src="assets/images/food-4.png" alt="" srcset="" />
+                    </div>
+                    <div class="work-description">
+                      Red Velvet & Cream Cheese ( 500g )
+                    </div>
+                  </a>
+                  <a href="#" class="previous-work-card">
+                    <div class="work-img">
+                      <img src="assets/images/food-2.png" alt="" srcset="" />
+                    </div>
+                    <div class="work-description">
+                      Cup Cream Chess Donate ( 500g )
+                    </div>
+                  </a>
+                  <a href="#" class="previous-work-card">
+                    <div class="work-img">
+                      <img src="assets/images/food-3.png" alt="" srcset="" />
+                    </div>
+                    <div class="work-description">
+                      Red Velvet & Cream Cheese ( 500g )
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- main area starts -->
+
+    <!-- Javascript Links -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <!--  intl-tel-input JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <!-- Optionally include the utils script for additional functionality -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

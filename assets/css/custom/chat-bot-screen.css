@@ -1,0 +1,2048 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+:root {
+    --primary--gradient--color: linear-gradient(15deg,
+            #4a25e1 26.3%,
+            #7b5aff 86.4%);
+    --brand--color: #231e55;
+    --primary--color: #4a25e1;
+    --violet-400: #4f4b77;
+    --white: #fff;
+    --white-2: #f1f1fa;
+    --gray-1: #bbb9ca;
+    --border-1: 1px solid #bbb9ca;
+    --border-2: 1px solid #4a25e1;
+    --base-transition: all 0.4s ease-in-out;
+    --text-xlg: 80px;
+    --text-lg: 48px;
+    --text-md-lg: 24px;
+    --text-md: 22px;
+    --text-reg-lg: 20px;
+    --text-reg: 18px;
+    --text-sm: 16px;
+    --text-xsm: 12px;
+}
+
+.dashboard-header.chat-bot-header {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+
+.chat-bot-header-contents {
+    width: 270px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    border-radius: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: var(--white);
+    padding: 0px 10px;
+    gap: 10px;
+    -webkit-box-shadow: 14px 17px 40px 4px rgba(112, 144, 176, 0.08);
+            box-shadow: 14px 17px 40px 4px rgba(112, 144, 176, 0.08);
+}
+
+.chat-bot-header-btn {
+    height: 40px;
+    width: 40px;
+    min-width: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.chat-bot-header-btn img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.chat-bot-screen-contents-wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+   
+    -webkit-box-orient: vertical;
+   
+    -webkit-box-direction: normal;
+   
+        -ms-flex-direction: column;
+   
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.chat-bot-screen-footer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+
+}
+
+.chat-bot-footer-text {
+    color: #718096;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: var(--text-sm);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164%;
+    /* 26.24px */
+}
+
+.chat-bot-footer-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.chat-bot-footer-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+
+.chat-bot-chatting-screen {
+    width: 100%;
+
+    height: calc(100% - 26px);
+    height: calc(100% - 26px);
+    max-height: calc(100% - 26px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 0 100px 54px 100px;
+    gap: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+}
+
+
+
+.chat-bot-chat-form {
+    width: 100%;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.regenerate-response-btn {
+    color: var(--violet-400, #4F4B77);
+    font-family: "DM Sans";
+    font-size: var(--text-sm);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    /* 26.24px */
+    text-transform: capitalize;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    height: 54px;
+    padding: 14px 24px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+    border-radius: 45px;
+    border: 1px solid #E2E8F0;
+}
+
+.chat-bot-input-wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 24px;
+}
+
+.chat-bot-form-input {
+    border-radius: 45px;
+    border: 1px solid #E2E8F0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    padding: 12px 24px;
+    color: var(--violet-400, #4F4B77);
+
+    /* Body text/Regular/Website/18/ */
+    font-family: "DM Sans";
+    font-size: var(--text-reg);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 29.52px */
+}
+
+.common-btn.chat-bot-msg-send {
+    border: none;
+    outline: none;
+    padding: 12px 68px;
+}
+
+
+.chat-bot-message-screen {
+
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 10px 20px;
+}
+
+.reply-from-ai-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 20px;
+}
+
+.ai-icon {
+    min-width: 40px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+}
+
+
+.ai-reply-msg-text {
+    color: var(--violet-400, #4F4B77);
+    font-size: var(--text-sm);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.ai-reply-msg {
+    width: 100%;
+    padding: 22px;
+    border-radius: 14px;
+    background: var(--white);
+    -webkit-box-shadow: 0px 0px 45px 21px rgba(112, 144, 176, 0.08);
+            box-shadow: 0px 0px 45px 21px rgba(112, 144, 176, 0.08);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+}
+
+.baker-info-from-ai {
+    width: 100%;
+    padding: 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 24px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+
+}
+
+.baker-info-header-from-ai {
+    width: 100%;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.baker-info-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 16px;
+}
+
+.baker-img-small {
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.baker-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 8px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+
+.baker-name-ai {
+    color: var(--brand--color, #231E55);
+    font-family: "DM Sans";
+    font-size: var(--text-sm);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+    /* 21.12px */
+    letter-spacing: -0.32px;
+}
+
+.baker-ratings {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 5px;
+}
+
+.rating-text {
+    color: var(--brand--color, #231E55);
+    font-size: var(--text-xsm);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.122px;
+}
+
+.common-btn.see-baker-profile-btn {
+    font-size: 14px;
+    border: var(--border-2);
+    background: transparent;
+    color: var(--primary--color);
+}
+
+.baker-previous-work-ai {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.baker-image-card {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+
+}
+
+.baker-card-description {
+    color: var(--brand--color, #231E55);
+    font-family: Outfit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164%;
+    /* 22.96px */
+}
+
+.baker-food-img {
+    width: 100%;
+    height: 200px;
+}
+
+.baker-food-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+
+
+
+
+.my-msg-ai-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    gap: 20px;
+}
+
+.my-msg-to-ai-box {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 10px;
+    position: relative;
+}
+
+.my-msg-to-ai-icons {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 50%;
+    border: var(--border-1);
+}
+
+.my-msg-to-ai-icons.user-icon svg path {
+    fill: var(--primary--color);
+}
+
+.my-msg-to-ai {
+    width: 100%;
+    border-radius: 14px;
+    border: 1px solid #E2E8F0;
+    padding: 17px 22px;
+    color: var(--violet-400, #4F4B77);
+
+    /* Body text/Regular/Website/16 */
+    font-family: "DM Sans";
+    font-size: var(--text-sm);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 26.24px */
+
+}
+
+.edit-my-msg-form {
+    position: absolute;
+    top: 30px;
+    border-radius: 14px;
+    background: #FFF;
+    -webkit-box-shadow: 0px 0px 45px 21px rgba(112, 144, 176, 0.08);
+            box-shadow: 0px 0px 45px 21px rgba(112, 144, 176, 0.08);
+    right: 100px;
+    z-index: 500;
+    width: min(100%, 600px);
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 10px;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translateY(60px);
+        -ms-transform: translateY(60px);
+            transform: translateY(60px);
+    -webkit-transition: var(--base-transition);
+    -o-transition: var(--base-transition);
+    transition: var(--base-transition);
+}
+
+.edit-my-msg-form.active {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-transition: var(--base-transition);
+    -o-transition: var(--base-transition);
+    transition: var(--base-transition);
+}
+
+.edit-msg-textarea {
+    width: 100%;
+    height: 130px;
+    resize: none;
+    border: none;
+    outline: none;
+    font-size: var(--text-sm);
+    color: var(--brand--color);
+}
+
+.edit-my-msg-form-btns {
+    width: 100%;
+    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+
+}
+
+.common-btn.edit-my-msg-btn {
+    border: none;
+    outline: none;
+    padding: 6px 20px;
+    font-size: var(--text-xsm);
+}
+
+
+
+
+
+/* ----------------------- ::responsive css starts here:: --------------------------------  */
+
+
+
+/* laptop devices */
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+    .chat-bot-chatting-screen {
+        width: 100%;
+        height: calc(100% - 26px);
+        height: calc(100% - 26px);
+        max-height: calc(100% - 26px);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        padding: 0 40px 54px 40px;
+        gap: 40px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+}
+
+/* large tablet devices */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .chat-bot-chatting-screen {
+        width: 100%;
+        height: calc(100% - 60px);
+        min-height: calc(100% - 60px);
+        max-height: calc(100% - 60px);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        padding: 0 0px 25px 0px;
+        gap: 12px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        overflow-x: hidden;
+    }
+    .chat-bot-screen-contents-wrapper{
+        gap: 5px ;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+   
+}
+
+/* medium tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .chat-bot-screen-contents-wrapper {
+        gap: 12px;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+
+    .chat-bot-chatting-screen {
+        width: 100%;
+        height: calc(100% - 60px);
+        min-height: calc(100% - 60px);
+        max-height: calc(100% - 60px);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        padding: 0 0px 25px 0px;
+        gap: 12px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    .chat-bot-screen-footer {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 8px;
+    }
+
+    .chat-bot-footer-right {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        gap: 15px;
+    }
+
+  
+    .edit-my-msg-form {
+        top: 47px;
+        right: 0px;
+        width: 90%;
+
+    }
+
+    .my-msg-to-ai {
+
+        padding: 12px 14px;
+
+        
+    }
+
+    .ai-icon {
+        min-width: 30px;
+        height: 30px;
+
+    }
+
+    .my-msg-to-ai-icons {
+        width: 35px;
+        height: 35px;
+        min-width: 35px;
+    }
+
+    .ai-reply-msg {
+        padding: 14px 12px;
+    }
+
+    
+
+    
+
+    .chat-bot-message-screen {
+
+        overflow-y: auto;
+
+        gap: 18px;
+
+        padding: 10px;
+        overflow-x: hidden;
+    }
+
+    .reply-from-ai-box {
+        gap: 10px;
+    }
+
+    .baker-info-from-ai {
+        width: 100%;
+        padding: 15px 0;
+        gap: 12px;
+
+    }
+    .baker-info-header-from-ai {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 10px;
+    }
+    .baker-info-left{
+        width: 100%;
+        gap: 10px;
+    }
+    
+    .baker-info{
+        width: 100%;
+    }
+    
+    .baker-ratings  svg{
+        width: 14px;
+        height: 14px;
+    }
+    .common-btn.see-baker-profile-btn{
+        
+        -ms-flex-item-align: end;
+        
+            align-self: flex-end;
+    }
+
+    .baker-previous-work-ai {
+        display: -ms-grid;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+    .baker-food-img {
+        width: 100%;
+        height: 150px;
+    }
+    .baker-food-img img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: fill;
+           object-fit: fill;
+    }
+ 
+    .chat-bot-input-wrapper {
+        
+        gap: 18px;
+    }
+    .chat-bot-chat-form {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 12px;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .regenerate-response-btn{
+        height: 50px;
+        padding: 14px 16px;
+        font-size: 14px;
+    }
+
+    .chat-bot-form-input{
+        width: 70%;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .common-btn.chat-bot-msg-send{
+        width: 30%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        font-size: 16px;
+        padding: 9px 50px;
+    }
+}
+
+/* small tablet devices */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .chat-bot-screen-contents-wrapper {
+        gap: 12px;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+
+    .chat-bot-chatting-screen {
+        width: 100%;
+        height: calc(100% - 60px);
+        min-height: calc(100% - 60px);
+        max-height: calc(100% - 60px);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        padding: 0 0px 25px 0px;
+        gap: 12px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    .chat-bot-screen-footer {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 8px;
+    }
+
+    .chat-bot-footer-right {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        gap: 15px;
+    }
+
+  
+    .edit-my-msg-form {
+        top: 47px;
+        right: 0px;
+        width: 90%;
+
+    }
+
+    .my-msg-to-ai {
+
+        padding: 12px 14px;
+
+        
+    }
+
+    .ai-icon {
+        min-width: 30px;
+        height: 30px;
+
+    }
+
+    .my-msg-to-ai-icons {
+        width: 35px;
+        height: 35px;
+        min-width: 35px;
+    }
+
+    .ai-reply-msg {
+        padding: 14px 12px;
+    }
+
+    
+
+    
+
+    .chat-bot-message-screen {
+
+        overflow-y: auto;
+
+        gap: 18px;
+
+        padding: 10px;
+        overflow-x: hidden;
+    }
+
+    .reply-from-ai-box {
+        gap: 10px;
+    }
+
+    .baker-info-from-ai {
+        width: 100%;
+        padding: 15px 0;
+        gap: 12px;
+
+    }
+    .baker-info-header-from-ai {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 10px;
+    }
+    .baker-info-left{
+        width: 100%;
+        gap: 10px;
+    }
+    
+    .baker-info{
+        width: 100%;
+    }
+    
+    .baker-ratings  svg{
+        width: 14px;
+        height: 14px;
+    }
+    .common-btn.see-baker-profile-btn{
+        
+        -ms-flex-item-align: end;
+        
+            align-self: flex-end;
+    }
+
+    .baker-previous-work-ai {
+        display: -ms-grid;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+    .baker-food-img {
+        width: 100%;
+        height: 150px;
+    }
+    .baker-food-img img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: fill;
+           object-fit: fill;
+    }
+ 
+    .chat-bot-input-wrapper {
+        
+        gap: 18px;
+    }
+    .chat-bot-chat-form {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 12px;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .regenerate-response-btn{
+        height: 50px;
+        padding: 14px 16px;
+        font-size: 14px;
+    }
+
+    .chat-bot-form-input{
+        width: 70%;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .common-btn.chat-bot-msg-send{
+        width: 30%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        font-size: 16px;
+        padding: 9px 50px;
+    }
+}
+
+/* large mobile devices */
+@media only screen and (min-width: 480px) and (max-width: 575px) {
+    .chat-bot-screen-contents-wrapper {
+        gap: 12px;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+
+    .chat-bot-chatting-screen {
+        width: 100%;
+        height: calc(100% - 60px);
+        min-height: calc(100% - 60px);
+        max-height: calc(100% - 60px);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        padding: 0 0px 25px 0px;
+        gap: 12px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    .chat-bot-screen-footer {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 8px;
+    }
+
+    .chat-bot-footer-right {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        gap: 0;
+    }
+
+    .chat-bot-footer-text {
+        font-size: 12px;
+    }
+
+    .edit-my-msg-form {
+        top: 47px;
+        right: 0px;
+        width: 90%;
+
+    }
+
+    .my-msg-to-ai {
+
+        padding: 12px 14px;
+
+        font-size: 14px;
+
+
+        line-height: 24px;
+    }
+
+    .ai-icon {
+        min-width: 30px;
+        height: 30px;
+
+    }
+
+    .my-msg-to-ai-icons {
+        width: 35px;
+        height: 35px;
+        min-width: 35px;
+    }
+
+    .ai-reply-msg {
+        padding: 14px 12px;
+    }
+
+    .edit-msg-textarea {
+        font-size: 14px;
+    }
+
+    .ai-reply-msg-text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .chat-bot-message-screen {
+
+        overflow-y: auto;
+
+        gap: 18px;
+
+        padding: 10px;
+        overflow-x: hidden;
+    }
+
+    .reply-from-ai-box {
+        gap: 10px;
+    }
+
+    .baker-info-from-ai {
+        width: 100%;
+        padding: 15px 0;
+        gap: 12px;
+
+    }
+    .baker-info-header-from-ai {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 10px;
+    }
+    .baker-info-left{
+        width: 100%;
+        gap: 10px;
+    }
+    .baker-img-small {
+        width: 40px;
+        min-width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .baker-info{
+        width: 100%;
+    }
+    .baker-name-ai{
+        font-size: 14px;
+    }
+    .baker-ratings  svg{
+        width: 14px;
+        height: 14px;
+    }
+    .common-btn.see-baker-profile-btn{
+        padding: 5px 12px;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+    }
+
+    .baker-previous-work-ai {
+        display: -ms-grid;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(116px, 1fr));
+        gap: 10px;
+    }
+    .baker-food-img {
+        width: 100%;
+        height: 114px;
+    }
+    .baker-food-img img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: fill;
+           object-fit: fill;
+    }
+    .baker-card-description {
+        font-size: 12px;
+        line-height: 21px;
+    }
+    .chat-bot-input-wrapper {
+        
+        gap: 18px;
+    }
+    .chat-bot-chat-form {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 12px;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .regenerate-response-btn{
+        height: 50px;
+        padding: 14px 16px;
+        font-size: 14px;
+    }
+
+    .chat-bot-form-input{
+        width: 70%;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .common-btn.chat-bot-msg-send{
+        width: 30%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        font-size: 16px;
+        padding: 9px 50px;
+    }
+}
+
+/* mobile devices */
+@media only screen and (min-width: 375px) and (max-width: 479px) {
+
+    .chat-bot-screen-contents-wrapper {
+        gap: 12px;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+
+    .chat-bot-chatting-screen {
+        width: 100%;
+        height: calc(100% - 60px);
+        min-height: calc(100% - 60px);
+        max-height: calc(100% - 60px);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        padding: 0 0px 25px 0px;
+        gap: 12px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    .chat-bot-screen-footer {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 8px;
+    }
+
+    .chat-bot-footer-right {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        gap: 0;
+    }
+
+    .chat-bot-footer-text {
+        font-size: 12px;
+    }
+
+    .edit-my-msg-form {
+        top: 47px;
+        right: 0px;
+        width: 90%;
+
+    }
+
+    .my-msg-to-ai {
+
+        padding: 12px 14px;
+
+        font-size: 14px;
+
+
+        line-height: 24px;
+    }
+
+    .ai-icon {
+        min-width: 30px;
+        height: 30px;
+
+    }
+
+    .my-msg-to-ai-icons {
+        width: 35px;
+        height: 35px;
+        min-width: 35px;
+    }
+
+    .ai-reply-msg {
+        padding: 14px 12px;
+    }
+
+    .edit-msg-textarea {
+        font-size: 14px;
+    }
+
+    .ai-reply-msg-text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .chat-bot-message-screen {
+
+        overflow-y: auto;
+
+        gap: 18px;
+
+        padding: 10px;
+        overflow-x: hidden;
+    }
+
+    .reply-from-ai-box {
+        gap: 10px;
+    }
+
+    .baker-info-from-ai {
+        width: 100%;
+        padding: 15px 0;
+        gap: 12px;
+
+    }
+    .baker-info-header-from-ai {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 10px;
+    }
+    .baker-info-left{
+        width: 100%;
+        gap: 10px;
+    }
+    .baker-img-small {
+        width: 40px;
+        min-width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .baker-info{
+        width: 100%;
+    }
+    .baker-name-ai{
+        font-size: 14px;
+    }
+    .baker-ratings  svg{
+        width: 14px;
+        height: 14px;
+    }
+    .common-btn.see-baker-profile-btn{
+        padding: 5px 12px;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+    }
+
+    .baker-previous-work-ai {
+        display: -ms-grid;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(116px, 1fr));
+        gap: 10px;
+    }
+    .baker-food-img {
+        width: 100%;
+        height: 114px;
+    }
+    .baker-food-img img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: fill;
+           object-fit: fill;
+    }
+    .baker-card-description {
+        font-size: 12px;
+        line-height: 21px;
+    }
+    .chat-bot-input-wrapper {
+        
+        gap: 18px;
+    }
+    .chat-bot-chat-form {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 12px;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .regenerate-response-btn{
+        height: 50px;
+        padding: 14px 16px;
+        font-size: 14px;
+    }
+
+    .chat-bot-form-input{
+        width: 70%;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .common-btn.chat-bot-msg-send{
+        width: 30%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        font-size: 16px;
+        padding: 9px 50px;
+    }
+
+
+}
+
+/* extra small devices */
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+    .chat-bot-screen-contents-wrapper {
+        gap: 12px;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+
+    .chat-bot-chatting-screen {
+        width: 100%;
+        height: calc(100% - 60px);
+        min-height: calc(100% - 60px);
+        max-height: calc(100% - 60px);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        padding: 0 0px 25px 0px;
+        gap: 12px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    .chat-bot-screen-footer {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 8px;
+    }
+
+    .chat-bot-footer-right {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        gap: 0;
+    }
+
+    .chat-bot-footer-text {
+        font-size: 12px;
+    }
+
+    .edit-my-msg-form {
+        top: 47px;
+        right: 0px;
+        width: 90%;
+
+    }
+
+    .my-msg-to-ai {
+
+        padding: 12px 14px;
+
+        font-size: 14px;
+
+
+        line-height: 24px;
+    }
+
+    .ai-icon {
+        min-width: 30px;
+        height: 30px;
+
+    }
+
+    .my-msg-to-ai-icons {
+        width: 35px;
+        height: 35px;
+        min-width: 35px;
+    }
+
+    .ai-reply-msg {
+        padding: 14px 12px;
+    }
+
+    .edit-msg-textarea {
+        font-size: 14px;
+    }
+
+    .ai-reply-msg-text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .chat-bot-message-screen {
+
+        overflow-y: auto;
+
+        gap: 18px;
+
+        padding: 10px;
+        overflow-x: hidden;
+    }
+
+    .reply-from-ai-box {
+        gap: 10px;
+    }
+
+    .baker-info-from-ai {
+        width: 100%;
+        padding: 15px 0;
+        gap: 12px;
+
+    }
+    .baker-info-header-from-ai {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 10px;
+    }
+    .baker-info-left{
+        width: 100%;
+        gap: 10px;
+    }
+    .baker-img-small {
+        width: 40px;
+        min-width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .baker-info{
+        width: 100%;
+    }
+    .baker-name-ai{
+        font-size: 14px;
+    }
+    .baker-ratings  svg{
+        width: 14px;
+        height: 14px;
+    }
+    .common-btn.see-baker-profile-btn{
+        padding: 5px 12px;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+    }
+
+    .baker-previous-work-ai {
+        display: -ms-grid;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(116px, 1fr));
+        gap: 10px;
+    }
+    .baker-food-img {
+        width: 100%;
+        height: 114px;
+    }
+    .baker-food-img img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: fill;
+           object-fit: fill;
+    }
+    .baker-card-description {
+        font-size: 12px;
+        line-height: 21px;
+    }
+    .chat-bot-input-wrapper {
+        
+        gap: 18px;
+    }
+    .chat-bot-chat-form {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 12px;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .regenerate-response-btn{
+        height: 50px;
+        padding: 14px 16px;
+        font-size: 14px;
+    }
+
+    .chat-bot-form-input{
+        width: 70%;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .common-btn.chat-bot-msg-send{
+        width: 30%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        font-size: 16px;
+        padding: 9px 50px;
+    }
+
+}
+
+
+
+/* extra small devices */
+@media only screen  and (max-width: 319px) {
+    .chat-bot-screen-contents-wrapper {
+        gap: 12px;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+
+    .chat-bot-chatting-screen {
+        width: 100%;
+        height: calc(100% - 60px);
+        min-height: calc(100% - 60px);
+        max-height: calc(100% - 60px);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        padding: 0 0px 25px 0px;
+        gap: 12px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    .chat-bot-screen-footer {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 8px;
+    }
+
+    .chat-bot-footer-right {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        gap: 0;
+    }
+
+    .chat-bot-footer-text {
+        font-size: 12px;
+    }
+
+    .edit-my-msg-form {
+        top: 47px;
+        right: 0px;
+        width: 90%;
+
+    }
+
+    .my-msg-to-ai {
+
+        padding: 12px 14px;
+
+        font-size: 14px;
+
+
+        line-height: 24px;
+    }
+
+    .ai-icon {
+        min-width: 30px;
+        height: 30px;
+
+    }
+
+    .my-msg-to-ai-icons {
+        width: 35px;
+        height: 35px;
+        min-width: 35px;
+    }
+
+    .ai-reply-msg {
+        padding: 14px 12px;
+    }
+
+    .edit-msg-textarea {
+        font-size: 14px;
+    }
+
+    .ai-reply-msg-text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .chat-bot-message-screen {
+
+        overflow-y: auto;
+
+        gap: 18px;
+
+        padding: 10px;
+        overflow-x: hidden;
+    }
+
+    .reply-from-ai-box {
+        gap: 10px;
+    }
+
+    .baker-info-from-ai {
+        width: 100%;
+        padding: 15px 0;
+        gap: 12px;
+
+    }
+    .baker-info-header-from-ai {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 10px;
+    }
+    .baker-info-left{
+        width: 100%;
+        gap: 10px;
+    }
+    .baker-img-small {
+        width: 40px;
+        min-width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .baker-info{
+        width: 100%;
+    }
+    .baker-name-ai{
+        font-size: 14px;
+    }
+    .baker-ratings  svg{
+        width: 14px;
+        height: 14px;
+    }
+    .common-btn.see-baker-profile-btn{
+        padding: 5px 12px;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+    }
+
+    .baker-previous-work-ai {
+        display: -ms-grid;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(116px, 1fr));
+        gap: 10px;
+    }
+    .baker-food-img {
+        width: 100%;
+        height: 114px;
+    }
+    .baker-food-img img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: fill;
+           object-fit: fill;
+    }
+    .baker-card-description {
+        font-size: 12px;
+        line-height: 21px;
+    }
+    .chat-bot-input-wrapper {
+        
+        gap: 18px;
+    }
+    .chat-bot-chat-form {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 12px;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .regenerate-response-btn{
+        height: 50px;
+        padding: 14px 16px;
+        font-size: 14px;
+    }
+
+    .chat-bot-form-input{
+        width: 70%;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .common-btn.chat-bot-msg-send{
+        width: 30%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        font-size: 16px;
+        padding: 9px 50px;
+    }
+
+}
+
+/* ----------------------- ::responsive css ends here:: --------------------------------  */
